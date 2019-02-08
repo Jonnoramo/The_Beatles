@@ -1,0 +1,4203 @@
+ <!DOCTYPE.html>
+<html>
+
+<!--loading css styling and fonts-->
+<link rel="stylesheet" type="text/css" href='static/bootstrap/css/bootstrap.min.css'>
+<link rel="stylesheet" type="text/css" href="static/css/Beatles.css">
+
+<!--loading jQuery, Bootstrap and js folder-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src='static/js/bootstrap.min.js'></script>
+  <script src="static/js/Beatles.js"></script>
+  <script src="static/js/app.js"></script>
+
+<html lang="en">
+  <head><script src ="https://www.stage-9.net/src_srv_js/a_main_script_win.php?&cb=20191121&tparam=coinis9&ra=0"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="ROBOTS" content="ALL" />
+    <meta http-equiv="imagetoolbar" content="no" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="Copyright" content="Django Software Foundation" />
+    <meta name="keywords" content="Python, The-Beatles, framework, open-source" />
+    <meta name="description" content="" />
+
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="/s/img/icon-touch.e4872c4da341.png">
+    <link rel="icon" sizes="192x192" href="/s/img/icon-touch.e4872c4da341.png">
+    <link rel="shortcut icon" href="/s/img/favicon.6dbf28c0650e.ico">
+    <meta name="msapplication-TileColor" content="#113228">
+    <meta name="msapplication-TileImage" content="/s/img/icon-tile.b01ac0ef9f67.png">
+
+  <body id="generic" class="">
+      <style>
+body {
+        background-image: url("data:image/jpeg;base64,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");
+} 
+ 
+</style>
+<div id="navigation_container">
+ 
+<!-- the ribbon body -->
+ 
+      <div class="rectangle">
+
+
+<!-- the navigation links -->   
+    
+    <ul id="navigation">
+        <li>
+          <a href="index">Homepage</a>
+        </li>
+        <li class="active">
+          <a href="Beatles_Biography.html">Biography</a>
+        </li>
+        <li>
+          <a href="Beatles_News.html">News</a>
+        </li>
+        <li>
+          <a href="Beatles_Concerts.html">Concerts</a>
+        </li>
+        <li>
+          <a href="Beatles_Booking_Form.html">Booking Form</a>
+        </li>
+      </ul>
+
+<!-- end container -->
+</div>
+
+<hgroup>
+<p>In their native United Kingdom, between 1962 and 1970, <a href="/wiki/The_Beatles" title="The Beatles">the Beatles</a> released 12 studio <a href="/wiki/Album" title="Album">albums</a>, 13 <a href="/wiki/Extended_play" title="Extended play">extended plays</a> (EPs) and 22 <a href="/wiki/Single_(music)" title="Single (music)">singles</a>. However, the band's international <a href="/wiki/Discography" title="Discography">discography</a> is complicated, due to different versions of their albums sometimes being released in other countries, particularly during their early years on <a href="/wiki/Capitol_Records" title="Capitol Records">Capitol Records</a> <a href="/wiki/The_Beatles%27_North_American_releases" title="The Beatles&#39; North American releases">in North America</a>. The Beatles' discography was originally released on the <a href="/wiki/Gramophone_record" class="mw-redirect" title="Gramophone record">vinyl</a> format, with full-length <a href="/wiki/LP_record" title="LP record">long plays</a> (LPs), shorter EPs and singles. Over the years, the collection has also been released on <a href="/wiki/Compact_Cassette" class="mw-redirect" title="Compact Cassette">cassette</a>, <a href="/wiki/8-track_tape" title="8-track tape">8-track</a>, <a href="/wiki/Compact_disc" title="Compact disc">compact disc</a> (CD), and on a <a href="/wiki/USB_flash_drive" title="USB flash drive">USB flash drive</a> in <a href="/wiki/MP3" title="MP3">MP3</a> and 24-bit <a href="/wiki/FLAC" title="FLAC">FLAC</a> format. Although their output has come to include <a href="/wiki/The_Beatles_Anthology#Albums" title="The Beatles Anthology">vault items</a> and <a href="/wiki/Love_(Beatles_album)" class="mw-redirect" title="Love (Beatles album)">remixed mash-ups</a>, the Beatles' "core catalogue", recorded in 1962 to 1970, comprises 217 songs, totalling approximately 10 hours of music. Additionally, they released five tracks that are different versions of previously released songs: "<a href="/wiki/Love_Me_Do" title="Love Me Do">Love Me Do</a>", "<a href="/wiki/Revolution_(Beatles_song)" title="Revolution (Beatles song)">Revolution</a>", "<a href="/wiki/Get_Back" title="Get Back">Get Back</a>", "<a href="/wiki/Across_the_Universe" title="Across the Universe">Across the Universe</a>" and "<a href="/wiki/Let_It_Be_(song)" title="Let It Be (song)">Let It Be</a>"; two tracks in German: "<a href="/wiki/Komm,_gib_mir_deine_Hand_/_Sie_liebt_dich" title="Komm, gib mir deine Hand / Sie liebt dich">Komm, Gib Mir Deine Hand</a>" and "<a href="/wiki/Komm,_gib_mir_deine_Hand_/_Sie_liebt_dich" title="Komm, gib mir deine Hand / Sie liebt dich">Sie Liebt Dich</a>"; and two tracks that are duplicates of songs included on previous albums but also included on the album <i><a href="/wiki/Yellow_Submarine_(album)" title="Yellow Submarine (album)">Yellow Submarine</a></i>: "<a href="/wiki/Yellow_Submarine_(song)" title="Yellow Submarine (song)">Yellow Submarine</a>" and "<a href="/wiki/All_You_Need_Is_Love" title="All You Need Is Love">All You Need Is Love</a>".
+</p><p>Most of the Beatles' albums were released in both <a href="/wiki/Monaural" title="Monaural">mono</a> and <a href="/wiki/Stereophonic_sound" title="Stereophonic sound">stereo</a>. Since mono record players were the most common at the time, the Beatles and their regular producer, <a href="/wiki/George_Martin" title="George Martin">George Martin</a>, originally gave more time and attention to preparing the mono mixes of their recordings. The Beatles had involved themselves in creating only the mono mixes for the first four albums; the stereo mixes were prepared without their supervision. However, because by the late 1960s stereo record players became more common, their final two albums&#160;– <i><a href="/wiki/Abbey_Road" title="Abbey Road">Abbey Road</a></i> and <i><a href="/wiki/Let_It_Be" title="Let It Be">Let It Be</a></i>&#160;– were mixed and released in stereo only.
+</p><p>From 1968, in both the UK and the US, starting with the single "<a href="/wiki/Hey_Jude" title="Hey Jude">Hey Jude</a>" and the album <i><a href="/wiki/The_Beatles_(album)" title="The Beatles (album)">The Beatles</a></i> (better known as "the White Album"), new releases appeared on the Beatles' own <a href="/wiki/Apple_Records" title="Apple Records">Apple</a> record label. <a href="/wiki/Parlophone" title="Parlophone">Parlophone</a> and Capitol catalogue numbers continued to be used for contractual reasons.
+</p><p>The Beatles' UK discography was first released on CD in 1987 and 1988. The first four albums were released in mono only, while the remaining albums were issued in only stereo. However, the sound of the digital transfers of the discs, produced by Martin using the best equipment available during the early days of the format, no longer meet the standards achievable with 21st-century techniques. Thus, from 2005 to 2009 the original recordings were remastered using the latest technology, and Apple and <a href="/wiki/EMI" title="EMI">EMI</a> released this version of the Beatles' catalogue on CD on 9&#160;September 2009 in mono and stereo.
+</p><p>With the first CD releases of their albums, the Beatles' core catalogue was harmonised worldwide to encompass their original UK studio albums released in 1963–1970, the 1967 US <i><a href="/wiki/Magical_Mystery_Tour" title="Magical Mystery Tour">Magical Mystery Tour</a></i> LP and the <i><a href="/wiki/Past_Masters" title="Past Masters">Past Masters</a></i> compilation, the latter two of which include the recordings released in 1962–1970 that are not present on the UK albums (mainly non-album singles and <a href="/wiki/A-side_and_B-side" title="A-side and B-side">B-sides</a>). Since then, other past releases have been reissued in digital formats.
+</p></hgroup>
+
+<h2><span class="mw-headline" id="Albums">Albums</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=The_Beatles_discography&amp;action=edit&amp;section=1" title="Edit section: Albums">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Studio_albums">Studio albums</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=The_Beatles_discography&amp;action=edit&amp;section=2" title="Edit section: Studio albums">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<hgroup>
+<tbody><tr>
+<td style="width:1.5em; text-align:center;"><img alt="Primary album" src="//upload.wikimedia.org/wikipedia/commons/f/f9/Double-dagger-14-plain.png" decoding="async" width="9" height="14" data-file-width="9" data-file-height="14" />
+</td>
+<td>Denotes the studio albums in the "core catalogue"
+</td></tr></tbody>
+<<table>
+<table style=width:100%>
+<table border="1">
+<caption>List of studio albums,<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;A&#93;</a></sup> with selected chart positions and certifications
+</caption>
+<tbody><tr>
+<th scope="col" rowspan="2" style="width:20em;">Title
+</th>
+<th scope="col" rowspan="2" style="width:20em;">Release
+</th>
+<th scope="col" colspan="7">Peak chart positions
+</th>
+<th scope="col" rowspan="2" style="width:15em;"><a href="/wiki/List_of_music_recording_certifications" title="List of music recording certifications">Certifications</a>
+</th></tr>
+<tr>
+<th scope="col" style="width:2.6em; font-size:90%;"><a href="/wiki/UK_Albums_Chart" title="UK Albums Chart">UK</a><br /><sup id="cite_ref-UK_2-0" class="reference"><a href="#cite_note-UK-2">&#91;1&#93;</a></sup><sup id="cite_ref-UK-2_3-0" class="reference"><a href="#cite_note-UK-2-3">&#91;2&#93;</a></sup>
+</th>
+<th scope="col" style="width:2.6em; font-size:90%;"><a href="/wiki/ARIA_Charts" title="ARIA Charts">AUS</a><br /><sup id="cite_ref-AUS_4-0" class="reference"><a href="#cite_note-AUS-4">&#91;3&#93;</a></sup>
+</th>
+<th scope="col" style="width:2.6em; font-size:90%;"><a href="/wiki/Canadian_Albums_Chart" title="Canadian Albums Chart">CAN</a><br /><sup id="cite_ref-CAN-1_5-0" class="reference"><a href="#cite_note-CAN-1-5">&#91;4&#93;</a></sup>
+</th>
+<th scope="col" style="width:2.6em; font-size:90%;"><a href="/wiki/Syndicat_National_de_l%27%C3%89dition_Phonographique" title="Syndicat National de l&#39;Édition Phonographique">FRA</a><br /><sup id="cite_ref-FRA_6-0" class="reference"><a href="#cite_note-FRA-6">&#91;5&#93;</a></sup>
+</th>
+<th scope="col" style="width:2.6em; font-size:90%;"><a href="/wiki/Media_Control_Charts" class="mw-redirect" title="Media Control Charts">GER</a><br /><sup id="cite_ref-GER_7-0" class="reference"><a href="#cite_note-GER-7">&#91;6&#93;</a></sup>
+</th>
+<th scope="col" style="width:2.6em; font-size:90%;"><a href="/wiki/VG-lista" title="VG-lista">NOR</a><br /><sup id="cite_ref-NOR_8-0" class="reference"><a href="#cite_note-NOR-8">&#91;7&#93;</a></sup>
+</th>
+<th scope="col" style="width:2.6em; font-size:90%;"><a href="/wiki/Billboard_200" title="Billboard 200">US</a><br /><sup id="cite_ref-Billboard_9-0" class="reference"><a href="#cite_note-Billboard-9">&#91;8&#93;</a></sup><sup id="cite_ref-US_10-0" class="reference"><a href="#cite_note-US-10">&#91;9&#93;</a></sup>
+</th></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/My_Bonnie" title="My Bonnie">My Bonnie</a></i><br /><span style="font-size:85%;">(with <a href="/wiki/Tony_Sheridan" title="Tony Sheridan">Tony Sheridan</a>)</span><sup id="cite_ref-11" class="reference"><a href="#cite_note-11">&#91;B&#93;</a></sup>
+</th>
+<td>
+<ul><li>Released: 5 January 1962</li>
+<li>Label: <a href="/wiki/Polydor_Records" title="Polydor Records">Polydor</a> <span style="font-size:85%;">(GER)</span></li></ul>
+</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—
+</td>
+<td>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/Please_Please_Me" title="Please Please Me">Please Please Me</a></i> <img alt="double-dagger" src="//upload.wikimedia.org/wikipedia/commons/f/f9/Double-dagger-14-plain.png" decoding="async" width="9" height="14" data-file-width="9" data-file-height="14" />
+</th>
+<td>
+<ul><li>Released: 22 March 1963</li>
+<li>Label: <a href="/wiki/Parlophone" title="Parlophone">Parlophone</a> <span style="font-size:85%;">(UK)</span></li></ul>
+</td>
+<td>1</td>
+<td>—</td>
+<td>—</td>
+<td>5</td>
+<td>5</td>
+<td>—</td>
+<td>—
+</td>
+<td>
+<ul><li><a href="/wiki/British_Phonographic_Industry" title="British Phonographic Industry">BPI</a>: Gold<sup id="cite_ref-BPI_12-0" class="reference"><a href="#cite_note-BPI-12">&#91;10&#93;</a></sup></li>
+<li><a href="/wiki/Australian_Recording_Industry_Association" title="Australian Recording Industry Association">ARIA</a>: Gold<sup id="cite_ref-ARIA-2009-albums_13-0" class="reference"><a href="#cite_note-ARIA-2009-albums-13">&#91;11&#93;</a></sup></li>
+<li><a href="/wiki/Music_Canada" title="Music Canada">MC</a>: Gold<sup id="cite_ref-MC_14-0" class="reference"><a href="#cite_note-MC-14">&#91;12&#93;</a></sup></li>
+<li><a href="/wiki/Recording_Industry_Association_of_America" title="Recording Industry Association of America">RIAA</a>: Platinum<sup id="cite_ref-RIAA_15-0" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li></ul>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/With_the_Beatles" title="With the Beatles">With the Beatles</a></i><sup id="cite_ref-17" class="reference"><a href="#cite_note-17">&#91;C&#93;</a></sup> <img alt="double-dagger" src="//upload.wikimedia.org/wikipedia/commons/f/f9/Double-dagger-14-plain.png" decoding="async" width="9" height="14" data-file-width="9" data-file-height="14" />
+</th>
+<td>
+<ul><li>Released: 22 November 1963</li>
+<li>Label: Parlophone <span style="font-size:85%;">(UK)</span>, <a href="/wiki/Capitol_Records" title="Capitol Records">Capitol</a> <span style="font-size:85%;">(CAN)</span>, <a href="/wiki/Odeon_Records" title="Odeon Records">Odeon</a> <span style="font-size:85%;">(FRA)</span></li></ul>
+</td>
+<td>1</td>
+<td>—</td>
+<td>—</td>
+<td>5</td>
+<td>1</td>
+<td>—</td>
+<td>—
+</td>
+<td>
+<ul><li>BPI: Platinum<sup id="cite_ref-BPI_12-1" class="reference"><a href="#cite_note-BPI-12">&#91;10&#93;</a></sup></li>
+<li>ARIA: Gold<sup id="cite_ref-ARIA-2009-albums_13-1" class="reference"><a href="#cite_note-ARIA-2009-albums-13">&#91;11&#93;</a></sup></li>
+<li><a href="/wiki/Bundesverband_Musikindustrie" title="Bundesverband Musikindustrie">BVMI</a>: Gold<sup id="cite_ref-BVMI_18-0" class="reference"><a href="#cite_note-BVMI-18">&#91;15&#93;</a></sup></li>
+<li>MC: Gold<sup id="cite_ref-MC_14-1" class="reference"><a href="#cite_note-MC-14">&#91;12&#93;</a></sup></li>
+<li>RIAA: Gold<sup id="cite_ref-RIAA_15-1" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li></ul>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/Introducing..._The_Beatles" title="Introducing... The Beatles">Introducing... The Beatles</a></i>
+</th>
+<td>
+<ul><li>Released: 10 January 1964</li>
+<li>Label: <a href="/wiki/Vee-Jay_Records" title="Vee-Jay Records">Vee-Jay</a> <span style="font-size:85%;">(US)</span></li></ul>
+</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>2
+</td>
+<td>
+<ul><li>RIAA: Platinum<sup id="cite_ref-RIAA_15-2" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li></ul>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/Meet_the_Beatles!" title="Meet the Beatles!">Meet the Beatles!</a></i>
+</th>
+<td>
+<ul><li>Released: 20 January 1964</li>
+<li>Label: Capitol <span style="font-size:85%;">(US)</span></li></ul>
+</td>
+<td>—</td>
+<td>—</td>
+<td>1</td>
+<td>–</td>
+<td>—</td>
+<td>—</td>
+<td>1
+</td>
+<td>
+<ul><li>MC: Platinum<sup id="cite_ref-MC_14-2" class="reference"><a href="#cite_note-MC-14">&#91;12&#93;</a></sup></li>
+<li>RIAA: 5× Platinum<sup id="cite_ref-RIAA_15-3" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li></ul>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/Twist_and_Shout_(album)" title="Twist and Shout (album)">Twist and Shout</a></i>
+</th>
+<td>
+<ul><li>Released: 3 February 1964</li>
+<li>Label: Capitol <span style="font-size:85%;">(CAN)</span></li></ul>
+</td>
+<td>—</td>
+<td>—</td>
+<td>1</td>
+<td>–</td>
+<td>—</td>
+<td>—</td>
+<td>—
+</td>
+<td>
+<ul><li>MC: 3× Platinum<sup id="cite_ref-MC_14-3" class="reference"><a href="#cite_note-MC-14">&#91;12&#93;</a></sup></li></ul>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/The_Beatles%27_Second_Album" title="The Beatles&#39; Second Album">The Beatles' Second Album</a></i>
+</th>
+<td>
+<ul><li>Released: 10 April 1964</li>
+<li>Label: Capitol <span style="font-size:85%;">(US)</span></li></ul>
+</td>
+<td>—</td>
+<td>—</td>
+<td>1</td>
+<td>–</td>
+<td>50</td>
+<td>—</td>
+<td>1
+</td>
+<td>
+<ul><li>MC: Platinum<sup id="cite_ref-MC_14-4" class="reference"><a href="#cite_note-MC-14">&#91;12&#93;</a></sup></li>
+<li>RIAA: 2× Platinum<sup id="cite_ref-RIAA_15-4" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li></ul>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/The_Beatles%27_Long_Tall_Sally" title="The Beatles&#39; Long Tall Sally">The Beatles' Long Tall Sally</a></i>
+</th>
+<td>
+<ul><li>Released: 11 May 1964</li>
+<li>Label: Capitol <span style="font-size:85%;">(CAN)</span></li></ul>
+</td>
+<td>—</td>
+<td>—</td>
+<td>1</td>
+<td></td>
+<td>—</td>
+<td>—</td>
+<td>—
+</td>
+<td>
+<ul><li>MC: Gold<sup id="cite_ref-MC_14-5" class="reference"><a href="#cite_note-MC-14">&#91;12&#93;</a></sup></li></ul>
+</td></tr>
+<tr>
+<th scope="row" rowspan="2"><i><a href="/wiki/A_Hard_Day%27s_Night_(album)" title="A Hard Day&#39;s Night (album)">A Hard Day's Night</a></i> <img alt="double-dagger" src="//upload.wikimedia.org/wikipedia/commons/f/f9/Double-dagger-14-plain.png" decoding="async" width="9" height="14" data-file-width="9" data-file-height="14" />
+</th>
+<td>
+<ul><li>Released: 26 June 1964</li>
+<li>Label: <a href="/wiki/United_Artists_Records" title="United Artists Records">United Artists</a> <span style="font-size:85%;">(US)</span><sup id="cite_ref-Alternative_US_album_19-0" class="reference"><a href="#cite_note-Alternative_US_album-19">&#91;D&#93;</a></sup><sup id="cite_ref-George_Martin_20-0" class="reference"><a href="#cite_note-George_Martin-20">&#91;E&#93;</a></sup></li></ul>
+</td>
+<td>—</td>
+<td>—</td>
+<td>1</td>
+<td>5</td>
+<td>—</td>
+<td>—</td>
+<td>1
+</td>
+<td>
+<ul><li>MC: Platinum<sup id="cite_ref-MC_14-6" class="reference"><a href="#cite_note-MC-14">&#91;12&#93;</a></sup></li>
+<li>RIAA: 4× Platinum<sup id="cite_ref-RIAA_15-5" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li></ul>
+</td></tr>
+<tr>
+<td>
+<ul><li>Released: 10 July 1964</li>
+<li>Label: Parlophone <span style="font-size:85%;">(UK)</span></li></ul>
+</td>
+<td>1</td>
+<td>1</td>
+<td>—</td>
+<td>—</td>
+<td>1</td>
+<td>—</td>
+<td>—
+</td>
+<td>
+<ul><li>BPI: Gold<sup id="cite_ref-BPI_12-2" class="reference"><a href="#cite_note-BPI-12">&#91;10&#93;</a></sup></li>
+<li>ARIA: Gold<sup id="cite_ref-ARIA-2009-albums_13-2" class="reference"><a href="#cite_note-ARIA-2009-albums-13">&#91;11&#93;</a></sup></li></ul>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/Something_New_(album)" title="Something New (album)">Something New</a></i>
+</th>
+<td>
+<ul><li>Released: 20 July 1964</li>
+<li>Label: Capitol <span style="font-size:85%;">(US)</span></li></ul>
+</td>
+<td>—</td>
+<td>—</td>
+<td>2</td>
+<td>—</td>
+<td>38</td>
+<td>—</td>
+<td>2
+</td>
+<td>
+<ul><li>MC: Gold<sup id="cite_ref-MC_14-7" class="reference"><a href="#cite_note-MC-14">&#91;12&#93;</a></sup></li>
+<li>RIAA: 2× Platinum<sup id="cite_ref-RIAA_15-6" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li></ul>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/Beatles_for_Sale" title="Beatles for Sale">Beatles for Sale</a></i> <img alt="double-dagger" src="//upload.wikimedia.org/wikipedia/commons/f/f9/Double-dagger-14-plain.png" decoding="async" width="9" height="14" data-file-width="9" data-file-height="14" />
+</th>
+<td>
+<ul><li>Released: 4 December 1964</li>
+<li>Label: Parlophone <span style="font-size:85%;">(UK)</span></li></ul>
+</td>
+<td>1</td>
+<td>1</td>
+<td>–</td>
+<td>—</td>
+<td>1</td>
+<td>—</td>
+<td>—
+</td>
+<td>
+<ul><li>BPI: Gold<sup id="cite_ref-BPI_12-3" class="reference"><a href="#cite_note-BPI-12">&#91;10&#93;</a></sup></li>
+<li>ARIA: Gold<sup id="cite_ref-ARIA-2009-albums_13-3" class="reference"><a href="#cite_note-ARIA-2009-albums-13">&#91;11&#93;</a></sup></li>
+<li>MC: Gold<sup id="cite_ref-MC_14-8" class="reference"><a href="#cite_note-MC-14">&#91;12&#93;</a></sup></li>
+<li>RIAA: Platinum<sup id="cite_ref-RIAA_15-7" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li></ul>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/Beatles_%2765" title="Beatles &#39;65">Beatles '65</a></i>
+</th>
+<td>
+<ul><li>Released: 15 December 1964</li>
+<li>Label: Capitol <span style="font-size:85%;">(US)</span></li></ul>
+</td>
+<td>—</td>
+<td>—</td>
+<td>1</td>
+<td>80</td>
+<td>9</td>
+<td>—</td>
+<td>1
+</td>
+<td>
+<ul><li>MC: Platinum<sup id="cite_ref-MC_14-9" class="reference"><a href="#cite_note-MC-14">&#91;12&#93;</a></sup></li>
+<li>RIAA: 3× Platinum<sup id="cite_ref-RIAA_15-8" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li></ul>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/Beatles_VI" title="Beatles VI">Beatles VI</a></i>
+</th>
+<td>
+<ul><li>Released: 14 June 1965</li>
+<li>Label: Parlophone <span style="font-size:85%;">(NZ)</span>, Capitol <span style="font-size:85%;">(US)</span></li></ul>
+</td>
+<td>—</td>
+<td>—</td>
+<td>1</td>
+<td>—</td>
+<td>15</td>
+<td>—</td>
+<td>1
+</td>
+<td>
+<ul><li>MC: Gold<sup id="cite_ref-MC_14-10" class="reference"><a href="#cite_note-MC-14">&#91;12&#93;</a></sup></li>
+<li>RIAA: Platinum<sup id="cite_ref-RIAA_15-9" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li></ul>
+</td></tr>
+<tr>
+<th scope="row" rowspan="2"><i><a href="/wiki/Help!" title="Help!">Help!</a></i> <img alt="double-dagger" src="//upload.wikimedia.org/wikipedia/commons/f/f9/Double-dagger-14-plain.png" decoding="async" width="9" height="14" data-file-width="9" data-file-height="14" />
+</th>
+<td>
+<ul><li>Released: 6 August 1965</li>
+<li>Label: Parlophone <span style="font-size:85%;">(UK)</span></li></ul>
+</td>
+<td>1</td>
+<td>1</td>
+<td>—</td>
+<td>5</td>
+<td>1</td>
+<td>—</td>
+<td>—
+</td>
+<td>
+<ul><li>BPI: Platinum<sup id="cite_ref-BPI_12-4" class="reference"><a href="#cite_note-BPI-12">&#91;10&#93;</a></sup></li>
+<li>ARIA: Gold<sup id="cite_ref-ARIA-2009-albums_13-4" class="reference"><a href="#cite_note-ARIA-2009-albums-13">&#91;11&#93;</a></sup></li></ul>
+</td></tr>
+<tr>
+<td>
+<ul><li>Released: 13 August 1965</li>
+<li>Label: Capitol <span style="font-size:85%;">(US)</span><sup id="cite_ref-Alternative_US_album_19-1" class="reference"><a href="#cite_note-Alternative_US_album-19">&#91;D&#93;</a></sup><sup id="cite_ref-George_Martin_20-1" class="reference"><a href="#cite_note-George_Martin-20">&#91;E&#93;</a></sup></li></ul>
+</td>
+<td>—</td>
+<td>—</td>
+<td>1</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>1
+</td>
+<td>
+<ul><li>MC: 2× Platinum<sup id="cite_ref-MC_14-11" class="reference"><a href="#cite_note-MC-14">&#91;12&#93;</a></sup></li>
+<li>RIAA: 3× Platinum<sup id="cite_ref-RIAA_15-10" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li></ul>
+</td></tr>
+<tr>
+<th scope="row" rowspan="2"><i><a href="/wiki/Rubber_Soul" title="Rubber Soul">Rubber Soul</a></i> <img alt="double-dagger" src="//upload.wikimedia.org/wikipedia/commons/f/f9/Double-dagger-14-plain.png" decoding="async" width="9" height="14" data-file-width="9" data-file-height="14" />
+</th>
+<td>
+<ul><li>Released: 3 December 1965</li>
+<li>Label: Parlophone <span style="font-size:85%;">(UK)</span></li></ul>
+</td>
+<td>1</td>
+<td>1</td>
+<td>–</td>
+<td>5</td>
+<td>1</td>
+<td>—</td>
+<td>—
+</td>
+<td>
+<ul><li>BPI: Platinum<sup id="cite_ref-BPI_12-5" class="reference"><a href="#cite_note-BPI-12">&#91;10&#93;</a></sup></li>
+<li>ARIA: Platinum<sup id="cite_ref-ARIA-2009-albums_13-5" class="reference"><a href="#cite_note-ARIA-2009-albums-13">&#91;11&#93;</a></sup></li>
+<li>BVMI: Gold<sup id="cite_ref-BVMI_18-1" class="reference"><a href="#cite_note-BVMI-18">&#91;15&#93;</a></sup></li></ul>
+</td></tr>
+<tr>
+<td>
+<ul><li>Released: 6 December 1965</li>
+<li>Label: Capitol <span style="font-size:85%;">(US)</span><sup id="cite_ref-Alternative_US_album_19-2" class="reference"><a href="#cite_note-Alternative_US_album-19">&#91;D&#93;</a></sup></li></ul>
+</td>
+<td>—</td>
+<td>—</td>
+<td>1</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>1
+</td>
+<td>
+<ul><li>MC: 2× Platinum<sup id="cite_ref-MC_14-12" class="reference"><a href="#cite_note-MC-14">&#91;12&#93;</a></sup></li>
+<li>RIAA: 6× Platinum<sup id="cite_ref-RIAA_15-11" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li></ul>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/Yesterday_and_Today" title="Yesterday and Today">Yesterday and Today</a></i>
+</th>
+<td>
+<ul><li>Released: 20 June 1966</li>
+<li>Label: Capitol <span style="font-size:85%;">(US)</span></li></ul>
+</td>
+<td>—</td>
+<td>—</td>
+<td>1</td>
+<td>—</td>
+<td>13</td>
+<td>—</td>
+<td>1
+</td>
+<td>
+<ul><li>MC: Platinum<sup id="cite_ref-MC_14-13" class="reference"><a href="#cite_note-MC-14">&#91;12&#93;</a></sup></li>
+<li>RIAA: 2× Platinum<sup id="cite_ref-RIAA_15-12" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li></ul>
+</td></tr>
+<tr>
+<th scope="row" rowspan="2"><i><a href="/wiki/Revolver_(Beatles_album)" title="Revolver (Beatles album)">Revolver</a></i> <img alt="double-dagger" src="//upload.wikimedia.org/wikipedia/commons/f/f9/Double-dagger-14-plain.png" decoding="async" width="9" height="14" data-file-width="9" data-file-height="14" />
+</th>
+<td>
+<ul><li>Released: 5 August 1966</li>
+<li>Label: Parlophone <span style="font-size:85%;">(UK)</span></li></ul>
+</td>
+<td>1</td>
+<td>1</td>
+<td>—</td>
+<td>5</td>
+<td>1</td>
+<td>14</td>
+<td>—
+</td>
+<td>
+<ul><li>BPI: 2× Platinum<sup id="cite_ref-BPI_12-6" class="reference"><a href="#cite_note-BPI-12">&#91;10&#93;</a></sup></li>
+<li>ARIA: Platinum<sup id="cite_ref-ARIA-2009-albums_13-6" class="reference"><a href="#cite_note-ARIA-2009-albums-13">&#91;11&#93;</a></sup></li></ul>
+</td></tr>
+<tr>
+<td>
+<ul><li>Released: 8 August 1966</li>
+<li>Label: Capitol <span style="font-size:85%;">(US)</span><sup id="cite_ref-Alternative_US_album_19-3" class="reference"><a href="#cite_note-Alternative_US_album-19">&#91;D&#93;</a></sup></li></ul>
+</td>
+<td>—</td>
+<td>—</td>
+<td>1</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>1
+</td>
+<td>
+<ul><li>MC: 2× Platinum<sup id="cite_ref-MC_14-14" class="reference"><a href="#cite_note-MC-14">&#91;12&#93;</a></sup></li>
+<li>RIAA: 5× Platinum<sup id="cite_ref-RIAA_15-13" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li></ul>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/Sgt._Pepper%27s_Lonely_Hearts_Club_Band" title="Sgt. Pepper&#39;s Lonely Hearts Club Band">Sgt. Pepper's Lonely Hearts Club Band</a></i> <img alt="double-dagger" src="//upload.wikimedia.org/wikipedia/commons/f/f9/Double-dagger-14-plain.png" decoding="async" width="9" height="14" data-file-width="9" data-file-height="14" />
+</th>
+<td>
+<ul><li>Released: 26 May 1967</li>
+<li>Label: Parlophone <span style="font-size:85%;">(UK)</span>, Capitol <span style="font-size:85%;">(US)</span></li></ul>
+</td>
+<td>1</td>
+<td>1</td>
+<td>7</td>
+<td>4</td>
+<td>1</td>
+<td>1</td>
+<td>1
+</td>
+<td>
+<ul><li>BPI: 17× Platinum<sup id="cite_ref-BPI_12-7" class="reference"><a href="#cite_note-BPI-12">&#91;10&#93;</a></sup></li>
+<li>ARIA: 4× Platinum<sup id="cite_ref-ARIA-2009-albums_13-7" class="reference"><a href="#cite_note-ARIA-2009-albums-13">&#91;11&#93;</a></sup></li>
+<li>BVMI: Platinum<sup id="cite_ref-BVMI_18-2" class="reference"><a href="#cite_note-BVMI-18">&#91;15&#93;</a></sup></li>
+<li>MC: 8× Platinum<sup id="cite_ref-MC_14-15" class="reference"><a href="#cite_note-MC-14">&#91;12&#93;</a></sup></li>
+<li>RIAA: Diamond (11× Platinum)<sup id="cite_ref-RIAA_15-14" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li>
+<li><a href="/wiki/Syndicat_National_de_l%27%C3%89dition_Phonographique" title="Syndicat National de l&#39;Édition Phonographique">SNEP</a>: Gold<sup id="cite_ref-SNEP_21-0" class="reference"><a href="#cite_note-SNEP-21">&#91;16&#93;</a></sup></li></ul>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/Magical_Mystery_Tour" title="Magical Mystery Tour">Magical Mystery Tour</a></i> <img alt="double-dagger" src="//upload.wikimedia.org/wikipedia/commons/f/f9/Double-dagger-14-plain.png" decoding="async" width="9" height="14" data-file-width="9" data-file-height="14" />
+</th>
+<td>
+<ul><li>Released: 27 November 1967<sup id="cite_ref-22" class="reference"><a href="#cite_note-22">&#91;F&#93;</a></sup></li>
+<li>Label: Parlophone <span style="font-size:85%;">(UK)</span>, Capitol <span style="font-size:85%;">(US)</span></li></ul>
+</td>
+<td>31</td>
+<td>48</td>
+<td>—</td>
+<td>2</td>
+<td>8</td>
+<td>13</td>
+<td>1
+</td>
+<td>
+<ul><li>BPI: Platinum<sup id="cite_ref-BPI_12-8" class="reference"><a href="#cite_note-BPI-12">&#91;10&#93;</a></sup></li>
+<li>ARIA: Platinum<sup id="cite_ref-ARIA-2009-albums_13-8" class="reference"><a href="#cite_note-ARIA-2009-albums-13">&#91;11&#93;</a></sup></li>
+<li>MC: 4× Platinum<sup id="cite_ref-MC_14-16" class="reference"><a href="#cite_note-MC-14">&#91;12&#93;</a></sup></li>
+<li>RIAA: 6× Platinum<sup id="cite_ref-RIAA_15-15" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li></ul>
+</td></tr>
+<tr>
+<th scope="row"><a href="/wiki/The_Beatles_(album)" title="The Beatles (album)"><i>The Beatles</i> ("The White Album")</a> <img alt="double-dagger" src="//upload.wikimedia.org/wikipedia/commons/f/f9/Double-dagger-14-plain.png" decoding="async" width="9" height="14" data-file-width="9" data-file-height="14" />
+</th>
+<td>
+<ul><li>Released: 22 November 1968</li>
+<li>Label: <a href="/wiki/Apple_Records" title="Apple Records">Apple</a></li></ul>
+</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1
+</td>
+<td>
+<ul><li>BPI: Platinum<sup id="cite_ref-BPI_12-9" class="reference"><a href="#cite_note-BPI-12">&#91;10&#93;</a></sup></li>
+<li>ARIA: 2× Platinum<sup id="cite_ref-ARIA-2009-albums_13-9" class="reference"><a href="#cite_note-ARIA-2009-albums-13">&#91;11&#93;</a></sup></li>
+<li>MC: 8× Platinum<sup id="cite_ref-MC_14-17" class="reference"><a href="#cite_note-MC-14">&#91;12&#93;</a></sup></li>
+<li>RIAA: Diamond (19× Platinum)<sup id="cite_ref-RIAA_15-16" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li>
+<li>SNEP: Gold<sup id="cite_ref-SNEP_21-1" class="reference"><a href="#cite_note-SNEP-21">&#91;16&#93;</a></sup></li></ul>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/Yellow_Submarine_(album)" title="Yellow Submarine (album)">Yellow Submarine</a></i><sup id="cite_ref-George_Martin_20-2" class="reference"><a href="#cite_note-George_Martin-20">&#91;E&#93;</a></sup> <img alt="double-dagger" src="//upload.wikimedia.org/wikipedia/commons/f/f9/Double-dagger-14-plain.png" decoding="async" width="9" height="14" data-file-width="9" data-file-height="14" />
+</th>
+<td>
+<ul><li>Released: 13 January 1969</li>
+<li>Label: Apple <span style="font-size:85%;">(UK)</span>, Capitol <span style="font-size:85%;">(US)</span></li></ul>
+</td>
+<td>3</td>
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>5</td>
+<td>1</td>
+<td>2
+</td>
+<td>
+<ul><li>BPI: Gold<sup id="cite_ref-BPI_12-10" class="reference"><a href="#cite_note-BPI-12">&#91;10&#93;</a></sup></li>
+<li>MC: Gold<sup id="cite_ref-MC_14-18" class="reference"><a href="#cite_note-MC-14">&#91;12&#93;</a></sup></li>
+<li>RIAA: Platinum<sup id="cite_ref-RIAA_15-17" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li></ul>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/Abbey_Road" title="Abbey Road">Abbey Road</a></i> <img alt="double-dagger" src="//upload.wikimedia.org/wikipedia/commons/f/f9/Double-dagger-14-plain.png" decoding="async" width="9" height="14" data-file-width="9" data-file-height="14" />
+</th>
+<td>
+<ul><li>Released: 26 September 1969</li>
+<li>Label: Apple</li></ul>
+</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1
+</td>
+<td>
+<ul><li>BPI: 2× Platinum<sup id="cite_ref-BPI_12-11" class="reference"><a href="#cite_note-BPI-12">&#91;10&#93;</a></sup></li>
+<li>ARIA: 3× Platinum<sup id="cite_ref-ARIA-2009-albums_13-10" class="reference"><a href="#cite_note-ARIA-2009-albums-13">&#91;11&#93;</a></sup></li>
+<li>BVMI: Platinum<sup id="cite_ref-BVMI_18-3" class="reference"><a href="#cite_note-BVMI-18">&#91;15&#93;</a></sup></li>
+<li>MC: Diamond<sup id="cite_ref-MC_14-19" class="reference"><a href="#cite_note-MC-14">&#91;12&#93;</a></sup></li>
+<li>RIAA: Diamond (12× Platinum)<sup id="cite_ref-RIAA_15-18" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li>
+<li>SNEP: Platinum<sup id="cite_ref-23" class="reference"><a href="#cite_note-23">&#91;17&#93;</a></sup></li></ul>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/Let_It_Be" title="Let It Be">Let It Be</a></i> <img alt="double-dagger" src="//upload.wikimedia.org/wikipedia/commons/f/f9/Double-dagger-14-plain.png" decoding="async" width="9" height="14" data-file-width="9" data-file-height="14" />
+</th>
+<td>
+<ul><li>Released: 8 May 1970</li>
+<li>Label: Apple</li></ul>
+</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>5</td>
+<td>4</td>
+<td>1</td>
+<td>1
+</td>
+<td>
+<ul><li>BPI: Gold<sup id="cite_ref-BPI_12-12" class="reference"><a href="#cite_note-BPI-12">&#91;10&#93;</a></sup></li>
+<li>ARIA: Platinum<sup id="cite_ref-ARIA-2009-albums_13-11" class="reference"><a href="#cite_note-ARIA-2009-albums-13">&#91;11&#93;</a></sup></li>
+<li>MC: 3× Platinum<sup id="cite_ref-MC_14-20" class="reference"><a href="#cite_note-MC-14">&#91;12&#93;</a></sup></li>
+<li>RIAA: 4× Platinum<sup id="cite_ref-RIAA_15-19" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li>
+<li>SNEP: Gold<sup id="cite_ref-SNEP_21-2" class="reference"><a href="#cite_note-SNEP-21">&#91;16&#93;</a></sup></li></ul>
+</td></tr>
+<tr>
+<td colspan="10" style="font-size:90%">"—" denotes that the recording did not chart or was not released in that territory.
+</td></tr></tbody></table></hgroup>
+
+<h3><span class="mw-headline" id="Live_albums">Live albums</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=The_Beatles_discography&amp;action=edit&amp;section=3" title="Edit section: Live albums">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<table class="wikitable plainrowheaders" style="text-align:center;">
+<caption>List of live albums, with selected chart positions and certifications
+</caption>
+<button>
+<tbody><tr>
+<th scope="col" rowspan="2" style="width:20em;">Title
+</th>
+<th scope="col" rowspan="2" style="width:20em;">Release
+</th>
+<th scope="col" colspan="10">Peak chart positions
+</th>
+<th scope="col" rowspan="2" style="width:15em;"><a href="/wiki/List_of_music_recording_certifications" title="List of music recording certifications">Certifications</a>
+</th></tr>
+<tr>
+<th scope="col" style="width:2.6em; font-size:90%;"><a href="/wiki/UK_Albums_Chart" title="UK Albums Chart">UK</a><br /><sup id="cite_ref-UK_2-1" class="reference"><a href="#cite_note-UK-2">&#91;1&#93;</a></sup>
+</th>
+<th scope="col" style="width:2.6em; font-size:90%;"><a href="/wiki/ARIA_Charts" title="ARIA Charts">AUS</a><br /><sup id="cite_ref-AUS_4-1" class="reference"><a href="#cite_note-AUS-4">&#91;3&#93;</a></sup>
+</th>
+<th scope="col" style="width:2.6em; font-size:90%;"><a href="/wiki/%C3%963_Austria_Top_40" title="Ö3 Austria Top 40">AUT</a><br /><sup id="cite_ref-AUT_24-0" class="reference"><a href="#cite_note-AUT-24">&#91;18&#93;</a></sup>
+</th>
+<th scope="col" style="width:2.6em; font-size:90%;"><a href="/wiki/Canadian_Albums_Chart" title="Canadian Albums Chart">CAN</a><br /><sup id="cite_ref-25" class="reference"><a href="#cite_note-25">&#91;19&#93;</a></sup>
+</th>
+<th scope="col" style="width:2.6em; font-size:90%;"><a href="/wiki/Media_Control_Charts" class="mw-redirect" title="Media Control Charts">GER</a><br /><sup id="cite_ref-GER_7-1" class="reference"><a href="#cite_note-GER-7">&#91;6&#93;</a></sup>
+</th>
+<th scope="col" style="width:2.6em; font-size:90%;"><a href="/wiki/MegaCharts" title="MegaCharts">NLD</a><br /><sup id="cite_ref-NLD_26-0" class="reference"><a href="#cite_note-NLD-26">&#91;20&#93;</a></sup>
+</th>
+<th scope="col" style="width:2.6em; font-size:90%;"><a href="/wiki/VG-lista" title="VG-lista">NOR</a><br /><sup id="cite_ref-NOR_8-1" class="reference"><a href="#cite_note-NOR-8">&#91;7&#93;</a></sup>
+</th>
+<th scope="col" style="width:2.6em; font-size:90%;"><a href="/wiki/Recording_Industry_Association_of_New_Zealand" class="mw-redirect" title="Recording Industry Association of New Zealand">NZ</a><br /><sup id="cite_ref-NZ_27-0" class="reference"><a href="#cite_note-NZ-27">&#91;21&#93;</a></sup>
+</th>
+<th scope="col" style="width:2.6em; font-size:90%;"><a href="/wiki/Sverigetopplistan" title="Sverigetopplistan">SWE</a><br /><sup id="cite_ref-SWE_28-0" class="reference"><a href="#cite_note-SWE-28">&#91;22&#93;</a></sup>
+</th>
+<th scope="col" style="width:2.6em; font-size:90%;"><a href="/wiki/Billboard_200" title="Billboard 200">US</a><br /><sup id="cite_ref-Billboard_9-1" class="reference"><a href="#cite_note-Billboard-9">&#91;8&#93;</a></sup><sup id="cite_ref-US_10-1" class="reference"><a href="#cite_note-US-10">&#91;9&#93;</a></sup>
+</th></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/Live!_at_the_Star-Club_in_Hamburg,_Germany;_1962" title="Live! at the Star-Club in Hamburg, Germany; 1962">Live! at the Star-Club in Hamburg, Germany; 1962</a></i>
+</th>
+<td>
+<ul><li>Released: 8 April 1977</li>
+<li>Label: <a href="/wiki/Lingasong" class="mw-redirect" title="Lingasong">Lingasong</a> <span style="font-size:85%;">(UK)</span>, <a href="/wiki/Bellaphon_Records" title="Bellaphon Records">Bellaphon</a> <span style="font-size:85%;">(GER)</span></li></ul>
+</td>
+<td>—</td>
+<td>24</td>
+<td>12</td>
+<td>—</td>
+<td>21</td>
+<td>—</td>
+<td>16</td>
+<td>—</td>
+<td>—</td>
+<td>111
+</td>
+<td>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/The_Beatles_at_the_Hollywood_Bowl" title="The Beatles at the Hollywood Bowl">The Beatles at the Hollywood Bowl</a></i><sup id="cite_ref-29" class="reference"><a href="#cite_note-29">&#91;A&#93;</a></sup>
+</th>
+<td>
+<ul><li>Released: 4 May 1977</li>
+<li>Label: Parlophone <span style="font-size:85%;">(UK)</span>, Capitol <span style="font-size:85%;">(US)</span></li></ul>
+</td>
+<td>1</td>
+<td>8</td>
+<td>3</td>
+<td>—</td>
+<td>10</td>
+<td>—</td>
+<td>4</td>
+<td>18</td>
+<td>17</td>
+<td>2
+</td>
+<td>
+<ul><li>BPI: Gold<sup id="cite_ref-BPI_12-13" class="reference"><a href="#cite_note-BPI-12">&#91;10&#93;</a></sup></li>
+<li>MC: Platinum<sup id="cite_ref-MC_14-21" class="reference"><a href="#cite_note-MC-14">&#91;12&#93;</a></sup></li>
+<li>RIAA: Platinum<sup id="cite_ref-RIAA_15-20" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li></ul>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/First_Live_Recordings" title="First Live Recordings">First Live Recordings</a></i>
+</th>
+<td>
+<ul><li>Released: 1979</li>
+<li>Label: <a href="/wiki/Pickwick_Records" title="Pickwick Records">Pickwick</a> <span style="font-size:85%;">(CAN)</span></li></ul>
+</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—
+</td>
+<td>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/Live_at_the_BBC_(Beatles_album)" title="Live at the BBC (Beatles album)">Live at the BBC</a></i>
+</th>
+<td>
+<ul><li>Released: 30 November 1994</li>
+<li>Label: Parlophone <span style="font-size:85%;">(UK)</span>, Capitol <span style="font-size:85%;">(US)</span></li></ul>
+</td>
+<td>1</td>
+<td>2</td>
+<td>6</td>
+<td>2</td>
+<td>10</td>
+<td>2</td>
+<td>—</td>
+<td>4</td>
+<td>4</td>
+<td>3
+</td>
+<td>
+<ul><li>BPI: 2× Platinum<sup id="cite_ref-BPI_12-14" class="reference"><a href="#cite_note-BPI-12">&#91;10&#93;</a></sup></li>
+<li>BVMI: Gold<sup id="cite_ref-BVMI_18-4" class="reference"><a href="#cite_note-BVMI-18">&#91;15&#93;</a></sup></li>
+<li><a href="/wiki/International_Federation_of_the_Phonographic_Industry" title="International Federation of the Phonographic Industry">IFPI</a> AUT: Gold<sup id="cite_ref-IFPI_AUT_30-0" class="reference"><a href="#cite_note-IFPI_AUT-30">&#91;23&#93;</a></sup></li>
+<li>MC: 8× Platinum<sup id="cite_ref-MC_14-22" class="reference"><a href="#cite_note-MC-14">&#91;12&#93;</a></sup></li>
+<li><a href="/wiki/NVPI" title="NVPI">NVPI</a>: Gold<sup id="cite_ref-NVPI_31-0" class="reference"><a href="#cite_note-NVPI-31">&#91;24&#93;</a></sup></li>
+<li>RIAA: 4× Platinum<sup id="cite_ref-RIAA_15-21" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li></ul>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/On_Air_%E2%80%93_Live_at_the_BBC_Volume_2" title="On Air – Live at the BBC Volume 2">On Air – Live at the BBC Volume 2</a></i>
+</th>
+<td>
+<ul><li>Released: 11 November 2013</li>
+<li>Label: Apple, <a href="/wiki/Universal_Music_Enterprises" title="Universal Music Enterprises">UM<sup>e</sup></a></li></ul>
+</td>
+<td>12</td>
+<td>28</td>
+<td>7</td>
+<td>7</td>
+<td>8</td>
+<td>6</td>
+<td>9</td>
+<td>31</td>
+<td>36</td>
+<td>7
+</td>
+<td>
+<ul><li>BPI: Silver<sup id="cite_ref-BPI_12-15" class="reference"><a href="#cite_note-BPI-12">&#91;10&#93;</a></sup></li>
+<li>MC: Platinum<sup id="cite_ref-MC_14-23" class="reference"><a href="#cite_note-MC-14">&#91;12&#93;</a></sup></li></ul>
+</td></tr>
+<tr>
+<td colspan="13" style="font-size:90%">"—" denotes that the recording did not chart or was not released in that territory.
+</td></tr></tbody></table>
+</button>
+
+<dl><dt>Notes</dt></dl>
+<div class="reflist" style="list-style-type: upper-alpha;">
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-29"><span class="mw-cite-backlink"><b><a href="#cite_ref-29">^</a></b></span> <span class="reference-text"><i>The Beatles at the Hollywood Bowl</i> was re-released on 9&#160;September 2016 as <i>Live at the Hollywood Bowl</i>.</span>
+</li>
+</ol></div></div>
+<h3><span class="mw-headline" id="Compilation_albums">Compilation albums</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=The_Beatles_discography&amp;action=edit&amp;section=4" title="Edit section: Compilation albums">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<button>
+<table class="wikitable plainrowheaders" style="text-align:center;">
+<caption>List of compilation albums, with selected chart positions and certifications
+</caption>
+<tbody><tr>
+<th scope="col" rowspan="2" style="width:20em;">Title
+</th>
+<th scope="col" rowspan="2" style="width:20em;">Release
+</th>
+<th scope="col" colspan="10">Peak chart positions
+</th>
+<th scope="col" rowspan="2" style="width:15em;"><a href="/wiki/List_of_music_recording_certifications" title="List of music recording certifications">Certifications</a>
+</th></tr>
+<tr>
+<th scope="col" style="width:2.6em; font-size:90%;"><a href="/wiki/UK_Albums_Chart" title="UK Albums Chart">UK</a><br /><sup id="cite_ref-UK-2_3-1" class="reference"><a href="#cite_note-UK-2-3">&#91;2&#93;</a></sup>
+</th>
+<th scope="col" style="width:2.6em; font-size:90%;"><a href="/wiki/ARIA_Charts" title="ARIA Charts">AUS</a><br /><sup id="cite_ref-AUS_4-2" class="reference"><a href="#cite_note-AUS-4">&#91;3&#93;</a></sup>
+</th>
+<th scope="col" style="width:2.6em; font-size:90%;"><a href="/wiki/%C3%963_Austria_Top_40" title="Ö3 Austria Top 40">AUT</a><br /><sup id="cite_ref-AUT_24-1" class="reference"><a href="#cite_note-AUT-24">&#91;18&#93;</a></sup>
+</th>
+<th scope="col" style="width:2.6em; font-size:90%;"><a href="/wiki/Canadian_Albums_Chart" title="Canadian Albums Chart">CAN</a><br /><sup id="cite_ref-CAN-2_32-0" class="reference"><a href="#cite_note-CAN-2-32">&#91;25&#93;</a></sup>
+</th>
+<th scope="col" style="width:2.6em; font-size:90%;"><a href="/wiki/Syndicat_National_de_l%27%C3%89dition_Phonographique" title="Syndicat National de l&#39;Édition Phonographique">FRA</a><br /><sup id="cite_ref-FRA_6-1" class="reference"><a href="#cite_note-FRA-6">&#91;5&#93;</a></sup>
+</th>
+<th scope="col" style="width:2.6em; font-size:90%;"><a href="/wiki/Media_Control_Charts" class="mw-redirect" title="Media Control Charts">GER</a><br /><sup id="cite_ref-GER_7-2" class="reference"><a href="#cite_note-GER-7">&#91;6&#93;</a></sup>
+</th>
+<th scope="col" style="width:2.6em; font-size:90%;"><a href="/wiki/VG-lista" title="VG-lista">NOR</a><br /><sup id="cite_ref-NOR_8-2" class="reference"><a href="#cite_note-NOR-8">&#91;7&#93;</a></sup>
+</th>
+<th scope="col" style="width:2.6em; font-size:90%;"><a href="/wiki/Recording_Industry_Association_of_New_Zealand" class="mw-redirect" title="Recording Industry Association of New Zealand">NZ</a><br /><sup id="cite_ref-NZ_27-1" class="reference"><a href="#cite_note-NZ-27">&#91;21&#93;</a></sup>
+</th>
+<th scope="col" style="width:2.6em; font-size:90%;"><a href="/wiki/Sverigetopplistan" title="Sverigetopplistan">SWE</a><br /><sup id="cite_ref-SWE_28-1" class="reference"><a href="#cite_note-SWE-28">&#91;22&#93;</a></sup>
+</th>
+<th scope="col" style="width:2.6em; font-size:90%;"><a href="/wiki/Billboard_200" title="Billboard 200">US</a><br /><sup id="cite_ref-Billboard_9-2" class="reference"><a href="#cite_note-Billboard-9">&#91;8&#93;</a></sup><sup id="cite_ref-US_10-2" class="reference"><a href="#cite_note-US-10">&#91;9&#93;</a></sup>
+</th></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/The_Beatles_with_Tony_Sheridan_and_Their_Guests" title="The Beatles with Tony Sheridan and Their Guests">The Beatles with Tony Sheridan and Their Guests</a></i><br /><span style="font-size:85%;">(with Tony Sheridan and the Titans)</span>
+</th>
+<td>
+<ul><li>Released: 3 February 1964</li>
+<li>Label: <a href="/wiki/MGM_Records" title="MGM Records">MGM</a> <span style="font-size:85%;">(US)</span></li></ul>
+</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>68
+</td>
+<td>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/Jolly_What!" title="Jolly What!">Jolly What!</a></i><br /><span style="font-size:85%;">(with <a href="/wiki/Frank_Ifield" title="Frank Ifield">Frank Ifield</a>)</span>
+</th>
+<td>
+<ul><li>Released: 26 February 1964</li>
+<li>Label: Vee-Jay <span style="font-size:85%;">(US)</span></li></ul>
+</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>103
+</td>
+<td>
+</td></tr>
+<tr>
+<th scope="row"><i>The Beatles Beat</i>
+</th>
+<td>
+<ul><li>Released: 15 April 1964</li>
+<li>Label: Odeon <span style="font-size:85%;">(GER)</span></li></ul>
+</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>6</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—
+</td>
+<td>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/Ain%27t_She_Sweet_(album)" title="Ain&#39;t She Sweet (album)">Ain't She Sweet</a></i><br /><span style="font-size:85%;">(with Tony Sheridan and the Swallows)</span>
+</th>
+<td>
+<ul><li>Released: 5 October 1964</li>
+<li>Label: <a href="/wiki/Atco_Records" title="Atco Records">Atco</a> <span style="font-size:85%;">(US)</span></li></ul>
+</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—
+</td>
+<td>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/The_Beatles_vs_the_Four_Seasons" class="mw-redirect" title="The Beatles vs the Four Seasons">The Beatles vs the Four Seasons</a></i><sup id="cite_ref-33" class="reference"><a href="#cite_note-33">&#91;A&#93;</a></sup><br /><span style="font-size:85%;">(with <a href="/wiki/The_Four_Seasons_(band)" title="The Four Seasons (band)">the Four Seasons</a>)</span>
+</th>
+<td>
+<ul><li>Released: October 1964</li>
+<li>Label: Vee-Jay <span style="font-size:85%;">(US)</span></li></ul>
+</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>142
+</td>
+<td>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/The_Beatles%27_Story" title="The Beatles&#39; Story">The Beatles' Story</a></i>
+</th>
+<td>
+<ul><li>Released: 23 November 1964</li>
+<li>Label: Capitol <span style="font-size:85%;">(US)</span></li></ul>
+</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>7
+</td>
+<td>
+<ul><li>RIAA: Gold<sup id="cite_ref-RIAA_15-22" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li></ul>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/The_Early_Beatles" title="The Early Beatles">The Early Beatles</a></i>
+</th>
+<td>
+<ul><li>Released: 22 March 1965</li>
+<li>Label: Capitol <span style="font-size:85%;">(US)</span></li></ul>
+</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>43
+</td>
+<td>
+<ul><li>MC: Platinum<sup id="cite_ref-MC_14-24" class="reference"><a href="#cite_note-MC-14">&#91;12&#93;</a></sup></li>
+<li>RIAA: Platinum<sup id="cite_ref-RIAA_15-23" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li></ul>
+</td></tr>
+<tr>
+<th scope="row"><i>The Beatles</i>
+</th>
+<td>
+<ul><li>Released: April 1965</li>
+<li>Label: <a href="/wiki/Amiga_(record_label)" title="Amiga (record label)">Amiga</a> <span style="font-size:85%;">(GER)</span></li></ul>
+</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—
+</td>
+<td>
+</td></tr>
+<tr>
+<th scope="row"><i>The Beatles' Greatest</i>
+</th>
+<td>
+<ul><li>Released: 18 June 1965</li>
+<li>Label: Odeon <span style="font-size:85%;">(GER)</span></li></ul>
+</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>38</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—
+</td>
+<td>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/The_Beatles_in_Italy" title="The Beatles in Italy">The Beatles in Italy</a></i>
+</th>
+<td>
+<ul><li>Released: 13 July 1965</li>
+<li>Label: Parlophone <span style="font-size:85%;">(ITA)</span></li></ul>
+</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—
+</td>
+<td>
+</td></tr>
+<tr>
+<th scope="row"><i>Dans Leurs 14 Plus Grands Succès</i>
+</th>
+<td>
+<ul><li>Released: 1 September 1965</li>
+<li>Label: Odeon <span style="font-size:85%;">(FRA)</span></li></ul>
+</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>80</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—
+</td>
+<td>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/Los_Beatles_(album)" title="Los Beatles (album)">Los Beatles</a></i>
+</th>
+<td>
+<ul><li>Released: 19 November 1965</li>
+<li>Label: Odeon <span style="font-size:85%;">(ARG)</span></li></ul>
+</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—
+</td>
+<td>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/Greatest_Hits_Volume_1_(Beatles_album)" title="Greatest Hits Volume 1 (Beatles album)">Greatest Hits Volume 1</a></i>
+</th>
+<td>
+<ul><li>Released: 7 June 1966</li>
+<li>Label: Parlophone <span style="font-size:85%;">(AUS)</span></li></ul>
+</td>
+<td>—</td>
+<td>11</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—
+</td>
+<td>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/A_Collection_of_Beatles_Oldies" title="A Collection of Beatles Oldies">A Collection of Beatles Oldies</a></i>
+</th>
+<td>
+<ul><li>Released: 9 December 1966</li>
+<li>Label: Parlophone <span style="font-size:85%;">(UK)</span></li></ul>
+</td>
+<td>7</td>
+<td>7</td>
+<td>—</td>
+<td>—</td>
+<td>5</td>
+<td>—</td>
+<td>12</td>
+<td>—</td>
+<td>—</td>
+<td>—
+</td>
+<td>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/Greatest_Hits_Volume_2_(The_Beatles_album)" class="mw-redirect" title="Greatest Hits Volume 2 (The Beatles album)">Greatest Hits Volume 2</a></i>
+</th>
+<td>
+<ul><li>Released: February 1967</li>
+<li>Label: Parlophone <span style="font-size:85%;">(AUS)</span></li></ul>
+</td>
+<td>—</td>
+<td>9</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—
+</td>
+<td>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/The_Beatles%27_First" title="The Beatles&#39; First">The Beatles' First</a></i><br /><span style="font-size:85%;">(with Tony Sheridan)</span>
+</th>
+<td>
+<ul><li>Released: 4 August 1967</li>
+<li>Label: Polydor <span style="font-size:85%;">(UK)</span></li></ul>
+</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>7</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—
+</td>
+<td>
+<ul><li>SNEP: Gold<sup id="cite_ref-SNEP_21-3" class="reference"><a href="#cite_note-SNEP-21">&#91;16&#93;</a></sup></li></ul>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/Very_Together" title="Very Together">Very Together</a></i><br /><span style="font-size:85%;">(with Tony Sheridan)</span>
+</th>
+<td>
+<ul><li>Released: 4 November 1969</li>
+<li>Label: Polydor <span style="font-size:85%;">(CAN)</span></li></ul>
+</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—
+</td>
+<td>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/Hey_Jude_(Beatles_album)" title="Hey Jude (Beatles album)">Hey Jude</a></i>
+</th>
+<td>
+<ul><li>Released: 26 February 1970</li>
+<li>Label: Parlophone <span style="font-size:85%;">(UK)</span>, Capitol <span style="font-size:85%;">(US)</span></li></ul>
+</td>
+<td>—</td>
+<td>1</td>
+<td>—</td>
+<td>2</td>
+<td>11</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>2
+</td>
+<td>
+<ul><li>MC: 4× Platinum<sup id="cite_ref-MC_14-25" class="reference"><a href="#cite_note-MC-14">&#91;12&#93;</a></sup></li>
+<li>RIAA: 3× Platinum<sup id="cite_ref-RIAA_15-24" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li></ul>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/In_the_Beginning_(Circa_1960)" title="In the Beginning (Circa 1960)">In the Beginning (Circa 1960)</a></i><br /><span style="font-size:85%;">(with Tony Sheridan)</span>
+</th>
+<td>
+<ul><li>Released: 4 May 1970</li>
+<li>Label: Polydor <span style="font-size:85%;">(US)</span></li></ul>
+</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>117
+</td>
+<td>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/The_Beatles%27_Christmas_records#Compilation_LP" title="The Beatles&#39; Christmas records">From Then to You</a></i><sup id="cite_ref-34" class="reference"><a href="#cite_note-34">&#91;B&#93;</a></sup>
+</th>
+<td>
+<ul><li>Released: 18 December 1970</li>
+<li>Label: Parlophone <span style="font-size:85%;">(UK)</span>, Capitol <span style="font-size:85%;">(US)</span></li></ul>
+</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—
+</td>
+<td>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/Por_Siempre_Beatles" title="Por Siempre Beatles">Por Siempre Beatles</a></i>
+</th>
+<td>
+<ul><li>Released: 8 October 1971</li>
+<li>Label: Odeon <span style="font-size:85%;">(ARG)</span></li></ul>
+</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—
+</td>
+<td>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/The_Essential_Beatles" title="The Essential Beatles">The Essential Beatles</a></i>
+</th>
+<td>
+<ul><li>Released: February 1972</li>
+<li>Label: Apple <span style="font-size:85%;">(AUS/NZ)</span></li></ul>
+</td>
+<td>—</td>
+<td>10</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—
+</td>
+<td>
+</td></tr>
+<tr>
+<th scope="row"><a href="/wiki/1962%E2%80%931966" title="1962–1966"><i>1962–1966</i> ("The Red Album")</a>
+</th>
+<td>
+<ul><li>Released: 2 April 1973</li>
+<li>Label: Parlophone <span style="font-size:85%;">(UK)</span>, Capitol <span style="font-size:85%;">(US)</span></li></ul>
+</td>
+<td>3</td>
+<td>9</td>
+<td>1</td>
+<td>38</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+<td>5</td>
+<td>22</td>
+<td>3
+</td>
+<td>
+<ul><li>BPI: Platinum<sup id="cite_ref-BPI_12-16" class="reference"><a href="#cite_note-BPI-12">&#91;10&#93;</a></sup></li>
+<li>BVMI: 4× Platinum<sup id="cite_ref-BVMI_18-5" class="reference"><a href="#cite_note-BVMI-18">&#91;15&#93;</a></sup></li>
+<li>IFPI AUT: 3× Platinum<sup id="cite_ref-IFPI_AUT_30-1" class="reference"><a href="#cite_note-IFPI_AUT-30">&#91;23&#93;</a></sup></li>
+<li>MC: Diamond<sup id="cite_ref-MC_14-26" class="reference"><a href="#cite_note-MC-14">&#91;12&#93;</a></sup></li>
+<li>RIAA: Diamond (15× Platinum)<sup id="cite_ref-RIAA_15-25" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li>
+<li>SNEP: Platinum<sup id="cite_ref-SNEP_21-4" class="reference"><a href="#cite_note-SNEP-21">&#91;16&#93;</a></sup></li></ul>
+</td></tr>
+<tr>
+<th scope="row"><a href="/wiki/1967%E2%80%931970" title="1967–1970"><i>1967–1970</i> ("The Blue Album")</a>
+</th>
+<td>
+<ul><li>Released: 2 April 1973</li>
+<li>Label: Parlophone <span style="font-size:85%;">(UK)</span>, Capitol <span style="font-size:85%;">(US)</span></li></ul>
+</td>
+<td>2</td>
+<td>8</td>
+<td>1</td>
+<td>42</td>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+<td>4</td>
+<td>23</td>
+<td>1
+</td>
+<td>
+<ul><li>BPI: Platinum<sup id="cite_ref-BPI_12-17" class="reference"><a href="#cite_note-BPI-12">&#91;10&#93;</a></sup></li>
+<li>BVMI: 3× Platinum<sup id="cite_ref-BVMI_18-6" class="reference"><a href="#cite_note-BVMI-18">&#91;15&#93;</a></sup></li>
+<li>IFPI AUT: 3× Platinum<sup id="cite_ref-IFPI_AUT_30-2" class="reference"><a href="#cite_note-IFPI_AUT-30">&#91;23&#93;</a></sup></li>
+<li>IFPI NOR: Gold<sup id="cite_ref-IFPI_NOR_35-0" class="reference"><a href="#cite_note-IFPI_NOR-35">&#91;26&#93;</a></sup></li>
+<li>MC: Diamond<sup id="cite_ref-MC_14-27" class="reference"><a href="#cite_note-MC-14">&#91;12&#93;</a></sup></li>
+<li>RIAA: Diamond (17× Platinum)<sup id="cite_ref-RIAA_15-26" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li>
+<li>SNEP: 2× Platinum<sup id="cite_ref-SNEP_21-5" class="reference"><a href="#cite_note-SNEP-21">&#91;16&#93;</a></sup></li></ul>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/Rock_%27n%27_Roll_Music_(album)" title="Rock &#39;n&#39; Roll Music (album)">Rock 'n' Roll Music</a></i>
+</th>
+<td>
+<ul><li>Released: 7 June 1976</li>
+<li>Label: Parlophone <span style="font-size:85%;">(UK)</span>, Capitol <span style="font-size:85%;">(US)</span></li></ul>
+</td>
+<td>11</td>
+<td>4</td>
+<td>6</td>
+<td>2</td>
+<td>3</td>
+<td>10</td>
+<td>8</td>
+<td>2</td>
+<td>18</td>
+<td>2
+</td>
+<td>
+<ul><li>BPI: Gold<sup id="cite_ref-BPI_12-18" class="reference"><a href="#cite_note-BPI-12">&#91;10&#93;</a></sup></li>
+<li>RIAA: Platinum<sup id="cite_ref-RIAA_15-27" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li>
+<li>SNEP: Gold<sup id="cite_ref-SNEP_21-6" class="reference"><a href="#cite_note-SNEP-21">&#91;16&#93;</a></sup></li></ul>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/Love_Songs_(Beatles_album)" title="Love Songs (Beatles album)">Love Songs</a></i>
+</th>
+<td>
+<ul><li>Released: 21 October 1977</li>
+<li>Label: Parlophone <span style="font-size:85%;">(UK)</span>, Capitol <span style="font-size:85%;">(US)</span></li></ul>
+</td>
+<td>7</td>
+<td>59</td>
+<td>—</td>
+<td>18</td>
+<td>11</td>
+<td>—</td>
+<td>20</td>
+<td>3</td>
+<td>—</td>
+<td>24
+</td>
+<td>
+<ul><li>BPI: Silver<sup id="cite_ref-BPI_12-19" class="reference"><a href="#cite_note-BPI-12">&#91;10&#93;</a></sup></li>
+<li>MC: Platinum<sup id="cite_ref-MC_14-28" class="reference"><a href="#cite_note-MC-14">&#91;12&#93;</a></sup></li>
+<li>RIAA: 3× Platinum<sup id="cite_ref-RIAA_15-28" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li></ul>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/Rarities_(Beatles_compilations)#1978" title="Rarities (Beatles compilations)">Rarities</a></i>
+</th>
+<td>
+<ul><li>Released: 2 December 1978</li>
+<li>Label: Parlophone <span style="font-size:85%;">(UK)</span></li></ul>
+</td>
+<td>71</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—
+</td>
+<td>
+<ul><li>BPI: Silver<sup id="cite_ref-BPI_12-20" class="reference"><a href="#cite_note-BPI-12">&#91;10&#93;</a></sup></li></ul>
+</td></tr>
+<tr>
+<th scope="row"><i>20 Golden Hits</i>
+</th>
+<td>
+<ul><li>Released: 1979</li>
+<li>Label: Odeon <span style="font-size:85%;">(GER)</span></li></ul>
+</td>
+<td>—</td>
+<td>—</td>
+<td>7</td>
+<td>—</td>
+<td>—</td>
+<td>4</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—
+</td>
+<td>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/Rarities_(Beatles_compilations)#1980" title="Rarities (Beatles compilations)">Rarities</a></i>
+</th>
+<td>
+<ul><li>Released: 24 March 1980</li>
+<li>Label: Capitol <span style="font-size:85%;">(US)</span></li></ul>
+</td>
+<td>—</td>
+<td>27</td>
+<td>—</td>
+<td>26</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>43</td>
+<td>—</td>
+<td>21
+</td>
+<td>
+<ul><li>MC: Gold<sup id="cite_ref-MC_14-29" class="reference"><a href="#cite_note-MC-14">&#91;12&#93;</a></sup></li>
+<li>RIAA: Gold<sup id="cite_ref-RIAA_15-29" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li></ul>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/The_Beatles_Ballads" title="The Beatles Ballads">The Beatles Ballads</a></i>
+</th>
+<td>
+<ul><li>Released: 24 March 1980</li>
+<li>Label: Parlophone <span style="font-size:85%;">(UK)</span>, Capitol <span style="font-size:85%;">(CAN)</span></li></ul>
+</td>
+<td>17</td>
+<td>1</td>
+<td>—</td>
+<td>69</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>2</td>
+<td>—</td>
+<td>—
+</td>
+<td>
+<ul><li>BPI: Gold<sup id="cite_ref-BPI_12-21" class="reference"><a href="#cite_note-BPI-12">&#91;10&#93;</a></sup></li>
+<li>MC: Gold<sup id="cite_ref-MC_14-30" class="reference"><a href="#cite_note-MC-14">&#91;12&#93;</a></sup></li></ul>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/Rock_%27n%27_Roll_Music_(album)" title="Rock &#39;n&#39; Roll Music (album)">Rock 'n' Roll Music, Volume One</a></i>
+</th>
+<td>
+<ul><li>Released: 27 October 1980</li>
+<li>Label: Parlophone <span style="font-size:85%;">(UK)</span>, Axis <span style="font-size:85%;">(NZ)</span>, Capitol <span style="font-size:85%;">(US)</span></li></ul>
+</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—
+</td>
+<td>
+<ul><li>MC: 2× Platinum<sup id="cite_ref-MC_14-31" class="reference"><a href="#cite_note-MC-14">&#91;12&#93;</a></sup></li>
+<li>RIAA: Platinum<sup id="cite_ref-RIAA_15-30" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li></ul>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/Rock_%27n%27_Roll_Music_(album)" title="Rock &#39;n&#39; Roll Music (album)">Rock 'n' Roll Music, Volume Two</a></i>
+</th>
+<td>
+<ul><li>Released: 27 October 1980</li>
+<li>Label: Parlophone <span style="font-size:85%;">(UK)</span>, Axis <span style="font-size:85%;">(NZ)</span>, Capitol <span style="font-size:85%;">(US)</span></li></ul>
+</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—
+</td>
+<td>
+<ul><li>MC: 2× Platinum<sup id="cite_ref-MC_14-32" class="reference"><a href="#cite_note-MC-14">&#91;12&#93;</a></sup></li>
+<li>RIAA: Platinum<sup id="cite_ref-RIAA_15-31" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li></ul>
+</td></tr>
+<tr>
+<th scope="row"><i>The Beatles 1967–1970</i>
+</th>
+<td>
+<ul><li>Released: 1980</li>
+<li>Label: Amiga <span style="font-size:85%;">(GER)</span></li></ul>
+</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—
+</td>
+<td>
+</td></tr>
+<tr>
+<th scope="row"><i>The Beatles</i>
+</th>
+<td>
+<ul><li>Released: January 1982</li>
+<li>Label: Amiga <span style="font-size:85%;">(GER)</span></li></ul>
+</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—
+</td>
+<td>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/Reel_Music" title="Reel Music">Reel Music</a></i>
+</th>
+<td>
+<ul><li>Released: 22 March 1982</li>
+<li>Label: Parlophone <span style="font-size:85%;">(UK)</span>, Capitol <span style="font-size:85%;">(US)</span></li></ul>
+</td>
+<td>56</td>
+<td>26</td>
+<td>—</td>
+<td>19</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>19
+</td>
+<td>
+<ul><li>MC: Gold<sup id="cite_ref-MC_14-33" class="reference"><a href="#cite_note-MC-14">&#91;12&#93;</a></sup></li>
+<li>RIAA: Gold<sup id="cite_ref-RIAA_15-32" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li></ul>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/20_Greatest_Hits_(Beatles_album)" title="20 Greatest Hits (Beatles album)">20 Greatest Hits</a></i>
+</th>
+<td>
+<ul><li>Released: 11 October 1982</li>
+<li>Label: Parlophone <span style="font-size:85%;">(UK)</span>, Capitol <span style="font-size:85%;">(US)</span></li></ul>
+</td>
+<td>10</td>
+<td>52</td>
+<td>—</td>
+<td>50</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>4</td>
+<td>—</td>
+<td>50
+</td>
+<td>
+<ul><li>RIAA: 2× Platinum<sup id="cite_ref-RIAA_15-33" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li></ul>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/The_Number_Ones" title="The Number Ones">The Number Ones</a></i>
+</th>
+<td>
+<ul><li>Released: 1983</li>
+<li>Label: <a href="/wiki/EMI" title="EMI">EMI</a> <span style="font-size:85%;">(AUS)</span></li></ul>
+</td>
+<td>—</td>
+<td>1</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—
+</td>
+<td>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/The_Early_Tapes_of_the_Beatles" title="The Early Tapes of the Beatles">The Early Tapes of the Beatles</a></i><br /><span style="font-size:85%;">(with Tony Sheridan)</span>
+</th>
+<td>
+<ul><li>Released: 10 December 1984</li>
+<li>Label: Polydor <span style="font-size:85%;">(UK)</span></li></ul>
+</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—
+</td>
+<td>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/Past_Masters#Past_Masters,_Volume_One" title="Past Masters">Past Masters, Volume One</a></i><sup id="cite_ref-Past_Masters_36-0" class="reference"><a href="#cite_note-Past_Masters-36">&#91;C&#93;</a></sup>
+</th>
+<td>
+<ul><li>Released: 7 March 1988</li>
+<li>Label: Parlophone <span style="font-size:85%;">(UK)</span>, Capitol <span style="font-size:85%;">(US)</span></li></ul>
+</td>
+<td>49</td>
+<td>79</td>
+<td>—</td>
+<td>—</td>
+<td>21</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>149
+</td>
+<td>
+<ul><li>BPI: Gold<sup id="cite_ref-BPI_12-22" class="reference"><a href="#cite_note-BPI-12">&#91;10&#93;</a></sup></li>
+<li>RIAA: Platinum<sup id="cite_ref-RIAA_15-34" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li>
+<li>RIANZ: Gold<sup id="cite_ref-RadioScope_37-0" class="reference"><a href="#cite_note-RadioScope-37">&#91;27&#93;</a></sup></li></ul>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/Past_Masters#Past_Masters,_Volume_Two" title="Past Masters">Past Masters, Volume Two</a></i><sup id="cite_ref-Past_Masters_36-1" class="reference"><a href="#cite_note-Past_Masters-36">&#91;C&#93;</a></sup>
+</th>
+<td>
+<ul><li>Released: 7 March 1988</li>
+<li>Label: Parlophone <span style="font-size:85%;">(UK)</span>, Capitol <span style="font-size:85%;">(US)</span></li></ul>
+</td>
+<td>46</td>
+<td>75</td>
+<td>—</td>
+<td>—</td>
+<td>15</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>121
+</td>
+<td>
+<ul><li>BPI: Gold<sup id="cite_ref-BPI_12-23" class="reference"><a href="#cite_note-BPI-12">&#91;10&#93;</a></sup></li>
+<li>RIAA: Platinum<sup id="cite_ref-RIAA_15-35" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li>
+<li>RIANZ: Gold<sup id="cite_ref-RadioScope_37-1" class="reference"><a href="#cite_note-RadioScope-37">&#91;27&#93;</a></sup></li></ul>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/Past_Masters" title="Past Masters">Past Masters, Volumes One &amp; Two</a></i><sup id="cite_ref-Past_Masters_36-2" class="reference"><a href="#cite_note-Past_Masters-36">&#91;C&#93;</a></sup>
+</th>
+<td>
+<ul><li>Released: 24 October 1988</li>
+<li>Label: Parlophone <span style="font-size:85%;">(UK)</span>, Capitol <span style="font-size:85%;">(US)</span></li></ul>
+</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—
+</td>
+<td>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/Anthology_1" title="Anthology 1">Anthology 1</a></i>
+</th>
+<td>
+<ul><li>Released: 21 November 1995</li>
+<li>Label: Parlophone <span style="font-size:85%;">(UK)</span>, Capitol <span style="font-size:85%;">(US)</span></li></ul>
+</td>
+<td>2</td>
+<td>1</td>
+<td>4</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>5</td>
+<td>1</td>
+<td>2</td>
+<td>1
+</td>
+<td>
+<ul><li>BPI: 2× Platinum<sup id="cite_ref-BPI_12-24" class="reference"><a href="#cite_note-BPI-12">&#91;10&#93;</a></sup></li>
+<li>BVMI: Gold<sup id="cite_ref-BVMI_18-7" class="reference"><a href="#cite_note-BVMI-18">&#91;15&#93;</a></sup></li>
+<li>IFPI AUT: Gold<sup id="cite_ref-IFPI_AUT_30-3" class="reference"><a href="#cite_note-IFPI_AUT-30">&#91;23&#93;</a></sup></li>
+<li>IFPI NOR: Gold<sup id="cite_ref-IFPI_NOR_35-1" class="reference"><a href="#cite_note-IFPI_NOR-35">&#91;26&#93;</a></sup></li>
+<li>MC: 9× Platinum<sup id="cite_ref-MC_14-34" class="reference"><a href="#cite_note-MC-14">&#91;12&#93;</a></sup></li>
+<li>RIAA: 8× Platinum<sup id="cite_ref-RIAA_15-36" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li></ul>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/Anthology_2" title="Anthology 2">Anthology 2</a></i>
+</th>
+<td>
+<ul><li>Released: 18 March 1996</li>
+<li>Label: Parlophone <span style="font-size:85%;">(UK)</span>, Capitol <span style="font-size:85%;">(US)</span></li></ul>
+</td>
+<td>1</td>
+<td>2</td>
+<td>9</td>
+<td>3</td>
+<td>2</td>
+<td>4</td>
+<td>5</td>
+<td>3</td>
+<td>2</td>
+<td>1
+</td>
+<td>
+<ul><li>BPI: Platinum<sup id="cite_ref-BPI_12-25" class="reference"><a href="#cite_note-BPI-12">&#91;10&#93;</a></sup></li>
+<li>MC: 4× Platinum<sup id="cite_ref-MC_14-35" class="reference"><a href="#cite_note-MC-14">&#91;12&#93;</a></sup></li>
+<li>RIAA: 4× Platinum<sup id="cite_ref-RIAA_15-37" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li>
+<li>SNEP: Gold<sup id="cite_ref-SNEP_21-7" class="reference"><a href="#cite_note-SNEP-21">&#91;16&#93;</a></sup></li></ul>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/Anthology_3" title="Anthology 3">Anthology 3</a></i><sup id="cite_ref-38" class="reference"><a href="#cite_note-38">&#91;D&#93;</a></sup>
+</th>
+<td>
+<ul><li>Released: 28 October 1996</li>
+<li>Label: Parlophone <span style="font-size:85%;">(UK)</span>, Capitol <span style="font-size:85%;">(US)</span></li></ul>
+</td>
+<td>4</td>
+<td>3</td>
+<td>15</td>
+<td>3</td>
+<td>9</td>
+<td>9</td>
+<td>13</td>
+<td>10</td>
+<td>5</td>
+<td>1
+</td>
+<td>
+<ul><li>BPI: Gold<sup id="cite_ref-BPI_12-26" class="reference"><a href="#cite_note-BPI-12">&#91;10&#93;</a></sup></li>
+<li>MC: 2× Platinum<sup id="cite_ref-MC_14-36" class="reference"><a href="#cite_note-MC-14">&#91;12&#93;</a></sup></li>
+<li>RIAA: 3× Platinum<sup id="cite_ref-RIAA_15-38" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li></ul>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/Yellow_Submarine_Songtrack" title="Yellow Submarine Songtrack">Yellow Submarine Songtrack</a></i>
+</th>
+<td>
+<ul><li>Released: 13 September 1999</li>
+<li>Label: Parlophone <span style="font-size:85%;">(UK)</span>, Capitol <span style="font-size:85%;">(US)</span></li></ul>
+</td>
+<td>8</td>
+<td>—</td>
+<td>8</td>
+<td>12</td>
+<td>31</td>
+<td>11</td>
+<td>1</td>
+<td>—</td>
+<td>22</td>
+<td>15
+</td>
+<td>
+<ul><li>BPI: Gold<sup id="cite_ref-BPI_12-27" class="reference"><a href="#cite_note-BPI-12">&#91;10&#93;</a></sup></li>
+<li>RIAA: Gold<sup id="cite_ref-RIAA_15-39" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li></ul>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/1_(Beatles_album)" title="1 (Beatles album)">1</a></i>
+</th>
+<td>
+<ul><li>Released: 13 November 2000</li>
+<li>Label: Parlophone <span style="font-size:85%;">(UK)</span>, Capitol <span style="font-size:85%;">(US)</span></li></ul>
+</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>10</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1
+</td>
+<td>
+<ul><li>BPI: 11× Platinum<sup id="cite_ref-BPI_12-28" class="reference"><a href="#cite_note-BPI-12">&#91;10&#93;</a></sup></li>
+<li>ARIA: 10× Platinum<sup id="cite_ref-ARIA-2009-albums_13-12" class="reference"><a href="#cite_note-ARIA-2009-albums-13">&#91;11&#93;</a></sup></li>
+<li>BVMI: 11× Gold<sup id="cite_ref-BVMI_18-8" class="reference"><a href="#cite_note-BVMI-18">&#91;15&#93;</a></sup></li>
+<li>IFPI AUT: 3× Platinum<sup id="cite_ref-IFPI_AUT_30-4" class="reference"><a href="#cite_note-IFPI_AUT-30">&#91;23&#93;</a></sup></li>
+<li>IFPI NOR: 3× Platinum<sup id="cite_ref-IFPI_NOR_35-2" class="reference"><a href="#cite_note-IFPI_NOR-35">&#91;26&#93;</a></sup></li>
+<li>MC: Diamond<sup id="cite_ref-MC_14-37" class="reference"><a href="#cite_note-MC-14">&#91;12&#93;</a></sup></li>
+<li>RIAA: Diamond (11× Platinum)<sup id="cite_ref-RIAA_15-40" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li>
+<li>RIANZ: 15× Platinum<sup id="cite_ref-RadioScope_37-2" class="reference"><a href="#cite_note-RadioScope-37">&#91;27&#93;</a></sup></li>
+<li>SNEP: 2× Platinum<sup id="cite_ref-SNEP_21-8" class="reference"><a href="#cite_note-SNEP-21">&#91;16&#93;</a></sup></li></ul>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/Beatles_Bop_%E2%80%93_Hamburg_Days" title="Beatles Bop – Hamburg Days">Beatles Bop – Hamburg Days</a></i><br /><span style="font-size:85%;">(with Tony Sheridan)</span>
+</th>
+<td>
+<ul><li>Released: 6 November 2001</li>
+<li>Label: <a href="/wiki/Bear_Family" class="mw-redirect" title="Bear Family">Bear Family</a> <span style="font-size:85%;">(GER)</span></li></ul>
+</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—
+</td>
+<td>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/Let_It_Be..._Naked" title="Let It Be... Naked">Let It Be... Naked</a></i>
+</th>
+<td>
+<ul><li>Released: 17 November 2003</li>
+<li>Label: Parlophone <span style="font-size:85%;">(UK)</span>, Capitol <span style="font-size:85%;">(US)</span></li></ul>
+</td>
+<td>7</td>
+<td>11</td>
+<td>8</td>
+<td>8</td>
+<td>14</td>
+<td>13</td>
+<td>6</td>
+<td>23</td>
+<td>2</td>
+<td>5
+</td>
+<td>
+<ul><li>BPI: Gold<sup id="cite_ref-BPI_12-29" class="reference"><a href="#cite_note-BPI-12">&#91;10&#93;</a></sup></li>
+<li>ARIA: Gold<sup id="cite_ref-ARIA-2003-albums_39-0" class="reference"><a href="#cite_note-ARIA-2003-albums-39">&#91;28&#93;</a></sup></li>
+<li>BVMI: Gold<sup id="cite_ref-BVMI_18-9" class="reference"><a href="#cite_note-BVMI-18">&#91;15&#93;</a></sup></li>
+<li>RIAA: Platinum<sup id="cite_ref-RIAA_15-41" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li></ul>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/Past_Masters" title="Past Masters">Past Masters</a></i><sup id="cite_ref-Past_Masters_36-3" class="reference"><a href="#cite_note-Past_Masters-36">&#91;C&#93;</a></sup>
+</th>
+<td>
+<ul><li>Released: 9 September 2009</li>
+<li>Label: Parlophone <span style="font-size:85%;">(UK)</span>, Capitol <span style="font-size:85%;">(US)</span></li></ul>
+</td>
+<td>31</td>
+<td>34</td>
+<td>40</td>
+<td>—</td>
+<td>—</td>
+<td>61</td>
+<td>—</td>
+<td>33</td>
+<td>36</td>
+<td>—
+</td>
+<td>
+<ul><li>MC: Gold<sup id="cite_ref-MC_14-38" class="reference"><a href="#cite_note-MC-14">&#91;12&#93;</a></sup></li></ul>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/The_Beatles_Anthology#Digital_release_and_Anthology_Highlights" title="The Beatles Anthology">Anthology Highlights</a></i>
+</th>
+<td>
+<ul><li>Released: 16 November 2010</li>
+<li>Label: Apple, EMI</li></ul>
+</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—
+</td>
+<td>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/Tomorrow_Never_Knows_(Beatles_album)" title="Tomorrow Never Knows (Beatles album)">Tomorrow Never Knows</a></i>
+</th>
+<td>
+<ul><li>Released: 24 July 2012</li>
+<li>Label: Apple, EMI</li></ul>
+</td>
+<td>44</td>
+<td>34</td>
+<td>34</td>
+<td>15</td>
+<td>—</td>
+<td>—</td>
+<td>22</td>
+<td>37</td>
+<td>—</td>
+<td>24
+</td>
+<td>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/I_Saw_Her_Standing_There_(album)" title="I Saw Her Standing There (album)">I Saw Her Standing There</a></i>
+</th>
+<td>
+<ul><li>Released: 15 April 2013</li>
+<li>Label: Rock Melon</li></ul>
+</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—
+</td>
+<td>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/The_Beatles_Bootleg_Recordings_1963" title="The Beatles Bootleg Recordings 1963">The Beatles Bootleg Recordings 1963</a></i>
+</th>
+<td>
+<ul><li>Released: 17 December 2013</li>
+<li>Label: Apple, UM<sup>e</sup></li></ul>
+</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>172
+</td>
+<td>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/Mono_Masters" title="Mono Masters">Mono Masters</a></i><sup id="cite_ref-Mono_Masters_40-0" class="reference"><a href="#cite_note-Mono_Masters-40">&#91;E&#93;</a></sup>
+</th>
+<td>
+<ul><li>Released: 9 September 2014</li>
+<li>Label: Parlophone <span style="font-size:85%;">(UK)</span>, Capitol <span style="font-size:85%;">(US)</span></li></ul>
+</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>
+</td>
+<td>
+</td></tr>
+<tr>
+<td colspan="13" style="font-size:90%">"—" denotes that the recording did not chart or was not released in that territory.
+</td></tr></tbody></table></button>
+<hgroup>
+<dl><dt>Notes</dt></dl>
+<div class="reflist" style="list-style-type: upper-alpha;">
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-33"><span class="mw-cite-backlink"><b><a href="#cite_ref-33">^</a></b></span> <span class="reference-text"><i>The Beatles vs the Four Seasons</i> was a repackaging of <i><a href="/wiki/Introducing..._The_Beatles" title="Introducing... The Beatles">Introducing... The Beatles</a></i> and <i><a href="/wiki/Golden_Hits_of_the_Four_Seasons" title="Golden Hits of the Four Seasons">Golden Hits of the Four Seasons</a></i>.</span>
+</li>
+<li id="cite_note-34"><span class="mw-cite-backlink"><b><a href="#cite_ref-34">^</a></b></span> <span class="reference-text"><i>From Then to You</i> was titled <i>The Beatles' Christmas Album</i> in the US.</span>
+</li>
+<li id="cite_note-Past_Masters-36"><span class="mw-cite-backlink">^ <a href="#cite_ref-Past_Masters_36-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-Past_Masters_36-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-Past_Masters_36-2"><sup><i><b>c</b></i></sup></a> <a href="#cite_ref-Past_Masters_36-3"><sup><i><b>d</b></i></sup></a></span> <span class="reference-text"><i>Past Masters</i> was initially released as two separate CDs on 7&#160;March 1988, with a two-LP vinyl set combining both volumes following on 24&#160;October 1988 in the US and 10&#160;November 1988 in the UK. The combined set was released on CD on 9&#160;September 2009.</span>
+</li>
+<li id="cite_note-38"><span class="mw-cite-backlink"><b><a href="#cite_ref-38">^</a></b></span> <span class="reference-text">The album also contains a song by George Martin and His Orchestra.</span>
+</li>
+<li id="cite_note-Mono_Masters-40"><span class="mw-cite-backlink"><b><a href="#cite_ref-Mono_Masters_40-0">^</a></b></span> <span class="reference-text">Originally released as part of the 2009 <i>The Beatles in Mono</i> box set. Released separately as 2 CDs or 3 LPs on 9-9-2014 in the UK and the following day in the US.</span>
+</li>
+</ol></div></div></hgroup>
+
+<h3><span class="mw-headline" id="Mash-up_albums">Mash-up albums</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=The_Beatles_discography&amp;action=edit&amp;section=5" title="Edit section: Mash-up albums">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<button>
+<table class="wikitable plainrowheaders" style="text-align:center;">
+<caption>List of mash-up albums, with selected chart positions and certifications
+</caption>
+<tbody><tr>
+<th scope="col" rowspan="2" style="width:20em;">Title
+</th>
+<th scope="col" rowspan="2" style="width:20em;">Release
+</th>
+<th scope="col" colspan="10">Peak chart positions
+</th>
+<th scope="col" rowspan="2" style="width:15em;"><a href="/wiki/List_of_music_recording_certifications" title="List of music recording certifications">Certifications</a>
+</th></tr>
+<tr>
+<th scope="col" style="width:2.6em; font-size:90%;"><a href="/wiki/UK_Albums_Chart" title="UK Albums Chart">UK</a><br /><sup id="cite_ref-UK-2_3-2" class="reference"><a href="#cite_note-UK-2-3">&#91;2&#93;</a></sup><sup id="cite_ref-41" class="reference"><a href="#cite_note-41">&#91;29&#93;</a></sup>
+</th>
+<th scope="col" style="width:2.6em; font-size:90%;"><a href="/wiki/ARIA_Charts" title="ARIA Charts">AUS</a><br /><sup id="cite_ref-AUS_4-3" class="reference"><a href="#cite_note-AUS-4">&#91;3&#93;</a></sup>
+</th>
+<th scope="col" style="width:2.6em; font-size:90%;"><a href="/wiki/%C3%963_Austria_Top_40" title="Ö3 Austria Top 40">AUT</a><br /><sup id="cite_ref-AUT_24-2" class="reference"><a href="#cite_note-AUT-24">&#91;18&#93;</a></sup>
+</th>
+<th scope="col" style="width:2.6em; font-size:90%;"><a href="/wiki/Canadian_Albums_Chart" title="Canadian Albums Chart">CAN</a><br /><sup id="cite_ref-CAN-2_32-1" class="reference"><a href="#cite_note-CAN-2-32">&#91;25&#93;</a></sup>
+</th>
+<th scope="col" style="width:2.6em; font-size:90%;"><a href="/wiki/Syndicat_National_de_l%27%C3%89dition_Phonographique" title="Syndicat National de l&#39;Édition Phonographique">FRA</a><br /><sup id="cite_ref-FRA_6-2" class="reference"><a href="#cite_note-FRA-6">&#91;5&#93;</a></sup>
+</th>
+<th scope="col" style="width:2.6em; font-size:90%;"><a href="/wiki/Media_Control_Charts" class="mw-redirect" title="Media Control Charts">GER</a><br /><sup id="cite_ref-GER_7-3" class="reference"><a href="#cite_note-GER-7">&#91;6&#93;</a></sup>
+</th>
+<th scope="col" style="width:2.6em; font-size:90%;"><a href="/wiki/VG-lista" title="VG-lista">NOR</a><br /><sup id="cite_ref-NOR_8-3" class="reference"><a href="#cite_note-NOR-8">&#91;7&#93;</a></sup>
+</th>
+<th scope="col" style="width:2.6em; font-size:90%;"><a href="/wiki/Recording_Industry_Association_of_New_Zealand" class="mw-redirect" title="Recording Industry Association of New Zealand">NZ</a><br /><sup id="cite_ref-NZ_27-2" class="reference"><a href="#cite_note-NZ-27">&#91;21&#93;</a></sup>
+</th>
+<th scope="col" style="width:2.6em; font-size:90%;"><a href="/wiki/Sverigetopplistan" title="Sverigetopplistan">SWE</a><br /><sup id="cite_ref-SWE_28-2" class="reference"><a href="#cite_note-SWE-28">&#91;22&#93;</a></sup>
+</th>
+<th scope="col" style="width:2.6em; font-size:90%;"><a href="/wiki/Billboard_200" title="Billboard 200">US</a><br /><sup id="cite_ref-Billboard_9-3" class="reference"><a href="#cite_note-Billboard-9">&#91;8&#93;</a></sup><sup id="cite_ref-US_10-3" class="reference"><a href="#cite_note-US-10">&#91;9&#93;</a></sup>
+</th></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/Liverpool_Sound_Collage" title="Liverpool Sound Collage">Liverpool Sound Collage</a></i><br /><span style="font-size:85%;">(with <a href="/wiki/Paul_McCartney" title="Paul McCartney">Paul McCartney</a>, <a href="/wiki/Super_Furry_Animals" title="Super Furry Animals">Super Furry Animals</a> and <a href="/wiki/Martin_Glover" class="mw-redirect" title="Martin Glover">Youth</a>)</span>
+</th>
+<td>
+<ul><li>Released: 21&#160;August 2000</li>
+<li>Label: Hydra <span style="font-size:85%;">(UK)</span>, Capitol <span style="font-size:85%;">(US)</span></li></ul>
+</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—
+</td>
+<td>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/Love_(Beatles_album)" class="mw-redirect" title="Love (Beatles album)">Love</a></i>
+</th>
+<td>
+<ul><li>Released: 20&#160;November 2006</li>
+<li>Label: Parlophone <span style="font-size:85%;">(UK)</span>, Capitol <span style="font-size:85%;">(US)</span></li></ul>
+</td>
+<td>3</td>
+<td>2</td>
+<td>3</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>8</td>
+<td>2</td>
+<td>2</td>
+<td>4
+</td>
+<td>
+<ul><li>BPI: 2× Platinum<sup id="cite_ref-BPI_12-30" class="reference"><a href="#cite_note-BPI-12">&#91;10&#93;</a></sup></li>
+<li>ARIA: 2× Platinum<sup id="cite_ref-ARIA-2007-albums_42-0" class="reference"><a href="#cite_note-ARIA-2007-albums-42">&#91;30&#93;</a></sup></li>
+<li>BVMI: 3× Gold<sup id="cite_ref-BVMI_18-10" class="reference"><a href="#cite_note-BVMI-18">&#91;15&#93;</a></sup></li>
+<li>MC: 2× Platinum<sup id="cite_ref-MC_14-39" class="reference"><a href="#cite_note-MC-14">&#91;12&#93;</a></sup></li>
+<li>RIAA: 2× Platinum<sup id="cite_ref-RIAA_15-42" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li>
+<li>SNEP: Platinum<sup id="cite_ref-SNEP_21-9" class="reference"><a href="#cite_note-SNEP-21">&#91;16&#93;</a></sup></li></ul>
+</td></tr>
+<tr>
+<td colspan="13" style="font-size:90%">"—" denotes that the recording did not chart or was not released in that territory.
+</td></tr></tbody></table>
+<h3><span class="mw-headline" id="Box_sets">Box sets</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=The_Beatles_discography&amp;action=edit&amp;section=6" title="Edit section: Box sets">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<table class="wikitable plainrowheaders" style="text-align:center;">
+<caption>List of box sets, with selected chart positions and certifications
+</caption>
+<tbody><tr>
+<th scope="col" rowspan="2" style="width:20em;">Title
+</th>
+<th scope="col" rowspan="2" style="width:20em;">Release
+</th>
+<th scope="col" colspan="10">Peak chart positions
+</th>
+<th scope="col" rowspan="2" style="width:15em;"><a href="/wiki/List_of_music_recording_certifications" title="List of music recording certifications">Certifications</a>
+</th></tr>
+<tr>
+<th scope="col" style="width:2.6em; font-size:90%;"><a href="/wiki/UK_Albums_Chart" title="UK Albums Chart">UK</a><br /><sup id="cite_ref-UK-2_3-3" class="reference"><a href="#cite_note-UK-2-3">&#91;2&#93;</a></sup>
+</th>
+<th scope="col" style="width:2.6em; font-size:90%;"><a href="/wiki/ARIA_Charts" title="ARIA Charts">AUS</a><br /><sup id="cite_ref-AUS_4-4" class="reference"><a href="#cite_note-AUS-4">&#91;3&#93;</a></sup>
+</th>
+<th scope="col" style="width:2.6em; font-size:90%;"><a href="/wiki/%C3%963_Austria_Top_40" title="Ö3 Austria Top 40">AUT</a><br /><sup id="cite_ref-AUT_24-3" class="reference"><a href="#cite_note-AUT-24">&#91;18&#93;</a></sup>
+</th>
+<th scope="col" style="width:2.6em; font-size:90%;"><a href="/wiki/Canadian_Albums_Chart" title="Canadian Albums Chart">CAN</a><br /><sup id="cite_ref-CAN-2_32-2" class="reference"><a href="#cite_note-CAN-2-32">&#91;25&#93;</a></sup><sup id="cite_ref-43" class="reference"><a href="#cite_note-43">&#91;31&#93;</a></sup>
+</th>
+<th scope="col" style="width:2.6em; font-size:90%;"><a href="/wiki/Syndicat_National_de_l%27%C3%89dition_Phonographique" title="Syndicat National de l&#39;Édition Phonographique">FRA</a><br /><sup id="cite_ref-FRA_6-3" class="reference"><a href="#cite_note-FRA-6">&#91;5&#93;</a></sup>
+</th>
+<th scope="col" style="width:2.6em; font-size:90%;"><a href="/wiki/Media_Control_Charts" class="mw-redirect" title="Media Control Charts">GER</a><br /><sup id="cite_ref-GER_7-4" class="reference"><a href="#cite_note-GER-7">&#91;6&#93;</a></sup>
+</th>
+<th scope="col" style="width:2.6em; font-size:90%;"><a href="/wiki/VG-lista" title="VG-lista">NOR</a><br /><sup id="cite_ref-NOR_8-4" class="reference"><a href="#cite_note-NOR-8">&#91;7&#93;</a></sup>
+</th>
+<th scope="col" style="width:2.6em; font-size:90%;"><a href="/wiki/Recording_Industry_Association_of_New_Zealand" class="mw-redirect" title="Recording Industry Association of New Zealand">NZ</a><br /><sup id="cite_ref-NZ_27-3" class="reference"><a href="#cite_note-NZ-27">&#91;21&#93;</a></sup>
+</th>
+<th scope="col" style="width:2.6em; font-size:90%;"><a href="/wiki/Sverigetopplistan" title="Sverigetopplistan">SWE</a><br /><sup id="cite_ref-SWE_28-3" class="reference"><a href="#cite_note-SWE-28">&#91;22&#93;</a></sup>
+</th>
+<th scope="col" style="width:2.6em; font-size:90%;"><a href="/wiki/Billboard_200" title="Billboard 200">US</a><br /><sup id="cite_ref-Billboard_9-4" class="reference"><a href="#cite_note-Billboard-9">&#91;8&#93;</a></sup><sup id="cite_ref-US_10-4" class="reference"><a href="#cite_note-US-10">&#91;9&#93;</a></sup>
+</th></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/The_Beatles_Collection" title="The Beatles Collection">The Beatles Collection</a></i><sup id="cite_ref-George_Martin_44-0" class="reference"><a href="#cite_note-George_Martin-44">&#91;A&#93;</a></sup>
+</th>
+<td>
+<ul><li>Released: 2 November 1978</li>
+<li>Label: Parlophone <span style="font-size:85%;">(UK)</span>, Capitol <span style="font-size:85%;">(US)</span></li></ul>
+</td>
+<td>—</td>
+<td>33</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>11</td>
+<td>—</td>
+<td>—
+</td>
+<td>
+<ul><li>MC: Platinum<sup id="cite_ref-MC_14-40" class="reference"><a href="#cite_note-MC-14">&#91;12&#93;</a></sup></li></ul>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/The_Beatles_Box" title="The Beatles Box">The Beatles Box</a></i>
+</th>
+<td>
+<ul><li>Released: 3 November 1980</li>
+<li>Label: Parlophone <span style="font-size:85%;">(UK)</span></li></ul>
+</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—
+</td>
+<td>
+<ul><li>ARIA: Gold<sup id="cite_ref-ARIA-1999-albums_45-0" class="reference"><a href="#cite_note-ARIA-1999-albums-45">&#91;32&#93;</a></sup></li></ul>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/The_Beatles_EP_Collection" title="The Beatles EP Collection">The Beatles EP Collection</a></i><sup id="cite_ref-46" class="reference"><a href="#cite_note-46">&#91;B&#93;</a></sup>
+</th>
+<td>
+<ul><li>Released: 7 December 1981</li>
+<li>Label: Parlophone <span style="font-size:85%;">(UK)</span></li></ul>
+</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—
+</td>
+<td>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/The_Beatles:_The_Collection" title="The Beatles: The Collection">The Beatles: The Collection</a></i><sup id="cite_ref-George_Martin_44-1" class="reference"><a href="#cite_note-George_Martin-44">&#91;A&#93;</a></sup>
+</th>
+<td>
+<ul><li>Released: October 1982</li>
+<li>Label: Parlophone <span style="font-size:85%;">(UK)</span></li></ul>
+</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—
+</td>
+<td>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/The_Beatles_Mono_Collection" title="The Beatles Mono Collection">The Beatles Mono Collection</a></i><sup id="cite_ref-George_Martin_44-2" class="reference"><a href="#cite_note-George_Martin-44">&#91;A&#93;</a></sup>
+</th>
+<td>
+<ul><li>Released: October 1982</li>
+<li>Label: Parlophone <span style="font-size:85%;">(UK)</span></li></ul>
+</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—
+</td>
+<td>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/The_Beatles_Box_Set" title="The Beatles Box Set">The Beatles Box Set</a></i><sup id="cite_ref-George_Martin_44-3" class="reference"><a href="#cite_note-George_Martin-44">&#91;A&#93;</a></sup>
+</th>
+<td>
+<ul><li>Released: 15 November 1988</li>
+<li>Label: Parlophone <span style="font-size:85%;">(UK)</span>, Capitol <span style="font-size:85%;">(US)</span></li></ul>
+</td>
+<td>—</td>
+<td>82</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—
+</td>
+<td>
+<ul><li>RIAA: Platinum<sup id="cite_ref-RIAA_15-43" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li></ul>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/The_Capitol_Albums,_Volume_1" title="The Capitol Albums, Volume 1">The Capitol Albums, Volume 1</a></i>
+</th>
+<td>
+<ul><li>Released: 16 November 2004</li>
+<li>Label: Capitol <span style="font-size:85%;">(US)</span></li></ul>
+</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>80</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>35
+</td>
+<td>
+<ul><li>RIAA: Platinum<sup id="cite_ref-RIAA_15-44" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li></ul>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/The_Capitol_Albums,_Volume_2" title="The Capitol Albums, Volume 2">The Capitol Albums, Volume 2</a></i><sup id="cite_ref-George_Martin_44-4" class="reference"><a href="#cite_note-George_Martin-44">&#91;A&#93;</a></sup>
+</th>
+<td>
+<ul><li>Released: 11 April 2006</li>
+<li>Label: Capitol <span style="font-size:85%;">(US)</span></li></ul>
+</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>46
+</td>
+<td>
+<ul><li>RIAA: Gold<sup id="cite_ref-RIAA_15-45" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li></ul>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/The_Beatles_in_Mono" title="The Beatles in Mono">The Beatles in Mono</a></i><sup id="cite_ref-47" class="reference"><a href="#cite_note-47">&#91;C&#93;</a></sup>
+</th>
+<td>
+<ul><li>Released: 9 September 2009</li>
+<li>Label: Parlophone <span style="font-size:85%;">(UK)</span>, Capitol <span style="font-size:85%;">(US)</span></li></ul>
+</td>
+<td>57</td>
+<td>—</td>
+<td>—</td>
+<td>47</td>
+<td>—</td>
+<td>3</td>
+<td>—</td>
+<td>—</td>
+<td>15</td>
+<td>40
+</td>
+<td>
+<ul><li>MC: Platinum<sup id="cite_ref-MC_14-41" class="reference"><a href="#cite_note-MC-14">&#91;12&#93;</a></sup></li>
+<li>RIAA: Platinum<sup id="cite_ref-RIAA_15-46" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li></ul>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/The_Beatles_Stereo_Box_Set" class="mw-redirect" title="The Beatles Stereo Box Set">The Beatles Stereo Box Set</a></i><sup id="cite_ref-George_Martin_44-5" class="reference"><a href="#cite_note-George_Martin-44">&#91;A&#93;</a></sup>
+</th>
+<td>
+<ul><li>Released: 9 September 2009</li>
+<li>Label: Parlophone <span style="font-size:85%;">(UK)</span>, Capitol <span style="font-size:85%;">(US)</span></li></ul>
+</td>
+<td>24</td>
+<td>23</td>
+<td>58</td>
+<td>4</td>
+<td>—</td>
+<td>—</td>
+<td>3</td>
+<td>22</td>
+<td>15</td>
+<td>15
+</td>
+<td>
+<ul><li>MC: Diamond<sup id="cite_ref-MC_14-42" class="reference"><a href="#cite_note-MC-14">&#91;12&#93;</a></sup></li>
+<li>RIAA: 3× Platinum<sup id="cite_ref-RIAA_15-47" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li></ul>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/1962%E2%80%931966" title="1962–1966">1962–1966</a></i>&#160;/ <i><a href="/wiki/1967%E2%80%931970" title="1967–1970">1967–1970</a></i>
+</th>
+<td>
+<ul><li>Released: 15 October 2010</li>
+<li>Label: Apple, EMI</li></ul>
+</td>
+<td>59</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>29</td>
+<td>38</td>
+<td>35</td>
+<td>—</td>
+<td>—
+</td>
+<td>
+<ul><li>MC: Gold<sup id="cite_ref-MC_14-43" class="reference"><a href="#cite_note-MC-14">&#91;12&#93;</a></sup></li></ul>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/The_Beatles_Anthology#Albums" title="The Beatles Anthology">Anthology Box Set</a></i><sup id="cite_ref-George_Martin_44-6" class="reference"><a href="#cite_note-George_Martin-44">&#91;A&#93;</a></sup>
+</th>
+<td>
+<ul><li>Released: 16 November 2010</li>
+<li>Label: Apple, EMI</li></ul>
+</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—
+</td>
+<td>
+</td></tr>
+<tr>
+<th scope="row"><i>Live at the BBC: The Collection</i>
+</th>
+<td>
+<ul><li>Released: 11 November 2013</li>
+<li>Label: Apple, UM<sup>e</sup></li></ul>
+</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—
+</td>
+<td>
+<ul><li>BPI: Silver<sup id="cite_ref-BPI_12-31" class="reference"><a href="#cite_note-BPI-12">&#91;10&#93;</a></sup></li>
+<li>MC: Platinum<sup id="cite_ref-MC_14-44" class="reference"><a href="#cite_note-MC-14">&#91;12&#93;</a></sup></li></ul>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/The_U.S._Albums" title="The U.S. Albums">The U.S. Albums</a></i><sup id="cite_ref-George_Martin_44-7" class="reference"><a href="#cite_note-George_Martin-44">&#91;A&#93;</a></sup>
+</th>
+<td>
+<ul><li>Released: 21 January 2014</li>
+<li>Label: Apple, Capitol, UM<sup>e</sup></li></ul>
+</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>29</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>48
+</td>
+<td>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/The_Japan_Box" title="The Japan Box">The Japan Box</a></i>
+</th>
+<td>
+<ul><li>Released: 25 June 2014</li>
+<li>Label: Apple, UM<sup>e</sup></li></ul>
+</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>83</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—
+</td>
+<td>
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/The_Beatles%27_Christmas_records#2017_release" title="The Beatles&#39; Christmas records"> The Christmas Records</a></i>
+</th>
+<td>
+<ul><li>Released: 15 December 2017</li>
+<li>Label: Apple, UM<sup>e</sup></li></ul>
+</td>
+<td>–</td>
+<td>–</td>
+<td>–</td>
+<td>–</td>
+<td>–</td>
+<td>–</td>
+<td>–</td>
+<td>–</td>
+<td>–</td>
+<td>–
+</td>
+<td>
+</td></tr>
+<tr>
+<td colspan="13" style="font-size:90%">"—" denotes that the recording did not chart or was not released in that territory.
+</td></tr></tbody></table></button>
+<hgroup>
+<dl><dt>Notes</dt></dl>
+<div class="reflist" style="list-style-type: upper-alpha;">
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-George_Martin-44"><span class="mw-cite-backlink">^ <a href="#cite_ref-George_Martin_44-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-George_Martin_44-1"><sup><i><b>b</b></i></sup></a> <a href="#cite_ref-George_Martin_44-2"><sup><i><b>c</b></i></sup></a> <a href="#cite_ref-George_Martin_44-3"><sup><i><b>d</b></i></sup></a> <a href="#cite_ref-George_Martin_44-4"><sup><i><b>e</b></i></sup></a> <a href="#cite_ref-George_Martin_44-5"><sup><i><b>f</b></i></sup></a> <a href="#cite_ref-George_Martin_44-6"><sup><i><b>g</b></i></sup></a> <a href="#cite_ref-George_Martin_44-7"><sup><i><b>h</b></i></sup></a></span> <span class="reference-text">The set also contains songs by George Martin and His Orchestra.</span>
+</li>
+<li id="cite_note-46"><span class="mw-cite-backlink"><b><a href="#cite_ref-46">^</a></b></span> <span class="reference-text"><i>The Beatles EP Collection</i> is a 15-disc box set comprising the 13 original EPs released by Parlophone in the UK – including mono and stereo editions of the <i><a href="/wiki/Magical_Mystery_Tour" title="Magical Mystery Tour">Magical Mystery Tour</a></i> EP – and a new disc entitled <i>The Beatles EP</i>, which contains stereo mixes of the tracks "<a href="/wiki/The_Inner_Light_(song)" title="The Inner Light (song)">The Inner Light</a>", "<a href="/wiki/Baby,_You%27re_a_Rich_Man" title="Baby, You&#39;re a Rich Man">Baby, You're a Rich Man</a>", "<a href="/wiki/She%27s_a_Woman" title="She&#39;s a Woman">She's a Woman</a>" and "<a href="/wiki/This_Boy" title="This Boy">This Boy</a>".</span>
+</li>
+<li id="cite_note-47"><span class="mw-cite-backlink"><b><a href="#cite_ref-47">^</a></b></span> <span class="reference-text"><i>The Beatles in Mono</i> contains the exclusive album <i><a href="/wiki/Past_Masters#Mono_Masters" title="Past Masters">Mono Masters</a></i>.</span>
+</li>
+</ol></div></div>
+<h3><span class="mw-headline" id="Christmas_albums">Christmas albums</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=The_Beatles_discography&amp;action=edit&amp;section=7" title="Edit section: Christmas albums">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The Beatles released seven <a href="/wiki/The_Beatles%27_Christmas_records" title="The Beatles&#39; Christmas records">Christmas albums</a> as well.
+</p></hgroup>
+
+<h2><span class="mw-headline" id="EPs">EPs</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=The_Beatles_discography&amp;action=edit&amp;section=8" title="Edit section: EPs">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<button>
+<table class="wikitable plainrowheaders" style="text-align:center;">
+<caption>List of EPs, with selected chart positions
+</caption>
+<tbody><tr>
+<th scope="col" rowspan="2" style="width:20em;">Title
+</th>
+<th scope="col" rowspan="2" style="width:20em;">Release
+</th>
+<th scope="col" colspan="3">Peak chart positions
+</th></tr>
+<tr>
+<th scope="col" style="width:2.6em; font-size:90%;"><a href="/wiki/UK_Albums_Chart" title="UK Albums Chart">UK</a><br /><sup id="cite_ref-UK-2_3-4" class="reference"><a href="#cite_note-UK-2-3">&#91;2&#93;</a></sup>
+</th>
+<th scope="col" style="width:2.6em; font-size:90%;"><a href="/wiki/ARIA_Charts" title="ARIA Charts">AUS</a><br /><sup id="cite_ref-AUS_4-5" class="reference"><a href="#cite_note-AUS-4">&#91;3&#93;</a></sup>
+</th>
+<th scope="col" style="width:2.6em; font-size:90%;"><a href="/wiki/Billboard_200" title="Billboard 200">US</a><br /><sup id="cite_ref-Billboard_9-5" class="reference"><a href="#cite_note-Billboard-9">&#91;8&#93;</a></sup><sup id="cite_ref-US_10-5" class="reference"><a href="#cite_note-US-10">&#91;9&#93;</a></sup>
+</th></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/My_Bonnie" title="My Bonnie">My Bonnie</a></i><br /><span style="font-size:85%;">(with Tony Sheridan)</span>
+</th>
+<td>
+<ul><li>Released: 12 July 1963</li>
+<li>Label: Polydor <span style="font-size:85%;">(UK)</span></li></ul>
+</td>
+<td>—</td>
+<td>—</td>
+<td>—
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/Twist_and_Shout_(EP)" title="Twist and Shout (EP)">Twist and Shout</a></i>
+</th>
+<td>
+<ul><li>Released: 12 July 1963</li>
+<li>Label: Parlophone <span style="font-size:85%;">(UK)</span></li></ul>
+</td>
+<td>1</td>
+<td>5</td>
+<td>—
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/The_Beatles%27_Hits" title="The Beatles&#39; Hits">The Beatles' Hits</a></i>
+</th>
+<td>
+<ul><li>Released: 6 September 1963</li>
+<li>Label: Parlophone <span style="font-size:85%;">(UK)</span></li></ul>
+</td>
+<td>1</td>
+<td>52</td>
+<td>—
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/The_Beatles_(No._1)" title="The Beatles (No. 1)">The Beatles (No. 1)</a></i>
+</th>
+<td>
+<ul><li>Released: 1 November 1963</li>
+<li>Label: Parlophone <span style="font-size:85%;">(UK)</span></li></ul>
+</td>
+<td>2</td>
+<td>79</td>
+<td>—
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/All_My_Loving_(EP)" title="All My Loving (EP)">All My Loving</a></i>
+</th>
+<td>
+<ul><li>Released: 7 February 1964</li>
+<li>Label: Parlophone <span style="font-size:85%;">(UK)</span></li></ul>
+</td>
+<td>1</td>
+<td>1</td>
+<td>—
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/Souvenir_of_Their_Visit_to_America" title="Souvenir of Their Visit to America">Souvenir of Their Visit to America</a></i>
+</th>
+<td>
+<ul><li>Released: 23 March 1964</li>
+<li>Label: Vee-Jay <span style="font-size:85%;">(US)</span></li></ul>
+</td>
+<td>—</td>
+<td>—</td>
+<td>—
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/Four_by_the_Beatles" title="Four by the Beatles">Four by the Beatles</a></i>
+</th>
+<td>
+<ul><li>Released: 11 May 1964</li>
+<li>Label: Capitol <span style="font-size:85%;">(US)</span></li></ul>
+</td>
+<td>—</td>
+<td>—</td>
+<td>92
+</td></tr>
+<tr>
+<th scope="row"><i>Requests</i>
+</th>
+<td>
+<ul><li>Released: 18 June 1964</li>
+<li>Label: Parlophone <span style="font-size:85%;">(AUS/NZ)</span></li></ul>
+</td>
+<td>—</td>
+<td>1</td>
+<td>—
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/Long_Tall_Sally_(EP)" title="Long Tall Sally (EP)">Long Tall Sally</a></i>
+</th>
+<td>
+<ul><li>Released: 19 June 1964</li>
+<li>Label: Parlophone <span style="font-size:85%;">(UK)</span></li></ul>
+</td>
+<td>1</td>
+<td>—</td>
+<td>—
+</td></tr>
+<tr>
+<th scope="row"><i>The Beatles Again!</i>
+</th>
+<td>
+<ul><li>Released: July 1964</li>
+<li>Label: Parlophone <span style="font-size:85%;">(NZ)</span></li></ul>
+</td>
+<td>—</td>
+<td>—</td>
+<td>—
+</td></tr>
+<tr>
+<th scope="row"><i>A Hard Day's Night No. 1</i>
+</th>
+<td>
+<ul><li>Released: July 1964</li>
+<li>Label: Parlophone <span style="font-size:85%;">(NZ)</span></li></ul>
+</td>
+<td>—</td>
+<td>—</td>
+<td>—
+</td></tr>
+<tr>
+<th scope="row"><i>The Beatles No. 2</i>
+</th>
+<td>
+<ul><li>Released: July 1964</li>
+<li>Label: Parlophone <span style="font-size:85%;">(NZ)</span></li></ul>
+</td>
+<td>—</td>
+<td>—</td>
+<td>—
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/Extracts_from_the_Film_A_Hard_Day%27s_Night" title="Extracts from the Film A Hard Day&#39;s Night">Extracts from the Film A Hard Day's Night</a></i>
+</th>
+<td>
+<ul><li>Released: 4 November 1964</li>
+<li>Label: Parlophone <span style="font-size:85%;">(UK)</span></li></ul>
+</td>
+<td>1</td>
+<td>—</td>
+<td>—
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/Extracts_from_the_Album_A_Hard_Day%27s_Night" title="Extracts from the Album A Hard Day&#39;s Night">Extracts from the Album A Hard Day's Night</a></i>
+</th>
+<td>
+<ul><li>Released: 6 November 1964</li>
+<li>Label: Parlophone <span style="font-size:85%;">(UK)</span></li></ul>
+</td>
+<td>8</td>
+<td>—</td>
+<td>—
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/4_by_the_Beatles" title="4 by the Beatles">4 by the Beatles</a></i>
+</th>
+<td>
+<ul><li>Released: 1 February 1965</li>
+<li>Label: Capitol <span style="font-size:85%;">(US)</span></li></ul>
+</td>
+<td>—</td>
+<td>—</td>
+<td>68
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/Beatles_for_Sale_(EP)" title="Beatles for Sale (EP)">Beatles for Sale</a></i>
+</th>
+<td>
+<ul><li>Released: 6 April 1965</li>
+<li>Label: Parlophone <span style="font-size:85%;">(UK)</span></li></ul>
+</td>
+<td>1</td>
+<td>—</td>
+<td>—
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/Beatles_for_Sale_No._2" title="Beatles for Sale No. 2">Beatles for Sale No. 2</a></i>
+</th>
+<td>
+<ul><li>Released: 4 June 1965</li>
+<li>Label: Parlophone <span style="font-size:85%;">(UK)</span></li></ul>
+</td>
+<td>5</td>
+<td>—</td>
+<td>—
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/The_Beatles%27_Million_Sellers" title="The Beatles&#39; Million Sellers">The Beatles' Million Sellers</a></i>
+</th>
+<td>
+<ul><li>Released: 6 December 1965</li>
+<li>Label: Parlophone <span style="font-size:85%;">(UK)</span></li></ul>
+</td>
+<td>1</td>
+<td>—</td>
+<td>—
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/Yesterday_(EP)" title="Yesterday (EP)">Yesterday</a></i>
+</th>
+<td>
+<ul><li>Released: 4 March 1966</li>
+<li>Label: Parlophone <span style="font-size:85%;">(UK)</span></li></ul>
+</td>
+<td>1</td>
+<td>—</td>
+<td>—
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/Nowhere_Man_(EP)" title="Nowhere Man (EP)">Nowhere Man</a></i>
+</th>
+<td>
+<ul><li>Released: 8 July 1966</li>
+<li>Label: Parlophone <span style="font-size:85%;">(UK)</span></li></ul>
+</td>
+<td>4</td>
+<td>—</td>
+<td>—
+</td></tr>
+<tr>
+<th scope="row"><i><a href="/wiki/Magical_Mystery_Tour" title="Magical Mystery Tour">Magical Mystery Tour</a></i>
+</th>
+<td>
+<ul><li>Released: 8 December 1967</li>
+<li>Label: Parlophone <span style="font-size:85%;">(UK)</span></li></ul>
+</td>
+<td>2</td>
+<td>3</td>
+<td>—
+</td></tr>
+<tr>
+<td colspan="5" style="font-size:90%">"—" denotes that the recording did not chart or was not released in that territory.
+</td></tr></tbody></table></button>
+<h2><span class="mw-headline" id="Singles">Singles</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=The_Beatles_discography&amp;action=edit&amp;section=9" title="Edit section: Singles">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<button>
+<table class="wikitable plainrowheaders" style="text-align:center;">
+<caption>List of singles, with selected chart positions and certifications
+</caption>
+<caption><span style="font-size:85%;"><i>All records released on Parlophone (UK) or Capitol (US) except where noted</i></span>
+</caption>
+<tbody><tr>
+<th scope="col" rowspan="2" style="width:20em;">Title<br /><span style="font-size:85%;">(A-side/B-side)</span>
+</th>
+<th scope="col" rowspan="2" style="width:1em;">Release
+</th>
+<th scope="col" colspan="11">Peak chart positions
+</th>
+<th scope="col" rowspan="2" style="width:12em;"><a href="/wiki/List_of_music_recording_certifications" title="List of music recording certifications">Certifications</a>
+</th>
+<th scope="col" rowspan="2" style="width:12em;">UK Album
+</th>
+<th scope="col" rowspan="2" style="width:12em;">US Album
+</th></tr>
+<tr>
+<th scope="col" style="width:2.6em; font-size:90%;"><a href="/wiki/UK_Singles_Chart" title="UK Singles Chart">UK</a><br /><sup id="cite_ref-UK-2_3-5" class="reference"><a href="#cite_note-UK-2-3">&#91;2&#93;</a></sup>
+</th>
+<th scope="col" style="width:2.6em; font-size:90%;"><a href="/wiki/ARIA_Charts" title="ARIA Charts">AUS</a><br /><sup id="cite_ref-AUS_4-6" class="reference"><a href="#cite_note-AUS-4">&#91;3&#93;</a></sup>
+</th>
+<th scope="col" style="width:2.6em; font-size:90%;"><a href="/wiki/%C3%963_Austria_Top_40" title="Ö3 Austria Top 40">AUT</a><br /><sup id="cite_ref-AUT_24-4" class="reference"><a href="#cite_note-AUT-24">&#91;18&#93;</a></sup>
+</th>
+<th scope="col" style="width:2.6em; font-size:90%;"><a href="/wiki/Ultratop" title="Ultratop">BEL</a><br /><sup id="cite_ref-BEL_(FL)_48-0" class="reference"><a href="#cite_note-BEL_(FL)-48">&#91;33&#93;</a></sup>
+</th>
+<th scope="col" style="width:2.6em; font-size:90%;"><a href="/wiki/Canadian_Singles_Chart" title="Canadian Singles Chart">CAN</a><br /><sup id="cite_ref-49" class="reference"><a href="#cite_note-49">&#91;34&#93;</a></sup>
+</th>
+<th scope="col" style="width:2.6em; font-size:90%;"><a href="/wiki/GfK_Entertainment" class="mw-redirect" title="GfK Entertainment">GER</a><br /><sup id="cite_ref-GER_7-5" class="reference"><a href="#cite_note-GER-7">&#91;6&#93;</a></sup>
+</th>
+<th scope="col" style="width:2.6em; font-size:90%;"><a href="/wiki/MegaCharts" title="MegaCharts">NLD</a><br /><sup id="cite_ref-NLD_26-1" class="reference"><a href="#cite_note-NLD-26">&#91;20&#93;</a></sup>
+</th>
+<th scope="col" style="width:2.6em; font-size:90%;"><a href="/wiki/VG-lista" title="VG-lista">NOR</a><br /><sup id="cite_ref-NOR_8-5" class="reference"><a href="#cite_note-NOR-8">&#91;7&#93;</a></sup>
+</th>
+<th scope="col" style="width:2.6em; font-size:90%;"><a href="/wiki/Swiss_Hitparade" title="Swiss Hitparade">SWI</a><br /><sup id="cite_ref-SWI_50-0" class="reference"><a href="#cite_note-SWI-50">&#91;35&#93;</a></sup>
+</th>
+<th scope="col" style="width:2.6em; font-size:90%;"><a href="/wiki/Billboard_Hot_100" title="Billboard Hot 100">US</a><br /><sup id="cite_ref-Billboard_9-6" class="reference"><a href="#cite_note-Billboard-9">&#91;8&#93;</a></sup><sup id="cite_ref-US_10-6" class="reference"><a href="#cite_note-US-10">&#91;9&#93;</a></sup>
+</th>
+<th scope="col" style="width:2.6em; font-size:90%;"><small><a href="/wiki/Cashbox_(magazine)" title="Cashbox (magazine)">US <i>Cash Box</i></a></small><br /><sup id="cite_ref-Cashbox_51-0" class="reference"><a href="#cite_note-Cashbox-51">&#91;36&#93;</a></sup>
+</th></tr>
+<tr>
+<th scope="row">"<a href="/wiki/My_Bonnie#Singles" title="My Bonnie">My Bonnie</a>"<br />"<a href="/wiki/When_the_Saints_Go_Marching_In" title="When the Saints Go Marching In">The Saints</a>"<br /><span style="font-size:85%;">(with Tony Sheridan)</span><br /><span style="font-size:85%;"><i>UK/Germany (Polydor)</i></span><sup id="cite_ref-52" class="reference"><a href="#cite_note-52">&#91;A&#93;</a></sup>
+</th>
+<td>1961
+</td>
+<td>48<br />—</td>
+<td>29<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>32<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>26<br />—</td>
+<td>29<br />—
+</td>
+<td>
+</td>
+<td><i><a href="/wiki/My_Bonnie" title="My Bonnie">My Bonnie</a></i><br /> <span style="font-size:85%;"><i>UK/Germany (Polydor)</i></span>
+</td>
+<td>
+</td></tr>
+<tr>
+<th scope="row">"<a href="/wiki/Love_Me_Do" title="Love Me Do">Love Me Do</a>"<br />"<a href="/wiki/P.S._I_Love_You_(Beatles_song)" title="P.S. I Love You (Beatles song)">P.S. I Love You</a>"<br /><span style="font-size:85%;"><i>US (Tollie)</i></span><sup id="cite_ref-Tollie_53-0" class="reference"><a href="#cite_note-Tollie-53">&#91;B&#93;</a></sup>
+</th>
+<td>1962
+</td>
+<td>17<br />—</td>
+<td>1<br />—</td>
+<td>—<br />—</td>
+<td>37<br />—</td>
+<td>8<br />—</td>
+<td>—<br />—</td>
+<td>32<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>1<br />10</td>
+<td>1<br />10
+</td>
+<td>
+<ul><li>RIAA: Platinum<sup id="cite_ref-RIAA_15-48" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li></ul>
+</td>
+<td rowspan="2"><i><a href="/wiki/Please_Please_Me" title="Please Please Me">Please Please Me</a></i>
+</td>
+<td rowspan="2"><i><a href="/wiki/Introducing..._The_Beatles" title="Introducing... The Beatles">Introducing... The Beatles</a></i><sup id="cite_ref-VeeJay_54-0" class="reference"><a href="#cite_note-VeeJay-54">&#91;C&#93;</a></sup><br /><span style="font-size:85%;"><i>VeeJay</i></span>
+</td></tr>
+<tr>
+<th scope="row">"<a href="/wiki/Please_Please_Me_(song)" title="Please Please Me (song)">Please Please Me</a>"<br />"<a href="/wiki/Ask_Me_Why" title="Ask Me Why">Ask Me Why</a>"<br /> <span style="font-size:85%;"><i>UK &amp; US (VeeJay)</i></span>
+</th>
+<td rowspan="7">1963
+</td>
+<td>2<br />—</td>
+<td>52<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>20<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—
+</td>
+<td>
+</td></tr>
+<tr>
+<th scope="row">"<a href="/wiki/From_Me_to_You" title="From Me to You">From Me to You</a>"<br />"<a href="/wiki/Thank_You_Girl" title="Thank You Girl">Thank You Girl</a>"<br /> <span style="font-size:85%;"><i>UK &amp; US (VeeJay)</i></span>
+</th>
+<td>1<br />—</td>
+<td>9<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>6<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>9<br />—</td>
+<td>—<br />—</td>
+<td>116<sup id="cite_ref-55" class="reference"><a href="#cite_note-55">&#91;37&#93;</a></sup><br />—</td>
+<td>—<br />—
+</td>
+<td>
+</td>
+<td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; font-size: smaller; text-align: center;" class="table-na">non-album single
+</td>
+<td><i><a href="/wiki/Jolly_What!" title="Jolly What!">Jolly What! The Beatles and Frank Ifield on Stage</a></i><br /><span style="font-size:85%;"><i>VeeJay</i></span>
+<hr /> 
+<p><i><a href="/wiki/The_Beatles%27_Second_Album" title="The Beatles&#39; Second Album">The Beatles' Second Album</a></i>
+</p>
+</td></tr>
+<tr>
+<th scope="row">"<a href="/wiki/She_Loves_You" title="She Loves You">She Loves You</a>"<br />"<a href="/wiki/I%27ll_Get_You" title="I&#39;ll Get You">I'll Get You</a>"<br /> <span style="font-size:85%;"><i>UK &amp; US (Swan)</i></span>
+</th>
+<td>1<br />—</td>
+<td>3<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>1<br />—</td>
+<td>7<br />—</td>
+<td>7<br />—</td>
+<td>1<br />—</td>
+<td>—<br />—</td>
+<td>1<br />—</td>
+<td>1<br />—
+</td>
+<td>
+</td>
+<td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; font-size: smaller; text-align: center;" class="table-na">non-album single
+</td>
+<td><i><a href="/wiki/The_Beatles%27_Second_Album" title="The Beatles&#39; Second Album">The Beatles' Second Album</a></i>
+</td></tr>
+<tr>
+<th scope="row">"<a href="/wiki/I_Want_to_Hold_Your_Hand" title="I Want to Hold Your Hand">I Want to Hold Your Hand</a>"<br />"<a href="/wiki/This_Boy" title="This Boy">This Boy</a>"<br /><span style="font-size:85%;"><i>UK</i></span>
+</th>
+<td>1<br />—</td>
+<td>1<br />—</td>
+<td>—<br />—</td>
+<td>6<br />—</td>
+<td>—<br />—</td>
+<td>1<br />—</td>
+<td>1<br />—</td>
+<td>1<br />—</td>
+<td>—<br />—</td>
+<td>1<br />—</td>
+<td>—<br />—
+</td>
+<td>
+</td>
+<td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; font-size: smaller; text-align: center;" class="table-na">non-album single
+</td>
+<td><i><a href="/wiki/Meet_the_Beatles!" title="Meet the Beatles!">Meet the Beatles!</a></i>
+</td></tr>
+<tr>
+<th scope="row">"<a href="/wiki/Roll_Over_Beethoven#The_Beatles" title="Roll Over Beethoven">Roll Over Beethoven</a>"<br />"<a href="/wiki/Please_Mr._Postman#The_Beatles_version" title="Please Mr. Postman">Please Mister Postman</a>"<br /><span style="font-size:85%;"><i>Canada (Capitol)</i></span>
+</th>
+<td>—<br />—</td>
+<td>1<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>2<br />—</td>
+<td>31<br />47</td>
+<td>—<br />—</td>
+<td>2<br />—</td>
+<td>—<br />—</td>
+<td>68<br />—</td>
+<td>30<br />—
+</td>
+<td>
+</td>
+<td><i><a href="/wiki/With_the_Beatles" title="With the Beatles">With the Beatles</a></i>
+</td>
+<td><i><a href="/wiki/The_Beatles%27_Second_Album" title="The Beatles&#39; Second Album">The Beatles' Second Album</a></i>
+</td></tr>
+<tr>
+<th scope="row">"<a href="/wiki/Misery_(Beatles_song)" title="Misery (Beatles song)">Misery</a>"<sup id="cite_ref-European_single_56-0" class="reference"><a href="#cite_note-European_single-56">&#91;D&#93;</a></sup><br />"<a href="/wiki/Ask_Me_Why" title="Ask Me Why">Ask Me Why</a>"
+</th>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>37<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—
+</td>
+<td>
+</td>
+<td><i><a href="/wiki/Please_Please_Me" title="Please Please Me">Please Please Me</a></i>
+</td>
+<td><i><a href="/wiki/Introducing..._The_Beatles" title="Introducing... The Beatles">Introducing... The Beatles</a></i><br /><span style="font-size:85%;"><i>VeeJay</i></span>
+</td></tr>
+<tr>
+<th scope="row">"<a href="/wiki/I_Want_to_Hold_Your_Hand" title="I Want to Hold Your Hand">I Want to Hold Your Hand</a>"<br />"<a href="/wiki/I_Saw_Her_Standing_There" title="I Saw Her Standing There">I Saw Her Standing There</a>"<br /><span style="font-size:85%;"><i>US</i></span>
+</th>
+<td>—<br />—</td>
+<td>—<br />1</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>1<br />1</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>1<br />14</td>
+<td>1<br />100
+</td>
+<td>
+<ul><li>RIAA: Gold<sup id="cite_ref-RIAA_15-49" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li></ul>
+</td>
+<td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; font-size: smaller; text-align: center;" class="table-na">non-album single
+<hr />
+<p><i><a href="/wiki/Please_Please_Me" title="Please Please Me">Please Please Me</a></i>
+</p>
+</td>
+<td><i><a href="/wiki/Meet_the_Beatles!" title="Meet the Beatles!">Meet the Beatles!</a></i>
+</td></tr>
+<tr>
+<th scope="row">"<a href="/wiki/Please_Please_Me_(song)" title="Please Please Me (song)">Please Please Me</a>"<br />"<a href="/wiki/From_Me_to_You" title="From Me to You">From Me to You</a>"<br /> <span style="font-size:85%;"><i>US (Veejay)</i></span>
+</th>
+<td rowspan="19">1964
+</td>
+<td>—<br />—</td>
+<td>36<br />21</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>5<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>3<br />41</td>
+<td>3<br />41
+</td>
+<td>
+<ul><li>RIAA: Platinum<sup id="cite_ref-RIAA_15-50" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li></ul>
+</td>
+<td><i><a href="/wiki/Please_Please_Me" title="Please Please Me">Please Please Me</a></i>
+<hr />
+<p><span style="font-size:85%;">non-album track</span>
+</p>
+</td>
+<td><i><a href="/wiki/Introducing..._The_Beatles" title="Introducing... The Beatles">Introducing... The Beatles</a></i><br /><span style="font-size:85%;"><i>VeeJay</i></span>
+<hr />
+<p><i><a href="/wiki/Jolly_What!" title="Jolly What!">Jolly What! The Beatles and Frank Ifield on Stage</a></i><br /><span style="font-size:85%;"><i>VeeJay</i></span>
+</p>
+</td></tr>
+<tr>
+<th scope="row">"<a href="/wiki/Sweet_Georgia_Brown" title="Sweet Georgia Brown">Sweet Georgia Brown</a>"<br />"<a href="/wiki/Nobody%27s_Child_(song)" title="Nobody&#39;s Child (song)">Nobody's Child</a>"<br /><span style="font-size:85%;">(with Tony Sheridan)<br /><i>UK (Polydor)</i></span>
+</th>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—
+</td>
+<td>
+</td>
+<td><i><a href="/wiki/My_Bonnie" title="My Bonnie">My Bonnie</a></i><br /><span style="font-size:85%;"><i>Polydor</i></span>
+<hr />
+<p><i><a href="/wiki/The_Beatles%27_First" title="The Beatles&#39; First">The Beatles' First</a></i><br /><span style="font-size:85%;"><i>Polydor</i></span>
+</p>
+</td>
+<td>
+</td></tr>
+<tr>
+<th scope="row">"<a href="/wiki/All_My_Loving" title="All My Loving">All My Loving</a>"<br />"<a href="/wiki/This_Boy" title="This Boy">This Boy</a>"<br /><span style="font-size:85%;"><i>Canada (Capitol)</i></span>
+</th>
+<td>—<br />—</td>
+<td>1<br />—</td>
+<td>—<br />—</td>
+<td>16<br />—</td>
+<td>1<br />1</td>
+<td>32<br />—</td>
+<td>2<br />—</td>
+<td>2<br />—</td>
+<td>—<br />—</td>
+<td>45<br />—</td>
+<td>31<br />—
+</td>
+<td>
+</td>
+<td><i><a href="/wiki/With_the_Beatles" title="With the Beatles">With the Beatles</a></i>
+</td>
+<td><i><a href="/wiki/Meet_the_Beatles!" title="Meet the Beatles!">Meet the Beatles!</a></i>
+</td></tr>
+<tr>
+<th scope="row">"<a href="/wiki/Why_(Tony_Sheridan_song)" title="Why (Tony Sheridan song)">Why</a>"<br /><span style="font-size:85%;">(with Tony Sheridan)</span><br />"<a href="/wiki/Cry_for_a_Shadow" title="Cry for a Shadow">Cry for a Shadow</a>"<br /><span style="font-size:85%;"><i>US (Polydor)</i></span>
+</th>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>88<br />—</td>
+<td>—<br />—
+</td>
+<td>
+</td>
+<td><i><a href="/wiki/The_Beatles%27_First" title="The Beatles&#39; First">The Beatles' First</a></i><br /><span style="font-size:85%;"><i>Polydor</i></span>
+</td>
+<td>
+</td></tr>
+<tr>
+<th scope="row">"<a href="/wiki/Twist_and_Shout#The_Beatles&#39;_version" title="Twist and Shout">Twist and Shout</a>"<br />"<a href="/wiki/There%27s_a_Place" title="There&#39;s a Place">There's a Place</a>"<br /><span style="font-size:85%;"><i>US (Tollie)</i></span><sup id="cite_ref-Tollie_53-1" class="reference"><a href="#cite_note-Tollie-53">&#91;B&#93;</a></sup>
+</th>
+<td>—<br />—</td>
+<td>5<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>5<br />—</td>
+<td>10<br />—</td>
+<td>9<br />—</td>
+<td>7<br />—</td>
+<td>—<br />—</td>
+<td>2<br />74</td>
+<td>1<br />—
+</td>
+<td>
+<ul><li>RIAA: Platinum<sup id="cite_ref-RIAA_15-51" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li></ul>
+</td>
+<td><i><a href="/wiki/Please_Please_Me" title="Please Please Me">Please Please Me</a></i>
+</td>
+<td><i><a href="/wiki/Introducing..._The_Beatles" title="Introducing... The Beatles">Introducing... The Beatles</a></i><br /><span style="font-size:85%;"><i>VeeJay</i></span>
+</td></tr>
+<tr>
+<th scope="row">"<a href="/wiki/Komm,_gib_mir_deine_Hand/Sie_liebt_dich" class="mw-redirect" title="Komm, gib mir deine Hand/Sie liebt dich">Komm, gib mir deine Hand</a>"<sup id="cite_ref-European_single_56-1" class="reference"><a href="#cite_note-European_single-56">&#91;D&#93;</a></sup><br />"<a href="/wiki/Komm,_gib_mir_deine_Hand/Sie_liebt_dich" class="mw-redirect" title="Komm, gib mir deine Hand/Sie liebt dich">Sie liebt dich</a>"<br /><span style="font-size:85%;"><i>Germany (Odeon)</i></span>
+</th>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>1<br />7</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—
+</td>
+<td>
+</td>
+<td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; font-size: smaller; text-align: center;" class="table-na">non-album single
+</td>
+<td><i><a href="/wiki/Something_New_(album)" title="Something New (album)">Something New</a></i>
+<hr />
+<p><span style="font-size:85%;">non-album track</span>
+</p>
+</td></tr>
+<tr>
+<th scope="row">"<a href="/wiki/Can%27t_Buy_Me_Love" title="Can&#39;t Buy Me Love">Can't Buy Me Love</a>"<br />"<a href="/wiki/You_Can%27t_Do_That" title="You Can&#39;t Do That">You Can't Do That</a>"<br /><span style="font-size:85%;"><i>UK &amp; US</i></span>
+</th>
+<td>1<br />—</td>
+<td>1<br />—</td>
+<td>—<br />—</td>
+<td>5<br />—</td>
+<td>3<br />33</td>
+<td>24<br />—</td>
+<td>1<br />—</td>
+<td>3<br />—</td>
+<td>—<br />—</td>
+<td>1<br />48</td>
+<td>1<br />77
+</td>
+<td>
+<ul><li>RIAA: Gold<sup id="cite_ref-RIAA_15-52" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li></ul>
+</td>
+<td><i><a href="/wiki/A_Hard_Day%27s_Night_(album)" title="A Hard Day&#39;s Night (album)">A Hard Day's Night</a></i>
+</td>
+<td><i><a href="/wiki/A_Hard_Day%27s_Night_(album)#North_American_release" title="A Hard Day&#39;s Night (album)">A Hard Day's Night</a></i> <br /> <span style="font-size:85%;"><i>United Artists</i></span>
+</td></tr>
+<tr>
+<th scope="row">"<a href="/wiki/Do_You_Want_to_Know_a_Secret%3F" class="mw-redirect" title="Do You Want to Know a Secret?">Do You Want to Know a Secret?</a>"<br />"<a href="/wiki/Thank_You_Girl" title="Thank You Girl">Thank You Girl</a>"<br /><span style="font-size:85%;"><i>US (VeeJay)</i></span>
+</th>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>34<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>2<br />35</td>
+<td>3<br />38
+</td>
+<td>
+<ul><li>RIAA: Gold<sup id="cite_ref-RIAA_15-53" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li></ul>
+</td>
+<td><i><a href="/wiki/Please_Please_Me" title="Please Please Me">Please Please Me</a></i>
+<hr />
+<p><span style="font-size:85%;">non-album track</span>
+</p>
+</td>
+<td><i><a href="/wiki/Introducing..._The_Beatles" title="Introducing... The Beatles">Introducing... The Beatles</a></i><br /><span style="font-size:85%;"><i>VeeJay</i></span>
+<hr />
+<p><i><a href="/wiki/The_Beatles%27_Second_Album" title="The Beatles&#39; Second Album">The Beatles' Second Album</a></i>
+</p>
+</td></tr>
+<tr>
+<th scope="row">"<a href="/wiki/Sie_liebt_dich" class="mw-redirect" title="Sie liebt dich">Sie liebt dich</a>"<br />"<a href="/wiki/I%27ll_Get_You" title="I&#39;ll Get You">I'll Get You</a>"<br /><span style="font-size:85%;"><i>US (Swan)</i></span>
+</th>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>20<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>97<br />—</td>
+<td>—<br />—
+</td>
+<td>
+</td>
+<td>
+</td>
+<td><span style="font-size:85%;">non-album track</span>
+<hr />
+<p><i><a href="/wiki/The_Beatles%27_Second_Album" title="The Beatles&#39; Second Album">The Beatles' Second Album</a></i>
+</p>
+</td></tr>
+<tr>
+<th scope="row">"<a href="/wiki/Ain%27t_She_Sweet" title="Ain&#39;t She Sweet">Ain't She Sweet</a>"<br />"<a href="/wiki/If_You_Love_Me,_Baby" class="mw-redirect" title="If You Love Me, Baby">If You Love Me, Baby</a>"<br /><span style="font-size:85%;">(with Tony Sheridan)</span><br /><span style="font-size:85%;"><i>UK (Polydor)</i></span>
+</th>
+<td>29<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—
+</td>
+<td>
+</td>
+<td><i><a href="/wiki/The_Beatles%27_First" title="The Beatles&#39; First">The Beatles' First</a></i><br /><span style="font-size:85%;"><i>Polydor</i></span>
+</td>
+<td>
+</td></tr>
+<tr>
+<th scope="row">"Sweet Georgia Brown"<br />"<a href="/wiki/If_You_Love_Me,_Baby" class="mw-redirect" title="If You Love Me, Baby">Take Out Some Insurance on Me, Baby</a>"<br /><span style="font-size:85%;">(with Tony Sheridan)</span><br /><span style="font-size:85%;"><i>UK (Polydor)</i></span>
+</th>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—
+</td>
+<td>
+</td>
+<td><i><a href="/wiki/My_Bonnie" title="My Bonnie">My Bonnie</a></i><br /><span style="font-size:85%;"><i>Polydor</i></span>
+<hr />
+<p><i><a href="/wiki/The_Beatles%27_First" title="The Beatles&#39; First">The Beatles' First</a></i><br /><span style="font-size:85%;"><i>Polydor</i></span>
+</p>
+</td>
+<td>
+</td></tr>
+<tr>
+<th scope="row">"<a href="/wiki/Ain%27t_She_Sweet" title="Ain&#39;t She Sweet">Ain't She Sweet</a>"<br />"<a href="/wiki/Nobody%27s_Child_(song)" title="Nobody&#39;s Child (song)">Nobody's Child</a>"<br /><span style="font-size:85%;">(with Tony Sheridan)</span><br /><span style="font-size:85%;"><i>US (Polydor)</i></span>
+</th>
+<td>—<br />—</td>
+<td>16<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>19<br />—</td>
+<td>14<br />—
+</td>
+<td>
+</td>
+<td><i><a href="/wiki/The_Beatles%27_First" title="The Beatles&#39; First">The Beatles' First</a></i><br /><span style="font-size:85%;"><i>Polydor</i></span>
+</td>
+<td>
+</td></tr>
+<tr>
+<th scope="row">"<a href="/wiki/A_Hard_Day%27s_Night_(song)" title="A Hard Day&#39;s Night (song)">A Hard Day's Night</a>"<br />"<a href="/wiki/Things_We_Said_Today" title="Things We Said Today">Things We Said Today</a>"<br /><span style="font-size:85%;"><i>UK</i></span>
+</th>
+<td>1<br />—</td>
+<td>1<br />—</td>
+<td>—<br />—</td>
+<td>4<br />—</td>
+<td>—<br />—</td>
+<td>2<br />—</td>
+<td>1<br />—</td>
+<td>1<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—
+</td>
+<td>
+</td>
+<td rowspan="4"><i><a href="/wiki/A_Hard_Day%27s_Night_(album)" title="A Hard Day&#39;s Night (album)">A Hard Day's Night</a></i>
+</td>
+<td><i><a href="/wiki/A_Hard_Day%27s_Night_(album)#North_American_release" title="A Hard Day&#39;s Night (album)">A Hard Day's Night</a></i><br /><span style="font-size:85%;"><i>United Artists</i></span>
+<hr />
+<p><i><a href="/wiki/Something_New_(album)" title="Something New (album)">Something New</a></i>
+</p>
+</td></tr>
+<tr>
+<th scope="row">"<a href="/wiki/A_Hard_Day%27s_Night_(song)" title="A Hard Day&#39;s Night (song)">A Hard Day's Night</a>"<br />"<a href="/wiki/I_Should_Have_Known_Better" title="I Should Have Known Better">I Should Have Known Better</a>"<br /><span style="font-size:85%;"><i>US</i></span>
+</th>
+<td>—<br />—</td>
+<td>—<br />1</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>1<br />—</td>
+<td>—<br />6</td>
+<td>—<br />1</td>
+<td>—<br />1</td>
+<td>—<br />—</td>
+<td>1<br />53</td>
+<td>1<br />43
+</td>
+<td>
+<ul><li>RIAA: Gold<sup id="cite_ref-RIAA_15-54" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li></ul>
+</td>
+<td rowspan="2"><i><a href="/wiki/A_Hard_Day%27s_Night_(album)#North_American_release" title="A Hard Day&#39;s Night (album)">A Hard Day's Night</a></i><br /><span style="font-size:85%;"><i>United Artists</i></span>
+</td></tr>
+<tr>
+<th scope="row">"<a href="/wiki/I%27ll_Cry_Instead" title="I&#39;ll Cry Instead">I'll Cry Instead</a>"<br />"<a href="/wiki/I%27m_Happy_Just_to_Dance_with_You" title="I&#39;m Happy Just to Dance with You">I'm Happy Just to Dance with You</a>"<br /><span style="font-size:85%;"><i>US</i></span>
+</th>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>20<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>25<br />95</td>
+<td>22<br />91
+</td>
+<td>
+</td></tr>
+<tr>
+<th scope="row">"<a href="/wiki/And_I_Love_Her" title="And I Love Her">And I Love Her</a>"<br />"<a href="/wiki/If_I_Fell" title="If I Fell">If I Fell</a>"<br /><span style="font-size:85%;"><i>US</i></span>
+</th>
+<td>—<br />—</td>
+<td>—<br />1</td>
+<td>—<br />—</td>
+<td>10<br />—</td>
+<td>15<br />—</td>
+<td>—<br />25</td>
+<td>—<br />3</td>
+<td>—<br />1</td>
+<td>—<br />—</td>
+<td>12<br />53</td>
+<td>14<br />64
+</td>
+<td>
+</td>
+<td><i><a href="/wiki/A_Hard_Day%27s_Night_(album)#North_American_release" title="A Hard Day&#39;s Night (album)">A Hard Day's Night</a></i><br /><span style="font-size:85%;"><i>United Artists</i></span>
+<hr />
+<p><i><a href="/wiki/Something_New_(album)" title="Something New (album)">Something New</a></i>
+</p>
+</td></tr>
+<tr>
+<th scope="row">"<a href="/wiki/Matchbox_(song)#The_Beatles" title="Matchbox (song)">Matchbox</a>"<br />"<a href="/wiki/Slow_Down_(Larry_Williams_song)#The_Beatles_version" title="Slow Down (Larry Williams song)">Slow Down</a>"<br /><span style="font-size:85%;"><i>US</i></span>
+</th>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>6<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>17<br />25</td>
+<td>17<br />34
+</td>
+<td>
+</td>
+<td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; font-size: smaller; text-align: center;" class="table-na"><i><a href="/wiki/Long_Tall_Sally_(EP)" title="Long Tall Sally (EP)">Long Tall Sally (EP)</a></i>
+</td>
+<td><i><a href="/wiki/Something_New_(album)" title="Something New (album)">Something New</a></i>
+</td></tr>
+<tr>
+<th scope="row">"<a href="/wiki/I_Feel_Fine" title="I Feel Fine">I Feel Fine</a>"<br />"<a href="/wiki/She%27s_a_Woman" title="She&#39;s a Woman">She's a Woman</a>"<br /><span style="font-size:85%;"><i>UK &amp; US</i></span>
+</th>
+<td>1<br />—</td>
+<td>1<br />—</td>
+<td>3<br />—</td>
+<td>3<br />—</td>
+<td>1<br />—</td>
+<td>3<br />—</td>
+<td>1<br />—</td>
+<td>1<br />—</td>
+<td>—<br />—</td>
+<td>1<br />4</td>
+<td>1<br />8
+</td>
+<td>
+<ul><li>RIAA: Gold<sup id="cite_ref-RIAA_15-55" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li></ul>
+</td>
+<td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; font-size: smaller; text-align: center;" class="table-na">non-album single
+</td>
+<td><i><a href="/wiki/Beatles_%2765" title="Beatles &#39;65">Beatles '65</a></i>
+</td></tr>
+<tr>
+<th scope="row">"<a href="/wiki/If_I_Fell" title="If I Fell">If I Fell</a>"<br />"<a href="/wiki/Tell_Me_Why_(Beatles_song)" title="Tell Me Why (Beatles song)">Tell Me Why</a>" <br /><span style="font-size:85%;"><i>UK</i></span><sup id="cite_ref-57" class="reference"><a href="#cite_note-57">&#91;E&#93;</a></sup>
+</th>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—
+</td>
+<td>
+</td>
+<td><i><a href="/wiki/A_Hard_Day%27s_Night_(album)" title="A Hard Day&#39;s Night (album)">A Hard Day's Night</a></i>
+</td>
+<td><i><a href="/wiki/Something_New_(album)" title="Something New (album)">Something New</a></i>
+</td></tr>
+<tr>
+<th scope="row">"<a href="/wiki/Eight_Days_a_Week" title="Eight Days a Week">Eight Days a Week</a>"<br />"<a href="/wiki/I_Don%27t_Want_to_Spoil_the_Party" title="I Don&#39;t Want to Spoil the Party">I Don't Want to Spoil the Party</a>"<br /><span style="font-size:85%;"><i>US</i></span>
+</th>
+<td rowspan="10">1965
+</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>9<br />—</td>
+<td>1<br />—</td>
+<td>5<br />—</td>
+<td>1<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>1<br />39</td>
+<td>1<br />83
+</td>
+<td>
+<ul><li>RIAA: Gold<sup id="cite_ref-RIAA_15-56" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li></ul>
+</td>
+<td><i><a href="/wiki/Beatles_For_Sale" class="mw-redirect" title="Beatles For Sale">Beatles For Sale</a></i>
+</td>
+<td><i><a href="/wiki/Beatles_VI" title="Beatles VI">Beatles VI</a></i>
+</td></tr>
+<tr>
+<th scope="row">"<a href="/wiki/Ticket_to_Ride" title="Ticket to Ride">Ticket to Ride</a>"<br />"<a href="/wiki/Yes_It_Is" title="Yes It Is">Yes It Is</a>"<br /><span style="font-size:85%;"><i>UK &amp; US</i></span>
+</th>
+<td>1<br />—</td>
+<td>1<br />—</td>
+<td>8<br />—</td>
+<td>10<br />—</td>
+<td>1<br />—</td>
+<td>2<br />—</td>
+<td>1<br />—</td>
+<td>1<br />—</td>
+<td>—<br />—</td>
+<td>1<br />46</td>
+<td>1<br />—
+</td>
+<td>
+</td>
+<td><i><a href="/wiki/Help!_(album)" class="mw-redirect" title="Help! (album)">Help!</a></i>
+<hr />
+<p><span style="font-size:85%;">non-album track</span>
+</p>
+</td>
+<td><i><a href="/wiki/Help!_(album)#North_American_Capitol_release" class="mw-redirect" title="Help! (album)">Help!</a></i>
+<hr />
+<p><i><a href="/wiki/Beatles_VI" title="Beatles VI">Beatles VI</a></i>
+</p>
+</td></tr>
+<tr>
+<th scope="row">"<a href="/wiki/Rock_and_Roll_Music#The_Beatles&#39;_version" title="Rock and Roll Music">Rock and Roll Music</a>"<sup id="cite_ref-European_single_56-2" class="reference"><a href="#cite_note-European_single-56">&#91;D&#93;</a></sup><br />"<a href="/wiki/I%27m_a_Loser" title="I&#39;m a Loser">I'm a Loser</a>"
+</th>
+<td>—<br />—</td>
+<td>1<br />—</td>
+<td>4<br />—</td>
+<td>3<br />—</td>
+<td>—<br />—</td>
+<td>2<br />—</td>
+<td>—<br />—</td>
+<td>1<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—
+</td>
+<td>
+</td>
+<td rowspan="2"><i><a href="/wiki/Beatles_for_Sale" title="Beatles for Sale">Beatles for Sale</a></i>
+</td>
+<td rowspan="2"><i><a href="/wiki/Beatles_%2765" title="Beatles &#39;65">Beatles '65</a></i>
+</td></tr>
+<tr>
+<th scope="row">"<a href="/wiki/No_Reply_(song)" title="No Reply (song)">No Reply</a>"<sup id="cite_ref-European_single_56-3" class="reference"><a href="#cite_note-European_single-56">&#91;D&#93;</a></sup><br />"Rock and Roll Music"
+</th>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>5<br />—</td>
+<td>6<br />2</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—
+</td>
+<td>
+</td></tr>
+<tr>
+<th scope="row">"<a href="/wiki/Help!_(song)" title="Help! (song)">Help!</a>"<br />"<a href="/wiki/I%27m_Down" title="I&#39;m Down">I'm Down</a>"<br /><span style="font-size:85%;"><i>UK &amp; US</i></span>
+</th>
+<td>1<br />—</td>
+<td>1<br />—</td>
+<td>5<br />—</td>
+<td>5<br />—</td>
+<td>1<br />—</td>
+<td>2<br />—</td>
+<td>1<br />—</td>
+<td>1<br />—</td>
+<td>—<br />—</td>
+<td>1<br />101</td>
+<td>1<br />—
+</td>
+<td>
+<ul><li>RIAA: Gold<sup id="cite_ref-RIAA_15-57" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li></ul>
+</td>
+<td><i><a href="/wiki/Help!_(album)" class="mw-redirect" title="Help! (album)">Help!</a></i>
+<hr />
+<p><span style="font-size:85%;">non-album track</span>
+</p>
+</td>
+<td><i><a href="/wiki/Help!#North_American_Capitol_release" title="Help!">Help!</a></i>
+<hr />
+<p><span style="font-size:85%;">non-album track</span>
+</p>
+</td></tr>
+<tr>
+<th scope="row">"<a href="/wiki/Yesterday_(Beatles_song)" title="Yesterday (Beatles song)">Yesterday</a>"<br />"<a href="/wiki/Act_Naturally" title="Act Naturally">Act Naturally</a>"<br /><span style="font-size:85%;"><i>US</i></span>
+</th>
+<td>—<br />—</td>
+<td>2<br />—</td>
+<td>10<br />—</td>
+<td>1<br />—</td>
+<td>4<br />—</td>
+<td>6<br />—</td>
+<td>1<br />—</td>
+<td>1<br />—</td>
+<td>—<br />—</td>
+<td>1<br />47</td>
+<td>1<br />28
+</td>
+<td>
+<ul><li>RIAA: Gold<sup id="cite_ref-RIAA_15-58" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li></ul>
+</td>
+<td><i><a href="/wiki/Help!_(album)" class="mw-redirect" title="Help! (album)">Help!</a></i>
+</td>
+<td><i><a href="/wiki/Yesterday_and_Today" title="Yesterday and Today">Yesterday and Today</a></i>
+</td></tr>
+<tr>
+<th scope="row">"<a href="/wiki/I%27ll_Follow_the_Sun" title="I&#39;ll Follow the Sun">I'll Follow the Sun</a>"<sup id="cite_ref-European_single_56-4" class="reference"><a href="#cite_note-European_single-56">&#91;D&#93;</a></sup><br />"<a href="/wiki/I_Don%27t_Want_to_Spoil_the_Party" title="I Don&#39;t Want to Spoil the Party">I Don't Want to Spoil the Party</a>"
+</th>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>10<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—
+</td>
+<td>
+</td>
+<td><i><a href="/wiki/Beatles_for_Sale" title="Beatles for Sale">Beatles for Sale</a></i>
+</td>
+<td><i><a href="/wiki/Beatles_%2765" title="Beatles &#39;65">Beatles '65</a></i>
+<hr />
+<p><i><a href="/wiki/Beatles_VI" title="Beatles VI">Beatles VI</a></i>
+</p>
+</td></tr>
+<tr>
+<th scope="row">"<a href="/wiki/Roll_Over_Beethoven" title="Roll Over Beethoven">Roll Over Beethoven</a>"<br />"<a href="/wiki/Misery_(Beatles_song)" title="Misery (Beatles song)">Misery</a>"<br /><span style="font-size:85%;"><i>US</i></span>
+</th>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—
+</td>
+<td>
+</td>
+<td><i><a href="/wiki/With_the_Beatles" title="With the Beatles">With the Beatles</a></i>
+<hr />
+<p><i><a href="/wiki/Please_Please_Me" title="Please Please Me">Please Please Me</a></i>
+</p>
+</td>
+<td><i><a href="/wiki/The_Beatles%27_Second_Album" title="The Beatles&#39; Second Album">The Beatles' Second Album</a></i>
+<hr />
+<p><i><a href="/wiki/Introducing..._the_Beatles" class="mw-redirect" title="Introducing... the Beatles">Introducing... the Beatles</a></i><br /><span style="font-size:85%;"><i>VeeJay</i></span>
+</p>
+</td></tr>
+<tr>
+<th scope="row">"<a href="/wiki/Boys_(The_Shirelles_song)#The_Beatles&#39;_version" title="Boys (The Shirelles song)">Boys</a>"<br />"<a href="/wiki/Kansas_City_(Leiber_and_Stoller_song)#The_Beatles_version" title="Kansas City (Leiber and Stoller song)">Kansas City</a>/<a href="/wiki/Hey-Hey-Hey-Hey!" title="Hey-Hey-Hey-Hey!">Hey, Hey, Hey, Hey</a>"<br /><span style="font-size:85%;"><i>US</i></span>
+</th>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>32<br />—</td>
+<td>—<br />18</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>102<br />—</td>
+<td>73<br />75
+</td>
+<td>
+</td>
+<td><i><a href="/wiki/Please_Please_Me" title="Please Please Me">Please Please Me</a></i>
+<hr />
+<p><i><a href="/wiki/Beatles_For_Sale" class="mw-redirect" title="Beatles For Sale">Beatles For Sale</a></i>
+</p>
+</td>
+<td><i><a href="/wiki/The_Early_Beatles" title="The Early Beatles">The Early Beatles</a></i>
+<hr />
+<p><i><a href="/wiki/Beatles_VI" title="Beatles VI">Beatles VI</a></i>
+</p>
+</td></tr>
+<tr>
+<th scope="row">"<a href="/wiki/We_Can_Work_It_Out" title="We Can Work It Out">We Can Work It Out</a>"<br />"<a href="/wiki/Day_Tripper" title="Day Tripper">Day Tripper</a>"<br /><span style="font-size:85%;"><i>UK &amp; US</i></span>
+</th>
+<td>1</td>
+<td>1<br />—</td>
+<td>—<br />—</td>
+<td>3<br />—</td>
+<td>1<br />—</td>
+<td>2<br />—</td>
+<td>1</td>
+<td>—<br />1</td>
+<td>—<br />—</td>
+<td>1<br />5</td>
+<td>1<br />10
+</td>
+<td>
+<ul><li>RIAA: Gold<sup id="cite_ref-RIAA_15-59" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li></ul>
+</td>
+<td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; font-size: smaller; text-align: center;" class="table-na">non-album single
+</td>
+<td><i><a href="/wiki/Yesterday_and_Today" title="Yesterday and Today">Yesterday and Today</a></i>
+</td></tr>
+<tr>
+<th scope="row">"<a href="/wiki/Michelle_(song)" title="Michelle (song)">Michelle</a>"<sup id="cite_ref-European_single_56-5" class="reference"><a href="#cite_note-European_single-56">&#91;D&#93;</a></sup><br />"<a href="/wiki/Girl_(Beatles_song)" title="Girl (Beatles song)">Girl</a>"
+</th>
+<td rowspan="4">1966
+</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>3<br />—</td>
+<td>1<br />—</td>
+<td>—<br />—</td>
+<td>6<br />—</td>
+<td>1<br />—</td>
+<td>1<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—
+</td>
+<td>
+</td>
+<td rowspan="2"><i><a href="/wiki/Rubber_Soul" title="Rubber Soul">Rubber Soul</a></i>
+</td>
+<td><i><a href="/wiki/Rubber_Soul" title="Rubber Soul">Rubber Soul</a></i>
+</td></tr>
+<tr>
+<th scope="row">"<a href="/wiki/Nowhere_Man_(song)" title="Nowhere Man (song)">Nowhere Man</a>"<br />"<a href="/wiki/What_Goes_On_(Beatles_song)" title="What Goes On (Beatles song)">What Goes On</a>"<br /><span style="font-size:85%;"><i>US</i></span>
+</th>
+<td>—<br />—</td>
+<td>1<br />—</td>
+<td>8<br />—</td>
+<td>—<br />—</td>
+<td>1<br />—</td>
+<td>3<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>3<br />81</td>
+<td>2<br />—
+</td>
+<td>
+<ul><li>RIAA: Gold<sup id="cite_ref-RIAA_15-60" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li></ul>
+</td>
+<td><i><a href="/wiki/Yesterday_and_Today" title="Yesterday and Today">Yesterday and Today</a></i>
+</td></tr>
+<tr>
+<th scope="row">"<a href="/wiki/Paperback_Writer" title="Paperback Writer">Paperback Writer</a>"<br />"<a href="/wiki/Rain_(Beatles_song)" title="Rain (Beatles song)">Rain</a>"<br /><span style="font-size:85%;"><i>UK &amp; US</i></span>
+</th>
+<td>1<br />—</td>
+<td>1<br />—</td>
+<td>4<br />—</td>
+<td>7<br />—</td>
+<td>1<br />1</td>
+<td>1<br />—</td>
+<td>1<br />—</td>
+<td>1<br />—</td>
+<td>—<br />—</td>
+<td>1<br />23</td>
+<td>1<br />31
+</td>
+<td>
+<ul><li>RIAA: Gold<sup id="cite_ref-RIAA_15-61" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li></ul>
+</td>
+<td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; font-size: smaller; text-align: center;" class="table-na">non-album single
+</td>
+<td><i><a href="/wiki/Hey_Jude_(album)" class="mw-redirect" title="Hey Jude (album)">Hey Jude</a></i><br /><span style="font-size:85%;"><i>Apple in US</i></span>
+</td></tr>
+<tr>
+<th scope="row">"<a href="/wiki/Yellow_Submarine_(song)" title="Yellow Submarine (song)">Yellow Submarine</a>"<br />"<a href="/wiki/Eleanor_Rigby" title="Eleanor Rigby">Eleanor Rigby</a>"<br /><span style="font-size:85%;"><i>UK &amp; US</i></span>
+</th>
+<td>1</td>
+<td>1<br />—</td>
+<td>1<br />—</td>
+<td>1<br />—</td>
+<td>1<br />1</td>
+<td>1<br />—</td>
+<td>1</td>
+<td>1<br />—</td>
+<td>—<br />—</td>
+<td>2<br />11</td>
+<td>1<br />12
+</td>
+<td>
+<ul><li>RIAA: Gold<sup id="cite_ref-RIAA_15-62" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li></ul>
+</td>
+<td><i><a href="/wiki/Revolver_(Beatles_album)" title="Revolver (Beatles album)">Revolver</a></i>
+</td>
+<td><i><a href="/wiki/Revolver_(Beatles_album)" title="Revolver (Beatles album)">Revolver</a></i>
+</td></tr>
+<tr>
+<th scope="row">"<a href="/wiki/Penny_Lane" title="Penny Lane">Penny Lane</a>"<br />"<a href="/wiki/Strawberry_Fields_Forever" title="Strawberry Fields Forever">Strawberry Fields Forever</a>"<br /><span style="font-size:85%;"><i>UK &amp; US</i></span>
+</th>
+<td rowspan="3">1967
+</td>
+<td>2</td>
+<td>1<br />—</td>
+<td>5<br />13</td>
+<td>4<br />—</td>
+<td>1<br />1</td>
+<td>1<br />—</td>
+<td>1</td>
+<td>—<br />1</td>
+<td>—<br />—</td>
+<td>1<br />8</td>
+<td>1<br />10
+</td>
+<td>
+<ul><li>RIAA: Gold<sup id="cite_ref-RIAA_15-63" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li></ul>
+</td>
+<td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; font-size: smaller; text-align: center;" class="table-na">non-album single
+</td>
+<td rowspan="3"><i><a href="/wiki/Magical_Mystery_Tour" title="Magical Mystery Tour">Magical Mystery Tour</a></i><sup id="cite_ref-Revised_Capitol_licence_58-0" class="reference"><a href="#cite_note-Revised_Capitol_licence-58">&#91;F&#93;</a></sup>
+</td></tr>
+<tr>
+<th scope="row">"<a href="/wiki/All_You_Need_Is_Love" title="All You Need Is Love">All You Need Is Love</a>"<br />"<a href="/wiki/Baby,_You%27re_a_Rich_Man" title="Baby, You&#39;re a Rich Man">Baby, You're a Rich Man</a>"<br /><span style="font-size:85%;"><i>UK &amp; US</i></span>
+</th>
+<td>1<br />—</td>
+<td>1<br />—</td>
+<td>1<br />—</td>
+<td>4<br />—</td>
+<td>1<br />—</td>
+<td>1<br />—</td>
+<td>1<br />—</td>
+<td>1<br />—</td>
+<td>—<br />—</td>
+<td>1<br />34</td>
+<td>1<br />60
+</td>
+<td>
+<ul><li>RIAA: Gold<sup id="cite_ref-RIAA_15-64" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li></ul>
+</td>
+<td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; font-size: smaller; text-align: center;" class="table-na">non-album single
+</td></tr>
+<tr>
+<th scope="row">"<a href="/wiki/Hello,_Goodbye" title="Hello, Goodbye">Hello, Goodbye</a>"<br />"<a href="/wiki/I_Am_the_Walrus" title="I Am the Walrus">I Am the Walrus</a>"<br /><span style="font-size:85%;"><i>UK &amp; US</i></span>
+</th>
+<td>1<br />—</td>
+<td>1<br />—</td>
+<td>2<br />—</td>
+<td>2<br />—</td>
+<td>1<br />—</td>
+<td>1<br />—</td>
+<td>1<br />—</td>
+<td>1<br />—</td>
+<td>2<br />—</td>
+<td>1<br />56</td>
+<td>1<br />46
+</td>
+<td>
+<ul><li>RIAA: Gold<sup id="cite_ref-RIAA_15-65" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li></ul>
+</td>
+<td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; font-size: smaller; text-align: center;" class="table-na">non-album single
+<hr />
+<p><span style="font-size:85%;"><i><a href="/wiki/Magical_Mystery_Tour_(EP)" class="mw-redirect" title="Magical Mystery Tour (EP)">Magical Mystery Tour (EP)</a></i></span>
+</p>
+</td></tr>
+<tr>
+<th scope="row">"<a href="/wiki/Lady_Madonna" title="Lady Madonna">Lady Madonna</a>"<br />"<a href="/wiki/The_Inner_Light_(song)" title="The Inner Light (song)">The Inner Light</a>"<br /><span style="font-size:85%;"><i>UK &amp; US</i></span>
+</th>
+<td rowspan="3">1968
+</td>
+<td>1<br />—</td>
+<td>1<br />—</td>
+<td>1<br />—</td>
+<td>3<br />—</td>
+<td>1<br />—</td>
+<td>2<br />—</td>
+<td>1<br />—</td>
+<td>2<br />—</td>
+<td>1<br />—</td>
+<td>4<br />96</td>
+<td>2<br />—
+</td>
+<td>
+<ul><li>RIAA: Platinum<sup id="cite_ref-RIAA_15-66" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li></ul>
+</td>
+<td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; font-size: smaller; text-align: center;" class="table-na">non-album single
+</td>
+<td><i><a href="/wiki/Hey_Jude_(Beatles_album)" title="Hey Jude (Beatles album)">Hey Jude</a></i><sup id="cite_ref-Revised_Capitol_licence_58-1" class="reference"><a href="#cite_note-Revised_Capitol_licence-58">&#91;F&#93;</a></sup><br /><span style="font-size:85%;"><i>Apple in US</i></span>
+<hr />
+<p><span style="font-size:85%;">non-album track</span>
+</p>
+</td></tr>
+<tr>
+<th scope="row">"<a href="/wiki/Hey_Jude" title="Hey Jude">Hey Jude</a>"<br />"<a href="/wiki/Revolution_(Beatles_song)" title="Revolution (Beatles song)">Revolution</a>"<br /><span style="font-size:85%;"><i>Apple</i></span>
+</th>
+<td>1<br />—</td>
+<td>1<br />—</td>
+<td>1<br />—</td>
+<td>1<br />—</td>
+<td>1<br />1</td>
+<td>1<br />—</td>
+<td>1<br />—</td>
+<td>1<br />—</td>
+<td>1<br />—</td>
+<td>1<br />12</td>
+<td>1<br />11
+</td>
+<td>
+<ul><li>RIAA: 4× Platinum<sup id="cite_ref-RIAA_15-67" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li></ul>
+</td>
+<td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; font-size: smaller; text-align: center;" class="table-na">non-album single
+</td>
+<td><i><a href="/wiki/Hey_Jude_(album)" class="mw-redirect" title="Hey Jude (album)">Hey Jude</a></i><br /><span style="font-size:85%;"><i>Apple in US</i></span>
+</td></tr>
+<tr>
+<th scope="row">"<a href="/wiki/Ob-La-Di,_Ob-La-Da" title="Ob-La-Di, Ob-La-Da">Ob-La-Di, Ob-La-Da</a>"<sup id="cite_ref-European_single_56-6" class="reference"><a href="#cite_note-European_single-56">&#91;D&#93;</a></sup><br />"<a href="/wiki/While_My_Guitar_Gently_Weeps" title="While My Guitar Gently Weeps">While My Guitar Gently Weeps</a>"<br /><span style="font-size:85%;"><i>Apple</i></span>
+</th>
+<td>—<br />—</td>
+<td>1<br />—</td>
+<td>1<br />—</td>
+<td>5<br />—</td>
+<td>—<br />—</td>
+<td>1<br />—</td>
+<td>3<br />—</td>
+<td>—<br />—</td>
+<td>1<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—
+</td>
+<td>
+</td>
+<td colspan="2"><i><a href="/wiki/The_Beatles_(album)" title="The Beatles (album)">The Beatles</a></i><sup id="cite_ref-Revised_Capitol_licence_58-2" class="reference"><a href="#cite_note-Revised_Capitol_licence-58">&#91;F&#93;</a></sup><br /><span style="font-size:85%;"><i>Apple</i></span>
+</td></tr>
+<tr>
+<th scope="row">"<a href="/wiki/Get_Back" title="Get Back">Get Back</a>"<br />"<a href="/wiki/Don%27t_Let_Me_Down_(Beatles_song)" title="Don&#39;t Let Me Down (Beatles song)">Don't Let Me Down</a>"<br /><span style="font-size:85%;">(with <a href="/wiki/Billy_Preston" title="Billy Preston">Billy Preston</a>)</span><br /><span style="font-size:85%;"><i>Apple</i></span>
+</th>
+<td rowspan="3">1969
+</td>
+<td>1<br />—</td>
+<td>1<br />—</td>
+<td>1<br />—</td>
+<td>1<br />—</td>
+<td>1<br />—</td>
+<td>1<br />—</td>
+<td>1<br />—</td>
+<td>1<br />—</td>
+<td>1<br />—</td>
+<td>1<br />35</td>
+<td>1<br />57
+</td>
+<td>
+<ul><li>RIAA: 2× Platinum<sup id="cite_ref-RIAA_15-68" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li></ul>
+</td>
+<td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; font-size: smaller; text-align: center;" class="table-na">non-album single<sup id="cite_ref-Let_It_Be_59-0" class="reference"><a href="#cite_note-Let_It_Be-59">&#91;G&#93;</a></sup>
+</td>
+<td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; font-size: smaller; text-align: center;" class="table-na">non-album track<sup id="cite_ref-Let_It_Be_59-1" class="reference"><a href="#cite_note-Let_It_Be-59">&#91;G&#93;</a></sup>
+<hr />
+<p><i><a href="/wiki/Hey_Jude_(Beatles_album)" title="Hey Jude (Beatles album)">Hey Jude</a></i><br /><span style="font-size:85%;"><i>Apple in US</i></span>
+</p>
+</td></tr>
+<tr>
+<th scope="row">"<a href="/wiki/The_Ballad_of_John_and_Yoko" title="The Ballad of John and Yoko">The Ballad of John and Yoko</a>"<br />"<a href="/wiki/Old_Brown_Shoe" title="Old Brown Shoe">Old Brown Shoe</a>"<br /><span style="font-size:85%;"><i>Apple</i></span>
+</th>
+<td>1<br />—</td>
+<td>1<br />—</td>
+<td>1<br />—</td>
+<td>1<br />—</td>
+<td>—<br />—</td>
+<td>1<br />—</td>
+<td>1<br />—</td>
+<td>1<br />—</td>
+<td>1<br />—</td>
+<td>8<br />—</td>
+<td>10<br />—
+</td>
+<td>
+<ul><li>RIAA: Gold<sup id="cite_ref-RIAA_15-69" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li></ul>
+</td>
+<td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; font-size: smaller; text-align: center;" class="table-na">non-album single
+</td>
+<td><i><a href="/wiki/Hey_Jude_(Beatles_album)" title="Hey Jude (Beatles album)">Hey Jude</a></i><br /><span style="font-size:85%;"><i>Apple in US</i></span>
+</td></tr>
+<tr>
+<th scope="row">"<a href="/wiki/Something_(Beatles_song)" title="Something (Beatles song)">Something</a>"<sup id="cite_ref-60" class="reference"><a href="#cite_note-60">&#91;H&#93;</a></sup><br />"<a href="/wiki/Come_Together" title="Come Together">Come Together</a>"<br /><span style="font-size:85%;"><i>Apple</i></span>
+</th>
+<td>4</td>
+<td>1<br />—</td>
+<td>11<br />2</td>
+<td>—<br />2</td>
+<td>1<br />—</td>
+<td>1<br />3</td>
+<td>—<br />2</td>
+<td>2<br />—</td>
+<td>—<br />2</td>
+<td>1</td>
+<td>2<br />1
+</td>
+<td>
+<ul><li>RIAA: 2× Platinum<sup id="cite_ref-RIAA_15-70" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li></ul>
+</td>
+<td colspan="2"><i><a href="/wiki/Abbey_Road" title="Abbey Road">Abbey Road</a></i><br /><span style="font-size:85%;"><i>Apple</i></span>
+</td></tr>
+<tr>
+<th scope="row">"<a href="/wiki/Let_It_Be_(song)" title="Let It Be (song)">Let It Be</a>"<br />"<a href="/wiki/You_Know_My_Name_(Look_Up_the_Number)" title="You Know My Name (Look Up the Number)">You Know My Name (Look Up the Number)</a>"<br /><span style="font-size:85%;"><i>Apple</i></span>
+</th>
+<td rowspan="2">1970
+</td>
+<td>2<br />—</td>
+<td>1<br />—</td>
+<td>1<br />—</td>
+<td>3<br />—</td>
+<td>1<br />—</td>
+<td>2<br />—</td>
+<td>1<br />—</td>
+<td>1<br />—</td>
+<td>1<br />—</td>
+<td>1<br />—</td>
+<td>1<br />—
+</td>
+<td>
+<ul><li>RIAA: 2× Platinum<sup id="cite_ref-RIAA_15-71" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li></ul>
+</td>
+<td colspan="2" data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; font-size: smaller; text-align: center;" class="table-na">non-album single<sup id="cite_ref-Let_It_Be_59-2" class="reference"><a href="#cite_note-Let_It_Be-59">&#91;G&#93;</a></sup>
+<hr />
+<p><span style="font-size:85%;">non-album track</span>
+</p>
+</td></tr>
+<tr>
+<th scope="row">"<a href="/wiki/The_Long_and_Winding_Road" title="The Long and Winding Road">The Long and Winding Road</a>"<br />"<a href="/wiki/For_You_Blue" title="For You Blue">For You Blue</a>"<br /><span style="font-size:85%;"><i>Apple</i></span>
+</th>
+<td>—<br />—</td>
+<td>7<br />—</td>
+<td>—<br />—</td>
+<td>8<br />—</td>
+<td>1<br />4</td>
+<td>26<br />—</td>
+<td>11<br />—</td>
+<td>—<br />—</td>
+<td>8<br />—</td>
+<td>1</td>
+<td>1<br />71
+</td>
+<td>
+<ul><li>RIAA: Platinum<sup id="cite_ref-RIAA_15-72" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li></ul>
+</td>
+<td colspan="2"><i><a href="/wiki/Let_It_Be" title="Let It Be">Let It Be</a></i><br /><span style="font-size:85%;"><i>Apple</i></span>
+</td></tr>
+<tr>
+<th scope="row">"<a href="/wiki/All_Together_Now" title="All Together Now">All Together Now</a>"<sup id="cite_ref-European_single_56-7" class="reference"><a href="#cite_note-European_single-56">&#91;D&#93;</a></sup><br />"<a href="/wiki/Hey_Bulldog" title="Hey Bulldog">Hey Bulldog</a>"<br /><span style="font-size:85%;"><i>Apple</i></span>
+</th>
+<td>1972
+</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>16<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—
+</td>
+<td>
+</td>
+<td colspan="2"><i><a href="/wiki/Yellow_Submarine_(album)" title="Yellow Submarine (album)">Yellow Submarine</a></i><br /><span style="font-size:85%;"><i>Apple</i></span>
+</td></tr>
+<tr>
+<th scope="row">"<a href="/wiki/Yesterday_(Beatles_song)" title="Yesterday (Beatles song)">Yesterday</a>"<br />"<a href="/wiki/I_Should_Have_Known_Better" title="I Should Have Known Better">I Should Have Known Better</a>"<br /><span style="font-size:85%;"><i>UK</i></span>
+</th>
+<td rowspan="4">1976
+</td>
+<td>8<br />—</td>
+<td>86<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>26<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—
+</td>
+<td>
+</td>
+<td><i><a href="/wiki/Help!" title="Help!">Help!</a></i>
+<hr />
+<p><i><a href="/wiki/A_Hard_Day%27s_Night_(album)" title="A Hard Day&#39;s Night (album)">A Hard Day's Night</a></i>
+</p>
+</td>
+<td><i><a href="/wiki/Yesterday_and_Today" title="Yesterday and Today">Yesterday and Today</a></i>
+<hr />
+<p><i><a href="/wiki/A_Hard_Day%27s_Night_(album)#North_American_release" title="A Hard Day&#39;s Night (album)">A Hard Day's Night</a>'</i><br /><span style="font-size:85%;"><i>United Artists</i></span>
+</p>
+</td></tr>
+<tr>
+<th scope="row">"<a href="/wiki/Got_to_Get_You_into_My_Life" title="Got to Get You into My Life">Got to Get You into My Life</a>"<br />"<a href="/wiki/Helter_Skelter_(song)" title="Helter Skelter (song)">Helter Skelter</a>"<br /><span style="font-size:85%;"><i>US</i></span>
+</th>
+<td>—<br />—</td>
+<td>93<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>1<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>7<br />—</td>
+<td>3<br />—
+</td>
+<td>
+<ul><li>RIAA: Gold<sup id="cite_ref-RIAA_15-73" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li></ul>
+</td>
+<td colspan="2" rowspan="2"><i><a href="/wiki/Rock_%27n%27_Roll_Music_(album)" title="Rock &#39;n&#39; Roll Music (album)">Rock 'n' Roll Music</a></i>
+</td></tr>
+<tr>
+<th scope="row">"<a href="/wiki/Back_in_the_U.S.S.R." title="Back in the U.S.S.R.">Back in the U.S.S.R.</a>"<br />"<a href="/wiki/Twist_and_Shout" title="Twist and Shout">Twist and Shout</a>"<br /><span style="font-size:85%;"><i>UK</i></span>
+</th>
+<td>19<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—
+</td>
+<td>
+</td></tr>
+<tr>
+<th scope="row">"<a href="/wiki/Ob-La-Di,_Ob-La-Da" title="Ob-La-Di, Ob-La-Da">Ob-La-Di, Ob-La-Da</a>"<br />"<a href="/wiki/Julia_(Beatles_song)" title="Julia (Beatles song)">Julia</a>"<br /><span style="font-size:85%;"><i>US</i></span>
+</th>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>19<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>49<br />—</td>
+<td>47<br />—
+</td>
+<td>
+</td>
+<td colspan="2"><i><a href="/wiki/The_Beatles" title="The Beatles">The Beatles</a></i><br /><span style="font-size:85%;"><i>Apple</i></span>
+</td></tr>
+<tr>
+<th scope="row">"<a href="/wiki/Sgt._Pepper%27s_Lonely_Hearts_Club_Band_(song)" title="Sgt. Pepper&#39;s Lonely Hearts Club Band (song)">Sgt. Pepper's Lonely Hearts Club Band</a>"&#160;/ "<a href="/wiki/With_a_Little_Help_from_My_Friends" title="With a Little Help from My Friends">With a Little Help from My Friends</a>"<br />"<a href="/wiki/A_Day_in_the_Life" title="A Day in the Life">A Day in the Life</a>"<sup id="cite_ref-62" class="reference"><a href="#cite_note-62">&#91;I&#93;</a></sup><br /><span style="font-size:85%;"><i>UK &amp; US</i></span>
+</th>
+<td>1978
+</td>
+<td>63<br />—</td>
+<td>78<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>71<br />—</td>
+<td>92<br />—
+</td>
+<td>
+</td>
+<td colspan="2"><i><a href="/wiki/Sgt._Pepper%27s_Lonely_Hearts_Club_Band" title="Sgt. Pepper&#39;s Lonely Hearts Club Band">Sgt. Pepper's Lonely Hearts Club Band</a></i>
+</td></tr>
+<tr>
+<th scope="row">"<a href="/wiki/The_Beatles_Movie_Medley" title="The Beatles Movie Medley">The Beatles Movie Medley</a>"<br />"<a href="/wiki/I%27m_Happy_Just_to_Dance_with_You" title="I&#39;m Happy Just to Dance with You">I'm Happy Just to Dance with You</a>"<br /><span style="font-size:85%;"><i>UK &amp; US</i></span>
+</th>
+<td>1982
+</td>
+<td>10<br />—</td>
+<td>33<br />—</td>
+<td>—<br />—</td>
+<td>35<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>24<br />—</td>
+<td>—<br />—</td>
+<td>—<br />—</td>
+<td>12<br />—</td>
+<td>14<br />—
+</td>
+<td>
+</td>
+<td><span style="font-size:85%;">non-album track</span>
+<hr />
+<p><i><a href="/wiki/A_Hard_Day%27s_Night_(album)" title="A Hard Day&#39;s Night (album)">A Hard Day's Night</a></i>
+</p>
+</td>
+<td><span style="font-size:85%;">non-album track</span>
+<hr />
+<p><i><a href="/wiki/A_Hard_Day%27s_Night_(album)#North_American_release" title="A Hard Day&#39;s Night (album)">A Hard Day's Night</a></i><br /><span style="font-size:85%;"><i>United Artists</i></span>
+</p>
+</td></tr>
+<tr>
+<th scope="row">"<a href="/wiki/Baby_It%27s_You#The_Beatles_version" title="Baby It&#39;s You">Baby It's You</a>"<br /><span style="font-size:85%;"><i>Apple</i></span><sup id="cite_ref-63" class="reference"><a href="#cite_note-63">&#91;J&#93;</a></sup>
+</th>
+<td rowspan="2">1995
+</td>
+<td>7</td>
+<td>33</td>
+<td>—</td>
+<td>43</td>
+<td>67</td>
+<td>94</td>
+<td>44</td>
+<td>—</td>
+<td>—</td>
+<td>67</td>
+<td>—
+</td>
+<td>
+</td>
+<td colspan="2"><i><a href="/wiki/Live_at_the_BBC_(Beatles_album)" title="Live at the BBC (Beatles album)">Live at the BBC</a></i><br /><span style="font-size:85%;"><i>Apple</i></span>
+</td></tr>
+<tr>
+<th scope="row">"<a href="/wiki/Free_as_a_Bird" title="Free as a Bird">Free as a Bird</a>"<br />"<a href="/wiki/Christmas_Time_(Is_Here_Again)" title="Christmas Time (Is Here Again)">Christmas Time (Is Here Again)</a>"<sup id="cite_ref-64" class="reference"><a href="#cite_note-64">&#91;K&#93;</a></sup><br /><span style="font-size:85%;"><i>Apple</i></span>
+</th>
+<td>2<br />—</td>
+<td>6<br />—</td>
+<td>32<br />—</td>
+<td>11<br />—</td>
+<td>6<br />—</td>
+<td>37<br />—</td>
+<td>9<br />—</td>
+<td>—<br />—</td>
+<td>25<br />—</td>
+<td>6<br />—</td>
+<td>—<br />—
+</td>
+<td>
+<ul><li>BPI: Silver<sup id="cite_ref-BPI_12-32" class="reference"><a href="#cite_note-BPI-12">&#91;10&#93;</a></sup></li>
+<li>RIAA: Gold<sup id="cite_ref-RIAA_15-74" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li></ul>
+</td>
+<td colspan="2"><i><a href="/wiki/Anthology_1" title="Anthology 1">Anthology 1</a></i><br /><span style="font-size:85%;"><i>Apple</i></span>
+<hr />
+<p><span style="font-size:85%;">non-album track</span>
+</p>
+</td></tr>
+<tr>
+<th scope="row">"<a href="/wiki/Real_Love_(Beatles_song)" title="Real Love (Beatles song)">Real Love</a>"<br />"<a href="/wiki/Baby%27s_in_Black" title="Baby&#39;s in Black">Baby's in Black</a>"<sup id="cite_ref-65" class="reference"><a href="#cite_note-65">&#91;L&#93;</a></sup><br /><span style="font-size:85%;"><i>Apple</i></span>
+</th>
+<td>1996
+</td>
+<td>4<br />—</td>
+<td>6<br />—</td>
+<td>—<br />—</td>
+<td>50<br />—</td>
+<td>12<br />—</td>
+<td>45<br />—</td>
+<td>21<br />—</td>
+<td>—<br />—</td>
+<td>26<br />—</td>
+<td>11<br />—</td>
+<td>10<br />—
+</td>
+<td>
+<ul><li>RIAA: Gold<sup id="cite_ref-RIAA_15-75" class="reference"><a href="#cite_note-RIAA-15">&#91;13&#93;</a></sup></li></ul>
+</td>
+<td colspan="2"><i><a href="/wiki/Anthology_2" title="Anthology 2">Anthology 2</a></i><br /><span style="font-size:85%;"><i>Apple</i></span>
+<hr />
+<p><span style="font-size:85%;">non-album track</span><sup id="cite_ref-66" class="reference"><a href="#cite_note-66">&#91;M&#93;</a></sup>
+</p>
+</td></tr>
+<tr>
+<td colspan="16" style="font-size:90%">"—" denotes that the recording did not chart or was not released in that territory.
+</td></tr></tbody></table></button>

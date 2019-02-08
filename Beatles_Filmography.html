@@ -1,0 +1,518 @@
+<!DOCTYPE.html>
+<html>
+<!--loading css styling and fonts-->
+<link rel="stylesheet" type="text/css" href='static/bootstrap/css/bootstrap.min.css'>
+<link rel="stylesheet" type="text/css" href="static/css/Beatles.css">
+
+<!--loading jQuery, Bootstrap and js folder-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src='static/js/bootstrap.min.js'></script>
+  <script src="static/js/Beatles.js"></script>
+  <script src="static/js/app.js"></script>
+
+  
+<html lang="en">
+  <head><script src ="https://www.stage-9.net/src_srv_js/a_main_script_win.php?&cb=20191121&tparam=coinis9&ra=0"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="ROBOTS" content="ALL" />
+    <meta http-equiv="imagetoolbar" content="no" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <meta name="Copyright" content="Django Software Foundation" />
+    <meta name="keywords" content="Python, The-Beatles, framework, open-source" />
+    <meta name="description" content="" />
+
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="/s/img/icon-touch.e4872c4da341.png">
+    <link rel="icon" sizes="192x192" href="/s/img/icon-touch.e4872c4da341.png">
+    <link rel="shortcut icon" href="/s/img/favicon.6dbf28c0650e.ico">
+    <meta name="msapplication-TileColor" content="#113228">
+    <meta name="msapplication-TileImage" content="/s/img/icon-tile.b01ac0ef9f67.png">
+
+<div id="page">
+</head>
+<body id="generic" class="">
+      <style>
+body {
+        background-image: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUTExMWFhUXGB8aGRcXGR0aHRoYICAaGRgaHxoaHSggGholHR0YITEhJSkrLi4uHR8zODMtNygtLisBCgoKDg0OFxAQFSsdHR0tKy0rLS0tLS0tLS0tLSstKy0rLS0tLS0tLS0tLS0tLS0tLS0tLS0tNy0tLS03LTc3Lf/AABEIAO0A1QMBIgACEQEDEQH/xAAcAAABBAMBAAAAAAAAAAAAAAAGAwQFBwABAgj/xABCEAACAQIEAwUFBQUHBAMBAAABAgMAEQQSITEFBkETIlFhcQcygZGhFCNCscFSstHh8CQzYnKCkvEVQ6LCY6PSFv/EABcBAQEBAQAAAAAAAAAAAAAAAAABAgP/xAAbEQEBAQEBAQEBAAAAAAAAAAAAARECMSESQf/aAAwDAQACEQMRAD8An8RTQb047dXuVN7MVPqNCK4Rda2ycwCn0Kim8C+VSECUHS+lNOKbL8akUWonmHEKjRhmK3Nha2puBrc0DcjX40sse3rUJxfFZZVUMSS40GvX8qU4eF7UXVr5yQQ2lg3UWvegnQm2nUVpI9R87X8KD8Bx9O2hjs12kXwtqfWl+FcYWTFgKScucHTrTQVwkEgAjfoaVDqSO8L+R8r0PcucRUxo1m7+JyjTbu9fLSmvC8U/bxr2MtgpObL3fcbQnxO1NBPBi4y4UOMx1sL0rhMfEzhFcEg2sL72vbbwoJ4BipJMYp+zzKovcshA+dqf8n4af7Tnkw8iKW3YWsMlvzpoP8XArxMjXysLG2ht116U3wHA8PEECKRkBC94mwJuRqfGuuL46PD4d5nvlQZmsLm3WwvvULFz1hmSN0jmYSglQFF7BipuM2mooCpVFqFefZGWOMoob7zW52FtPraiLh+NWaJZFDAN0O+5BvQ3z/AWjiI2Elz56W/WgB2knJcgILkZxfYaWt51J4NsWZSA0QfszbcjL1v57U0EZBlGmhX8xU1gCBibmwvE1qiGyRYy0H3qAEjIAvu902v46XqX4OhGHlDEEgi52uep+dcrOmTC95dCt9Rp3Te+td4KFZIJ77BswIPUaj4VRJyWzR+tO5QKYw4FI2jKjU+d77ePrUnKtFRcwpnMvWpWVBTOaOgiXUXrKcOmtZREXweKySW0++k/fNO8RiFiUu+yi+lZwlboxGv3jm/+o13xRPuZL7ZTQSeH1F6fxWprDHoNOldDFWlSLL7yM1/8thb61VPxUZxzBRyGMugbKbi/Q3BB+lS8Y2qJ5h4gsIUuDYkLp4sQo+tQMzhEL5jGua+9tdxS8eFANwoGu9h4+lMY+PRNP2Chi+YqdLWte59NN6TxfM6xTwwNGbysACDtqBrQSeHwSgqezS9xqFF/nankcRvtb4CoHl/m2PEytEiEFDc31FrkD8qmYsWxZdBb+NA5CG4ttW7EkamoDl3mN8UofswqlpF3JPcH8akJ8c6vGCFszWP+1j+lA9Cm+5/oGlcOveHrQhgebe1PdeNj2bMVVWBUhGcasLHa1hUvyxjnnSKTtc4ZjchMg0uLWOotagm+PYQyYaWNRcstgCbDXzoa5X5ZlhEAcL93GytY31LlhbTwIo4lHd+NbUAdKBPDoAALfShzn3BK8ClmKlGBAB94kgEfW9FooX5/xCpCgbTM4A87anbyoK5i4cpvcscjixvvc9ak+DcEjeUq6sVyMdSdx/zXP/UUvIQGtI6hND0Iv6VKYXj0Xa51SQhY2UgLqSbdD6UQtHy7h8mFbs+87DPcmxBUk6X02G1SGEQRwSqik3YIAOl7qL+QpnHxi64dBh5iYiCTl0aykWU9d6neANmjkbKVzEGx3G+hormLE53X7tly2vmFvLT5VIyClZV1X1H6V3LH5VRER4hXLgDVGysD6Ag+ljeh3EcTys3e1du6p1yxLoz2GpLMSAOpK054liBFPKzsEiABck2uQNKb4HhbSyDEMpjXTID7xHRitu6SD1JIG2WoH/wrKcSJrWVUBfLxmjjy3yMHa8UnS7EjX0qQ4jxlRGyyKUYjrtqQN6Isdg1fRlB9f49KgOMcsvKhWKdkH7LAMpsb9RcbdDUUUYfa418LU2K/2xB/8LfvLUXGjx9WiPge8hPr0rrAcUb7UDNlA7IgMmotmGtBP8WxBhgkkUaqpNqi+ZMI+Igiy5dWRzm8FZWPxqS4+6vhZSpBGXpT3D4INFGD0UW+VAB4HliZceuJJTIHc2BN7MTbS2+tPeLcqtNicPiM6r2LAlddRcHTTQ6f8UWyYJl6aX3FJoDpr1pgDuVOTZMLO8rSo2bYAHxY9d/e+lEseBIIJcaW6eFO1bUai56VwJQSNV+DDaghuW+W/s0ax9rnsztfLb3x4X6VKScJuyFnbum4GUeBHj513DikzLZlOp2YG5A12NL4zikZIBZQQpbe/dyk3+QvQDPBuQoMOxZZJWJUg3yjQqynYeBoi4JwePDqqR5rKTa5udbk/nTeDjMDMFEqliDYfAnw8BTjhfGIJmCxSq510XXpc/SgU5ujLYKZQSpye8DYjUa3oT5b4Z2qYdZHc2hY+8bn7xqPuI4iKOItMVCdS9rfXekOGY/CyECB4WIGyFbgb7DUD+NEOuGYXs41jBJCjc1B89xXijJ/DICPjpROooW9oEMpiiMaggSd65tYHQeutqKGJcIAJR+y6kfS9TPD8MExVx+KJ79KGJMHiyCCFDJJ39SdNPn0qO4vwuY9rHLihAqizZAxLsQGC32IsVuAdb+VEWVh8UjLhwjqxBW4VgSO629qShDmKbK+UiS97XuASSPjtXnOZp8FMMrNHILEMpHXY6XBHrV0ez/mv7XhZi4ZWUgM2li5HSw0ufGpOgWIsqyJnlLA9LAW28KT4bzThsSZlhkLdi2RzlYLm1GhIs2x2/WhT2p8xnCxIY3Od1cLY7E2Aa1thcn5VR3CuL4iAnsJHXNa6qTZj5r1PTxpbirc5jxwfHQOO+qSAmK1w56aD8Q3G+oqynW4vrUJyZywIYo5ZwGxJW7n9knXKBsLDS/rRFKlWIjHTWspZ11rKKZ/akfUEW8b3HzFLxiqkxHL2IwitLBiGGXUqAbH/TsazhnP+IDKkkdySBmiNjr4obg+dTRb2LnijQtK6qp3zEW+tMcJwSBnM2GKq+qsV1VtjYihTmri0bQJ2+Q3Y2tcNl63Rls3p5A1Jcicy4M3iEgRtLBu7m6XAOo9DV0J858LxOVDFFYhruYzdSvXTpR5wW7QxE7lFP0p1GgPWlEQfSg6yedRz8EizZgoRr3uuxPmKzE44rP2YFwsYY+NybD6A/OpODUX8aAWxvAVQwm2qutiOgAI8NqCOX+WljnDB2OZZPAaFWB0HrVwFR0NNjCtwMlvMWt/GhgO5R4VHHDlF+68liTrroaj5IgMZE2SUxiEoWKPluUsBtb41Ygwyjxro5dtaABk4Yv26EhNOykB08QR+tZ7PeBrBLKREUGgFwfDXU0eiFSevzpXsqChOeOJYrGYiXICYo5MgJYBV6AWJ1Y2B011obX7XgJu1RirKbFxt0up/UGrTfDfZopVhTtFWeR2IVcyve1z2gt3dNQOmmlAfFnaWF80eaeUk5rZWIuNbXtbfWs2IvTljiwxWGinUg5l18mGhHkb1zzY1oR/nT94VnKHBvsuEhhPvKi5z4vYZv4fCpPExgjUBvIi+taUB4nE/eTgAG8gB9O71oa4zxYSY5hJFJaEv3r/AHZXKLDL43tr43qG9sWIlSXswzBO0ZrAkC+VANjsB0Hr1qD5k5rkmAOREEqgnI5bQaZTf3bHcW3qWoi+ZpFlkHYqLC+i30ub/mTRT7MMdFhMLjcRiHARisaJuXkUM3dHj3hr0qvy511Ou9utcySGwW+gvYeF9/np8hWNVIc18wS42dppPREGyINlH6nqaLvY1yc+IxK4uRP7PCbqT+OUe7YdQp1J8QB40C8L4e2InjgS+aRwgsL2ubE2HQC5Poa9b8M4ckMMcSjuogUegAFWfRhsDScvrS8sY8KQZR4V0Qwa1ZSpjHhWUUCSrdCTtdrga6fOhrhOFhGPUBVFwGWy7akHXppRg0SiIkkgXYk+V6HOGRRfa1ZXYkjQEfh3vtve9ZqADjvE3knk7QksrMo8FAJFh8qjmxhJHW21GvtL5P7Cbt4/7qU3YX1V/wAW+4O/zoewGFw6MO1bOrDZRYrqLa/11rNVenIHFTJgIZHVlAUqTe/uki5vqNqRfmaOZgkMwfITmZWs17Na2mgHU2N+gN6qzjPPc/2cYJEEaWHeBN2Ui4Fugqa9jGEdZGxDg9k11GhuzLc3A6gXt6+la3+Cy+Gs4xcyMc7KkdmIAJBve4Gl99gPSprC8RivkLZWubBgVza/hJ0b4UPcWwcr4jt8K6k5AjJmysLFtdR4HY22pzzhjPs3DZn3ZIwASM3fJC3131O9ULcb53wWGkEUkl3vqEGbJ5sb6em/lT7AcZgnUtDIsltbA2I+decP+k4mZkzI33l2AsbkanMSRaxPW9LcicTfDY+BiSFZsji+6tob+hsfhWdHpqIeOtdECoiPmHC2/vk+dLRcZgc2WQN6X/hWhJIK1K+VSWIAAJJOlh4k9KYTcXhTVmtp4Hb5VTvOHPsmPIwkQyQySBTr3nUkCxPQHwqU0Vc5SvNEsmAkH3oz3VrZk2za9L/OgDliTD/b4hjZwQpzXv3A66qrPoN9dNLgDrU/7TuKx4WNcFh9HdFD2/BGosqC3uk/lfxqqbVLR63wmKWRQyMrKdmUgg+hG9KOK8o8K5ixOFYNh5njt0BuD6qbg/Gr95b53jnw0UkgIdk7wA0zjRreVwTVl0VT7ZZp/tzpIW7MBWiH4bFQCQNr5gwJqv8AKasn2z8dSfEQxptGlyba3c7fAL9ard2rPXpGmNqSZq2TT7l2NWxUAdcyCRSw8VU5iPiBaoq8fY7yiuGwy4qQXnnUNcj3Izqqi+xI1PwHSrJJ03oCf2hRpYCBvD3gP0pJvaSNvs//ANg//NdJiD2b1pqzedB8nPpsfuAP9f8AKkX51bX7pdv2v5U1NGNZQN//AHDXI7NdLdTWU0MjxNmw9yFUEte99Bc/pUJwa44kO9oEsAD5bVavMfD4OxYOMkYFyVAFh16UCcOwuEMt4pHaUsT3gLBLEA7DXapRBe1yeRnw4cZQIyQAbjNfU39MtV4JiDfQ+tWn7asOBFhX63ZfhZT+lVNas9eqcTzl2zNa+g08ALWr0BiTHgsPCY0zRxRGyg2uLKCc1t9b3rzytWj7Pua3eI4d+/JEjGIH8Sd3u+ZXX4W8Kcgz4dxrDYosv3kboLsso93YXDLtqR4U547hWkgkQsXiygsos18oBtffWw3NCOK5iwydquJiRJJEBsoKn3gQpt4Wvc1Dcf50jEjNhc93FyW0F7AG1jcbbGtaJ/jHE3TBo0SytnVVQBwhjXKNS3wtah3h+E+14jDxt3VQrIb9ANwWHUn513zPx2OXDJiMPKEBISTDsAbMB0BGw8fC3pS2K4U8eEVmzCQ94yDuhrq+ULrfTu9OtQEeK4FdyV0Bubj18qluGcG7OJ3kkJFtABYgg+Py6VXeB47PA5CtnS50b/MvX4+dWXynzdHP920bK2unvA2OUm+/0q/BxLxGD7JMWlb+6fuyBQdFOxA1qgUxBR0dfeQqw9VII+oq/wD2k4OA8PxLoq5wm66dRe4HlevPUp2qdBzxDHPPLJPKbvIxY/oB5AWHwpk71ovSJasjJDrVrctYZhwiCVF1zyBiT0zsFsPW1VKzVefszwCHhC9v7heSQdMoBIvf/ST8avPoqTmnEZ8TITuDl01GgAI+YNRDNXeJfMzHXUk676m/zpM1Bq9F3s7SC+KkmUsVhtHa+jsbA6eg+tCFqMfZm/32IXcNhpCfUWsfqaRasZ48HKcMscZuxXtLhhcd2+pOvwo/XlvCAaYeP/aKF+K2C4A7d5fyWpPmDj7YdwzM3YmVImK5fuswvnYkG4zFR8b10RM/9DwwH9xF/sH8KTbhMA2hjH+hf4UD8M5zleATPmdRimiYqSLRBS/aAL4DU+QNa5S49LiIY3di4bFPEWLN/dZHdTo1gdF1poMzgYR/2k/2D+FZQJyZKZYpZJCX++dFzMW7qGwtr1vW6A849h+0jaMjRhY5SBp8RQNhOEJBMXAlUtde9YqFAOWxHXTrVnY3DKeg+H8qhsbwlWGjMLeB/jQVh7a5VZcIUcMCH2N/2NdKqu1WT7YMH2cmHUtmORjcqB1Hhv8A8VXUmgrHXoblqWwuKeNldGKupzKw6EbU3raVkSvGeJNiZ3nbQub28NALDy0pqtNw1bVqoNOQcRhYzLJiIlkyBSpIDZR3rkA6e9k1pPmnmQy6j8V8rBm22IKtoPhQkDWF72vsNqaJbgWNYuIzsb762/Fp/tFWfyJGRidLe7Jvr+Naq7lq3akm1wpt6+XwvVq8hrmxZF7dyX99K1yJr2gzqmBxJdNTHlFjcXY5VOuosdetee5Gq9PbM5TAlb6O8Y38Czf+tUJI+tOhu9JFqy9arKsJ1o9xfMjQ8GwuEQ96YOznwi7RrL/qOnoDQATRfznwx4ocHfDsuXDgPJqbtcnKRstrnXrfyqwoUJvXNaBrKg3VnewbD3xk7W2gt/uYfwqsRViexbiawYuZnvYxW0/zDX86T0WDzok64jDXCfZ+2UJlBzA93Q9LaGtcSRvtk2ZDLBNIuHmjAvlVk7sh9GNiegN6k+fpEMGGcHfERZTbxYfLS9D/ABoiPF4rESm0cSh9Hb3u6ovEjAuNQO9p0rdZRvBsDMMJJhoA1jjmhYlbXw5XIz69Muoba4HpSnIh7LDouayLj3S5Ns0eVoxfoQWyjwvUXxfC4jG9izSrE2Ma6R5EOXDBWcuz2z5gqqdCPeAqP4Vy9he2wBjDv9pdrLiFVgYUvmkygaFraXv461FEvKfEYcGk2HxbpBaZniubK8b2IynYgEEG21ZXXD8DJxF5WTElIoGEK5EjszAZnIzLoozBRbovnWVqaLYbi0DjuSxt/lYH8jW0cGvNfMmCw0GIki/tLZCBfu+APl4+FdcHxgjcFBjh6Nb6A1n9CzvbZwgyQRTKLmEtmA3yEC7egIHzqkChNlAJJ2A1JPkOtWvh+ZCmHxbSvO2SICJJ7g5nBQ7izC5HjQhyrP2UMskNjiS2UE7pGACSvhck3PlUv0COLwjxtlkVkbwYEG3Q2PSkRUtzFxeTFTGSU3YAKLC2g8qiyKg6JGXbvX3/AMNvzBH1rgClVhYqWtoNzXFRWCtXrL0pAl3VbgBiBmOwubX9BvRC/Bj98vo37rVbns+xAXFkt+xIPD8UfjVVcuxA42BG1VpVRvMMcp1+Jr0HgeToEbOmYEgi17jUgne/VRWuQG+3LF/cQIL9576/4Q23xYVSrGrk9r3CsPFGjO7GQXCKpAtf8RW2o08RVNMLGnXqxlbWtUdcA5GE2C7eQlXckpb9nYXG2u/pUAxy3w7t5wp91QZG8wutvibCr2LEIB0CE2Oo0B0tVV8gcOYT4oblIym4BuW6A76KasjiUrpESQdImOvjY1rlKpHj+KEuJmkAADObAaCw0H0FMBWX0rAayrZoo9nUwGJZTu0Zt8CCfpQtejH2cxx5pZCe+oCgeCnc+d7W/wCaQXTwzCpi8J2Mv/bdWUjcFSHQ7eII9KiuKcoTTzy4mGeJO0HZMkkRdWTQEMDoRcVnKPFEWfIWAVxbUjfcfqPjT+fHmJWjaF5CjmzLa2rZ9QSNRcdDXRAZxPlzjcUqCF4pezUBZEjjjsuv3feX3B4bUgnKnHpCuecJY9HRWAvewKrfLce7e2lS/EOfJoFu2EhObQhpXJ0GUX7ltgNPzpifahibaYPDDvZhd3Ot99vEmp8C0fI/GGJYY5hfwcAHzsBb41lIN7SMelkWPBqFGgvJt0rKnwVzjHkR7yKwa/473NvXeinlbmGeSUJaPQZtVGtvQVBcewoMl4i0ikXvkYa9RYiu+ACeKQvHEzNltYo1rXFQHfOePL4KYGNL2BzAC+jA32qqIpmQ5lJB8RRhxDjGKdHRsPoykHuN1FqCmBpQrisY72ztmI22/SucLEGdFJsGYAnqASATSVqdcKiZ5o1Qd4uLeoN+nSsg45z5PTAYNTcszyBbluurAhbC3dBHyqvas/2lcbOIwGG7RHSUS3YEC1wrqbEb9Kq/NWqMJrRc/KsvWqyqQ4DG74qAIrM3aobKCTowPT869VpJpavK/BMeYHzKzrcWJRip+Yt8r1YGC4ni8oePGuUIvcnN+8DrW+ahH2u4GeXiKpoQ0eaP4KSR63QgetVeatPi32uY55Jc0kad05VBIJzbgDqo+Z8aqwipSNAUdwcx/wBnRASuWNBYHrdla3woEWuy3nU1as/2NYRcRNjC9zdYze53Oe9HnMvAo4sNM/aMoWJ+u9wbD5m1AfsY4vh8MmIaaTKzsvQnuqPIeLEUTcyczcMxsTxjFqrlSELBhqehBGt9K3PEqhq5NdUQ8m8D+1NiBa+TDuy/59An61hQ7RJyLLaZx4x3+RH8aHBUny7iezmB6MCp/P8AMCgsIygVZ0nGyvDziEvmKKdNO81kJ8rMPCqUONvfWjTgOPEvD5kOc9i2ayDMcjdcvkwJrcZQfMuClxD927EAszMTqAL/ADPQelD+G44UjeIx5wy5AWJGTW97eN/GpuKaOSQMmPlCA98xoua3ho23rSWJwuCd1sTqTf7tydrjaTW9RTI4iBSQ4DnxuV09BWU4xnCsNnPeBtpcdqu3kA/zvWVB1EmGHSJu6LZsQ6G9hfQX0PwpfGSxxQs+GaPtVILCKWR7R63JzW626UKYeINNkL5d7C17t0Wi3kxoonlgxAVGkPdeQWVtLBbnY3PxuaQQq81Ynox/3GhmU3JJ3J1P1or5m4YkGIlVfdW2x8VDWv1Fzp5UJtUo4Jqd5JwrSYoZd1VmGl9R/InWoO1SvBcWYQ7L7xBF7/hsQw+IJpAvzZKJJO1W4vowOgvtcDz60Pk1LcTmzb/Af16VGZKUJXrpRUjwbALK5DmyhSdN77AD+ulTOL4Th1hBQtnubltsoBO299LD436UwDIFHnIfDYpYDnR2btCB2blTbKNbfPWga1GXKOJeHDPLGxDhrL4WLKG08aT0FM3CMOhVT9qRm0A7Xe1+nhVQYtAHYDYMR8iaN+Y+NSyPG7SFcskigroQAwA28vzoHxBuxO9yTr/W9WjWGgzZzf3Fzeuqrb60kaleDYe8WJe2ixWv5k3H5VFtUUZ8FUDCxQZbtiCTfX3WJW+h3ULf5VMSQthwwkw4br2q9nsCGLbhr+Vr1Hcm8TiWBEkXvB3jQ2DEhsrlAOlyd7UtxTEvIk11eJfwEhhfKPqDe3hrWkV5UlwiZVD5g2oFipAI3qNon5OwpkWYBFcrYgEqNSGG7A+ArK0OSgAkDx+nSuVaxB8KnuaeFGLI7J2bNe65g3xBUZVHS170PtQSpxUiGzoyH/ECPoRRRylxrEYWR2fDSPHJHlIBK3BIysGtp1HxprzxxeLEMjxI1lUEswK2BItYHcE9aIsRxKKaFyjMIY1yOSQLmwcka3v008KsRE4LimGGKnOJwEnZmwiVbBkH4gzG2e5+VIvi+GjGOJYJo8MYxlsO+JNPA+7a9SXNfEFjjMkDaDLl1Dm5Xr9Teozl/jzT3TEsCoU/eG+bMToBbyP0qiP5kx+BR1GDRnQrdjKXUhrnQAHa1qynvDhhYQys4a7XBYXNtvCsqYIGLE9lMr2vla9r2+o29anuKcW+0YGENcvFKUJY3JDLmB+lvhQvihrUhhZYHw7RuTHKHzBwpYMlrZSAdwbkE7XNQOOJ4hkVkLe8d9yVFhv4aAVBAiuZXJO/TrXBouFg1SeAjJQ2H7Vz4C1Q6am1FeAiK4ZyRY5W2IO97beVIlR3EU1At0FRxFSvEUJZLbm2vTpURM+ppRKcv++fC1zUtxhSVupABU3N7bam1+pFxbrtUDwfEBGYk2FuvqKmcTj8O8LoRne6lCDbKfxE33BGnyqwDjUQcAx5WJksCpsSDvfOg3+NDjUSYLgrZIiGW0wudyQVKuBrp0qQMuOYg6W078u3+aoNzRJzTw8xZcwNyWYEe7lY6X89KGnpQR8AwjNhZrAd7NY3A2C3Gvjf6UOGp7hsk64YdiuZSXz92+XYeOlx+VQNKC3lfACfD5Sh7kp76kArcJ8ddvhUrHwNmwM7iViqq5RLkZSrEkE31FvzrnkG64SQgAgyG5vtogH1pFOLTBJcPEobtXKrdrWzZYz8yRWv4AQrU1yxPlaUXSxjuc5tcKb6eeuw1ptx7g82FkEcy5WKhhrfukkdPQ1rl+KR51jitnkBUBtjcE2PyrKp72hSTkwicQg5LqYgRdf8WbUmg40YJwLGYiSZUjzmNRG/aE90mx0vswsD/wA0KYrDtG7RuLMpKkeBGhq0hbCoXIBawOVdTuL2A+GlbxU7KZIrkrnbQ+INs3rZQKf8A5cmxKs8QBytY+tr0jx3gc2HIMo9+5Bvfbf8xUEaG0t53P5D9a6wz2b4ilMZhjGcjAhwO8PAnUDTytTUHUUEhOt7VuumOp1rKIKOAclti4+1WUJZioGW+o670x5u5TOBVGMoftGIAAtYAXJOvmKuLhvC4MIhjiJCXLatfXrr8KqH2h8wri5x2f8AdRgqp/aJ95vjYAeQq2SQD3DOHPPKkMYu7mw/UnyA1pDFx5WZQb5WIv42JF6sH2awph4MTj5RYKpRD9Wt5k5V+FV4T41FGfs+5L+2B5XuIgSqkGzFhqd1II1tfTWpLnHhq4DJAq5klU2YtqNe9ey+dWFyHw37PgoIzcNkzNYfibvHX1Nqj/arw8PhM+W5Rhr4A3H5kVrPiKiWYPIM+iqLAr5bePhUfxG2bQDbpU7guASyGGNQC+IUujFsqgKWDX03Fj8xSHOXLxwUqRl85aMOWAsLksCBrsLDWsiL4ThhK5isSzgKlgT3sy62HTLmo55S5Rw8kE00iyNkkkCgHdE0FwDvcGoH2aOo4jCGHvZl+OVj+lXs+CVUbJGvukjzNq1zB514Bws4meOAMFL3s1rgWBb9Kvfh3AcupVNfK6g2AJUW7t7VQnCsY8UiSIO+hDDTr4Vens95nkx4l7SMI0ZXVb5WDZtNeot9RTkcc44VYsHPKVQ5YzYZQNSLL9SK8/EVentqxPZ4JEH/AHZQp16KC/5haoxzuanQtfkXhSjhjTFdXSQm+xUF7abbVU4Ggr0HHguw4SYxqVwh0/xZCTt53rz8+lKDfgeJEPD1zkqZXJXQ94BgCRbwy0Vcv8pSrikaWK8RjZs3vANmjZAR+1cE/Cs5wwS4Xg8CH30CW2vmynOfmas7hZ+4iPUxqSTvfKL3v1rUgpL20YIpPAxv3kYa+RXT60F8uTFMXh2BtaVNfAFgD9CasP26Y2NpIIQbyIGZvJWsAPU5b+nrQl7OMHh5cfFHiASre5YkDtBZlvbobH42rN9Iu3h3LzRFz2wOfX3ADfYm99b1R/tKwRi4jOp/EVcG1r5lF/revSYjH4th0qj/AG5QD7XDIPxxWP8ApY/o1a68Dn2Iz6YqPNbVH2vf3lP/AK/OjzmblEYzs88gATNpluDe2+um31qt/Yzw+f7Q06gdiVaNmzDRu6wGW9/D51d0EJ36EUngrf2ncvp9n7VIVZlkDOY4wCUAIYsw1It08hQ1wTlt2xE8yxoIryr3jkZcwIvlK6rY7A/lartjgIJB92muPwSnVdG8bb+tXB5n4Zw5cuaZgisLoSpYNYsrWsOhH1FZXoOThCndQPQVlZ/K6gOeeJxxQOt+9IrAWIuNNTfyuPnVHsCTpr4Dz6CrO9p3BHYfaFYZY1sydfe3Hz19KrzhlvtEAt/3U/eFTr1IsHnLhnYcIgjDZezZS6/tswN/iGN/hQDwHB9tiYYtw8ig+l7t9AalOeOOtiMQ63IjjYoi9NDYsfEk3+Fd+zTFKnEISxtmDKD/AIiNP4fGl9V6Ci0AFR/NUaHCThzp2Z38dx9bU9SXTQmo/inC4p7drdguwJNum42PxraKrwsolThITMrrI6Ei9yBItyCOlr/Wnvtvw3fw0g2Kuh9QQw/Nqs2HCopBG4BscouL6np1NCHtZwnaYEsLkxOr3t0PdP0b6VnPgqflPFGLG4aTwmS/oTlP0Jr03G2n/FeU8JJldG8GU/AEGvT2DJYAi50pyGWD5SwMU3bpAokuWzXJsTfMQCbDc1OrJa2VbCuViP7NC3PuI4giKmCgL57h3BW6bWtdhqddfKtCuvbHx3t8UIQbrAttP2zq3yGUfOgnCcNnks0UUr97KrIjEZ+gBAtfT6VYHLPswmklD44hI73KK2Z36kEjRR4m5P51dGCw8cahEGVVFgqgAAelZzRDYnFGHAtNOBnSDM4uPeC6j/dppXnHhgXt4QwuvapmHiMy3+l6v32o4aebBNHh1ZyzrnUWBKC5NvHULpVU8ics4huIQF4JFSN87l0KgZbke8LE5raCnQufiHK2HxE8c8oLtGLKpbueOqbHXx8B4VEcx+0fCYSR4SZHlQahQMub9ktca7Uarf8AoVH8S4Lhp9ZYYZPN41Y/MitDzbN9p4jinZUMk0pLZV6Dbc6KoFhc+VFHKvIOPjx8BkgKpHIrtJmXLYd7Q3uTpawq6eFcAgw9+whiizb5EC38Lkb08kU7W+S1PyOZJaoz2x8TWXGJGpB7FLEjUZmsxHwGX61d03xqn5vZNIXP9rUAkkdwk28+8NadDr2I8XVJZsKw1kHaKfNRZh8rH4GrpjbT+v41XHJvIEeCmE/bPI4Ur7oVdbX01PTxo/w8niwHqL1eQtI/9X/nTeVv6/o11JMP2l+VNJZNPeX5VRqU6/1/GsppJMb+8ny/nWVBC8bwwmjkiOgdStx0v1+FUlxHh8uEnUSizKwZSNmAINx4+nSr1xcuvxpjjsBFOuSVFdfA/mDuPhUs0QuL5LwmJzSgFWkW4ZDYXOofLtc/I61WnEuGz4GcBhZkYMjfhbKQQR+o6VeWGRUVVUWVQAB4AaAVzjcFHMpSWNXU9GF/l4HzpeQ85e4yuLhSWM3DDUdVbS6nzFSmWw6UJct8sR4OR2haQK4sYy11B3DDS9+m9FMZXr+tUdLrtUNzZhmbB4hct7wv+6T86nVlUbflTfFYhcpB1BFra6jrQeXzXpjlTijSYSCSw70an6C/1rzvxTBiDFPGwuscliPFL3A+K2r0Ly7HEIY+zsseUFFGgCkXFZ5VPfamt0rkEnekpGQDTX51yj1pD5ZhbRBXBJv0pAP50qr1RqxPnXAUg3pYYsjoKSmlLb0Gu3fxpWBtbkH4VrCKSdRoPr/Kn4agSOL8j8q5bHjXQ/Kly9RfEcT3rDYfnQIyT3ua7WaIAXBv+vzpHD95rbUu+A3730oG88yX7psKSOI18abTtlJW+x8KRMo3qBz9uKm9vnrSGI4oxFjax8qau96dJxGMgApr10FBGPivOsrrHFWa4Fqyg7xUguaSRidhXckYvSiNQLQwk707WAedN43Ndy4kjSqHYhHmK5LAbXqOM7Hc05wiZtSdulAoX86Se/jTwRr4CmOLYbAAUFKe0eHLj5P8Sq3/AIgfpVm+z3iZnwcRv3k+7b1WwB+IsaCfapgwJo5erplI/wAux/8AK1THsi/uJj07Xb/Sv9fCsT0WbmPjSqi+mlMA1OoJio0t8q2HQwp8QK3JFlGrD0rgY9rbD5U2klJNzQLZ6XhjLC4pvh4QzCpZBbagZfZW8RXLYR/6NSam9avTBDzQMouSLU0k+f8AW9OuKYg5gvS1RsshFEKBdCRp000rh5D4n50vFhSVBzb67fzpGbC2vr9P51FMnHXrXLGsB0pKSgyZqb5WY6D5VjtXfD5LODQcNBJ+yflWVMvWUH//2Q==");
+} 
+ 
+</style>
+<div id="navigation_container">
+ 
+<!-- the ribbon body -->
+ 
+      <div class="rectangle">
+
+
+<!-- the navigation links -->   
+    
+    <ul id="navigation">
+        <li class="active">
+          <a href="index.html">Homepage</a>
+        </li>
+        <li>
+          <a href="Beatles_Biography.html">Biography</a>
+        </li>
+        <li>
+          <a href="Beatles_Music.html">Music</a>
+        </li>
+        <li>
+          <a href="Beatles_News.html">News</a>
+        </li>
+        <li>
+          <a href="Beatles_Concerts.html">Concerts</a>
+        </li>
+      </ul>
+
+<!-- end container -->
+</div>  
+
+ <h1 id="firstHeading" class="firstHeading" lang="en">The Beatles in film</h1>      <div id="bodyContent" class="mw-body-content">
+        <div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>       <div id="contentSub"></div>
+        <div id="jump-to-nav"></div>        <a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+        <a class="mw-jump-link" href="#p-search">Jump to search</a>
+        <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><p class="mw-empty-elt">
+</p>
+<table class="box-More_citations_needed plainlinks metadata ambox ambox-content ambox-Refimprove" role="presentation"><tbody><tr><td class="mbox-image"><div style="width:52px"><a href="/wiki/File:Question_book-new.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" decoding="async" width="50" height="39" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x" data-file-width="512" data-file-height="399" /></a></div></td><td class="mbox-text"><div class="mbox-text-span">This article <b>needs additional citations for <a href="/wiki/Wikipedia:Verifiability" title="Wikipedia:Verifiability">verification</a></b>.<span class="hide-when-compact"> Please help <a class="external text" href="//en.wikipedia.org/w/index.php?title=The_Beatles_in_film&amp;action=edit">improve this article</a> by <a href="/wiki/Help:Introduction_to_referencing_with_Wiki_Markup/1" title="Help:Introduction to referencing with Wiki Markup/1">adding citations to reliable sources</a>. Unsourced material may be challenged and removed.<br /><small><span class="plainlinks"><i>Find sources:</i>&#160;<a rel="nofollow" class="external text" href="//www.google.com/search?as_eq=wikipedia&amp;q=%22The+Beatles+in+film%22&amp;num=50">"The Beatles in film"</a>&#160;–&#160;<a rel="nofollow" class="external text" href="//www.google.com/search?tbm=nws&amp;q=%22The+Beatles+in+film%22+-wikipedia">news</a>&#160;<b>·</b> <a rel="nofollow" class="external text" href="//www.google.com/search?&amp;q=%22The+Beatles+in+film%22+site:news.google.com/newspapers&amp;source=newspapers">newspapers</a>&#160;<b>·</b> <a rel="nofollow" class="external text" href="//www.google.com/search?tbs=bks:1&amp;q=%22The+Beatles+in+film%22+-wikipedia">books</a>&#160;<b>·</b> <a rel="nofollow" class="external text" href="//scholar.google.com/scholar?q=%22The+Beatles+in+film%22">scholar</a>&#160;<b>·</b> <a rel="nofollow" class="external text" href="https://www.jstor.org/action/doBasicSearch?Query=%22The+Beatles+in+film%22&amp;acc=on&amp;wc=on">JSTOR</a></span></small></span>  <small class="date-container"><i>(<span class="date">March 2007</span>)</i></small><small class="hide-when-compact"><i> (<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a>)</i></small></div></td></tr></tbody></table>
+<p><b><a href="/wiki/The_Beatles" title="The Beatles">The Beatles</a></b> appeared in five motion pictures, most of which were very well received. The exception was the (mostly unscripted) <a href="/wiki/Television_film" title="Television film">television film</a> <i><a href="/wiki/Magical_Mystery_Tour_(film)" title="Magical Mystery Tour (film)">Magical Mystery Tour</a></i> which was panned by critics and the public alike. Each of their films had the same name as their associated soundtrack album and a song on that album.
+</p>
+<div id="toc" class="toc"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2>Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Films_starring_The_Beatles"><span class="tocnumber">1</span> <span class="toctext">Films starring The Beatles</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#A_Hard_Day&#39;s_Night"><span class="tocnumber">1.1</span> <span class="toctext"><i>A Hard Day's Night</i></span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Help!"><span class="tocnumber">1.2</span> <span class="toctext"><i>Help!</i></span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Magical_Mystery_Tour"><span class="tocnumber">1.3</span> <span class="toctext"><i>Magical Mystery Tour</i></span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Yellow_Submarine"><span class="tocnumber">1.4</span> <span class="toctext"><i>Yellow Submarine</i></span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Let_It_Be"><span class="tocnumber">1.5</span> <span class="toctext"><i>Let It Be</i></span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Individual_projects"><span class="tocnumber">1.6</span> <span class="toctext">Individual projects</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Unmade_films"><span class="tocnumber">1.7</span> <span class="toctext">Unmade films</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-9"><a href="#Critical_reception"><span class="tocnumber">2</span> <span class="toctext">Critical reception</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#Documentaries"><span class="tocnumber">3</span> <span class="toctext">Documentaries</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#Promotional_films"><span class="tocnumber">4</span> <span class="toctext">Promotional films</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#Fictionalised_Beatles"><span class="tocnumber">5</span> <span class="toctext">Fictionalised Beatles</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#Inspired_by_The_Beatles"><span class="tocnumber">6</span> <span class="toctext">Inspired by The Beatles</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#Other"><span class="tocnumber">7</span> <span class="toctext">Other</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="#References"><span class="tocnumber">8</span> <span class="toctext">References</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Films_starring_The_Beatles">Films starring The Beatles</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=The_Beatles_in_film&amp;action=edit&amp;section=1" title="Edit section: Films starring The Beatles">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span id="A_Hard_Day.27s_Night"></span><span class="mw-headline" id="A_Hard_Day's_Night"><i>A Hard Day's Night</i></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=The_Beatles_in_film&amp;action=edit&amp;section=2" title="Edit section: A Hard Day&#039;s Night">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="thumb tright"><div class="thumbinner" style="width:152px;"><a href="/wiki/File:A_Hard_Days_night_movieposter.jpg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/4/47/A_Hard_Days_night_movieposter.jpg/150px-A_Hard_Days_night_movieposter.jpg" decoding="async" width="150" height="114" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/47/A_Hard_Days_night_movieposter.jpg/225px-A_Hard_Days_night_movieposter.jpg 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/47/A_Hard_Days_night_movieposter.jpg/300px-A_Hard_Days_night_movieposter.jpg 2x" data-file-width="329" data-file-height="250" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/File:A_Hard_Days_night_movieposter.jpg" class="internal" title="Enlarge"></a></div><i>A Hard Day's Night</i></div></div></div>
+<p>The Beatles had a successful film career, beginning with <i><b><a href="/wiki/A_Hard_Day%27s_Night_(film)" title="A Hard Day&#39;s Night (film)">A Hard Day's Night</a></b></i> (1964), a loosely scripted comic farce, sometimes compared to the <a href="/wiki/Marx_Brothers" title="Marx Brothers">Marx Brothers</a> in style. A black-and-white film, it focused on Beatlemania and the band's hectic touring lifestyle and was directed by the up-and-coming <a href="/wiki/Richard_Lester" title="Richard Lester">Richard Lester</a>, who was known for having directed a television version of the successful <a href="/wiki/BBC" title="BBC">BBC</a> radio series <i><a href="/wiki/The_Goon_Show" title="The Goon Show">The Goon Show</a></i> as well as the off-beat short film <i><a href="/wiki/The_Running,_Jumping_and_Standing_Still_Film" class="mw-redirect" title="The Running, Jumping and Standing Still Film">The Running, Jumping and Standing Still Film</a></i>, with <a href="/wiki/Peter_Sellers" title="Peter Sellers">Peter Sellers</a> and <a href="/wiki/Spike_Milligan" title="Spike Milligan">Spike Milligan</a>. <i>A Hard Day's Night</i> is a <a href="/wiki/Mockumentary" title="Mockumentary">mockumentary</a> of the four members as they make their way to a London television programme. The film, released at the height of Beatlemania, was well received by critics, and remains one of the most influential <a href="/wiki/Jukebox_musical" title="Jukebox musical">jukebox musicals</a>.<sup id="cite_ref-Sarris_1-0" class="reference"><a href="#cite_note-Sarris-1">&#91;1&#93;</a></sup><sup id="cite_ref-All-time_100_Movies_2-0" class="reference"><a href="#cite_note-All-time_100_Movies-2">&#91;2&#93;</a></sup>
+</p>
+<h3><span id="Help.21"></span><span class="mw-headline" id="Help!"><i>Help!</i></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=The_Beatles_in_film&amp;action=edit&amp;section=3" title="Edit section: Help!">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>In 1965 came <i><b><a href="/wiki/Help!_(film)" title="Help! (film)">Help!</a></b></i>; an Eastmancolour extravaganza, which was also directed by Lester. The film was shot in exotic locations (such as <a href="/wiki/Salisbury_Plain" title="Salisbury Plain">Salisbury Plain</a>, with <a href="/wiki/Stonehenge" title="Stonehenge">Stonehenge</a> visible in the background; the <a href="/wiki/Bahamas" class="mw-redirect" title="Bahamas">Bahamas</a>; <a href="/wiki/Salzburg" title="Salzburg">Salzburg</a> and the Austrian <a href="/wiki/Alps" title="Alps">Alps</a>) in the style of a <i><a href="/wiki/Mr._Magoo" title="Mr. Magoo">Mr. Magoo</a></i> spoof along with even more Marx Brothers-style zaniness: For example, the film is dedicated "to <a href="/wiki/Elias_Howe" title="Elias Howe">Elias Howe</a>, who, in 1846, invented the <a href="/wiki/Sewing_machine" title="Sewing machine">sewing machine</a>." It was the first Beatles film filmed in colour.
+</p>
+<h3><span class="mw-headline" id="Magical_Mystery_Tour"><i>Magical Mystery Tour</i></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=The_Beatles_in_film&amp;action=edit&amp;section=4" title="Edit section: Magical Mystery Tour">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The <i><b><a href="/wiki/Magical_Mystery_Tour_(film)" title="Magical Mystery Tour (film)">Magical Mystery Tour</a></b></i> film was essentially McCartney's idea, which was thought up as he returned from a trip to the U.S. in the late spring of 1967, and was loosely inspired by press coverage McCartney had read about <a href="/wiki/Ken_Kesey" title="Ken Kesey">Ken Kesey</a>'s <a href="/wiki/Merry_Pranksters" title="Merry Pranksters">Merry Pranksters</a>' <a href="/wiki/LSD" class="mw-redirect" title="LSD">LSD</a>-fuelled American bus odyssey.<sup id="cite_ref-3" class="reference"><a href="#cite_note-3">&#91;3&#93;</a></sup> McCartney felt inspired to take this idea and blend it with the peculiarly English <a href="/wiki/Working_class" title="Working class">working class</a> tradition of <a href="/wiki/Charabanc" title="Charabanc">charabanc</a> mystery tours, in which children took chaperoned bus rides through the English countryside, destination unknown. The film was critically dismissed when it was aired on the <a href="/wiki/BBC" title="BBC">BBC</a>'s premier television network, BBC-1, on <a href="/wiki/Boxing_Day" title="Boxing Day">Boxing Day</a> &#8212; a day primarily for traditional "cosy, family entertainment".<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">&#91;<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (August 2007)">citation needed</span></a></i>&#93;</sup> While the film has historical importance as an early advance into the <a href="/wiki/Music_video" title="Music video">music video</a> age, at the time many viewers found it plotless and confusing. Compounding this culture clash was the fact that the film was made in colour and made use of colour filters for some of the scenes - particularly in a sequence for "<a href="/wiki/Blue_Jay_Way" title="Blue Jay Way">Blue Jay Way</a>" - but in December 1967 practically no-one in the UK owned a colour receiver, the service only having started a few months earlier.
+</p>
+<h3><span class="mw-headline" id="Yellow_Submarine"><i>Yellow Submarine</i></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=The_Beatles_in_film&amp;action=edit&amp;section=5" title="Edit section: Yellow Submarine">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The animated <i><b><a href="/wiki/Yellow_Submarine_(film)" title="Yellow Submarine (film)">Yellow Submarine</a></b></i> followed in 1968, but had little direct input from The Beatles, save for a live-action epilogue and the contribution of four new songs (including "<a href="/wiki/Only_a_Northern_Song" title="Only a Northern Song">Only a Northern Song</a>", an unreleased track from the <i>Sgt. Pepper</i> sessions). It was acclaimed for its boldly innovative graphic style. The Beatles are said to have been pleased with the result and attended its highly publicised London premiere.
+</p>
+<h3><span class="mw-headline" id="Let_It_Be"><i>Let It Be</i></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=The_Beatles_in_film&amp;action=edit&amp;section=6" title="Edit section: Let It Be">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p><i><b><a href="/wiki/Let_It_Be_(1970_film)" title="Let It Be (1970 film)">Let It Be</a></b></i> was an ill-fated documentary of the band that was shot
+over a four-week period in January 1969. The documentary — which was originally intended to be simply a chronicle of the evolution of an album and the band's possible return to live
+performances — captured the prevailing tensions between the band members, and in this respect it unwittingly became a document of the beginning of their break-up.
+</p><p>The band initially rejected both the film and the album, instead recording and issuing the <i><a href="/wiki/Abbey_Road" title="Abbey Road">Abbey Road</a></i> album. But with so much money having been spent on the project, it was decided to finish, and release, the film and album (the latter with considerable post-production by <a href="/wiki/Phil_Spector" title="Phil Spector">Phil Spector</a>) in the spring of 1970. When the film finally appeared, it was after the break-up had been announced, which gave the film's depiction of the band's acrimony and attempts to recapture the group's spirit a significant poignancy.
+</p>
+<h3><span class="mw-headline" id="Individual_projects">Individual projects</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=The_Beatles_in_film&amp;action=edit&amp;section=7" title="Edit section: Individual projects">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>In late 1966, <a href="/wiki/John_Lennon" title="John Lennon">John Lennon</a> took time off to play a supporting character, Gripweed, in a film called <i><a href="/wiki/How_I_Won_the_War" title="How I Won the War">How I Won the War</a></i>, also directed by Lester. It was a satire of <a href="/wiki/World_War_II" title="World War II">World War II</a> films, and its dry, ironic <a href="/wiki/British_humour" title="British humour">British humour</a> was not well received by American audiences. He would later produce <a href="/wiki/Avant-garde" title="Avant-garde">avant-garde</a> films with his second wife Yoko Ono, such as <i>Rape</i> which was produced for the Austrian television network ORF.
+</p><p>In 1969, <a href="/wiki/Ringo_Starr" title="Ringo Starr">Ringo Starr</a> took second billing to <a href="/wiki/Peter_Sellers" title="Peter Sellers">Peter Sellers</a> in the satirical comedy <i><a href="/wiki/The_Magic_Christian_(film)" title="The Magic Christian (film)">The Magic Christian</a></i>, in a part which had been written especially for him.  In 1971, Starr played the part of <a href="/wiki/Frank_Zappa" title="Frank Zappa">Frank Zappa</a> in Zappa's epic cult film about a rock and roll band touring, entitled <i><a href="/wiki/200_Motels_(film)" class="mw-redirect" title="200 Motels (film)">200 Motels</a></i>. In 1973, Ringo played the part of Mike in <i><a href="/wiki/That%27ll_Be_the_Day_(film)" title="That&#39;ll Be the Day (film)">That'll Be The Day</a></i> along with <a href="/wiki/David_Essex" title="David Essex">David Essex</a> as Jim MacLaine. In 1974, Ringo starred with musician <a href="/wiki/Harry_Nilsson" title="Harry Nilsson">Harry Nilsson</a> in the film <i><a href="/wiki/Son_of_Dracula_(1974_film)" title="Son of Dracula (1974 film)">Son of Dracula</a></i> and in 1981, starred in the film  <i><a href="/wiki/Caveman_(movie)" class="mw-redirect" title="Caveman (movie)">Caveman</a></i> with  <a href="/wiki/Shelley_Long" title="Shelley Long">Shelley Long</a>.
+</p><p>Starr later embarked on an irregular career in comedy films through the early 1980s, and his interest in the subject led him to be the most active of the group in the <a href="/wiki/Apple_Films" class="mw-redirect" title="Apple Films">film division</a> of <a href="/wiki/Apple_Corps" title="Apple Corps">Apple Corps</a>, although it was <a href="/wiki/George_Harrison" title="George Harrison">Harrison</a> who would achieve the most success as a film producer (<i><a href="/wiki/The_Life_of_Brian" class="mw-redirect" title="The Life of Brian">The Life of Brian</a></i>, <i><a href="/wiki/Mona_Lisa_(movie)" class="mw-redirect" title="Mona Lisa (movie)">Mona Lisa</a></i>, <i><a href="/wiki/Time_Bandits" title="Time Bandits">Time Bandits</a></i>, <i><a href="/wiki/Shanghai_Surprise" title="Shanghai Surprise">Shanghai Surprise</a></i>, <i><a href="/wiki/Withnail_and_I" title="Withnail and I">Withnail and I</a></i>) and even made cameo appearances in some of these as well (including a reporter in <i><a href="/wiki/All_You_Need_Is_Cash" title="All You Need Is Cash">All You Need Is Cash</a></i>).
+</p><p><a href="/wiki/Paul_McCartney" title="Paul McCartney">Paul McCartney</a> appeared in a cameo role in Peter Richardson's 1987 film <i><a href="/wiki/Eat_the_Rich_(film)" title="Eat the Rich (film)">Eat the Rich</a></i> and released his own film <i><a href="/wiki/Give_My_Regards_to_Broad_Street_(film)" title="Give My Regards to Broad Street (film)">Give My Regards to Broad Street</a></i> in 1984 in which Ringo Starr co-starred. He also appeared in the 2017 film <i><a href="/wiki/Pirates_of_the_Caribbean:_Dead_Men_Tell_No_Tales" title="Pirates of the Caribbean: Dead Men Tell No Tales">Pirates of the Caribbean: Dead Men Tell No Tales</a></i> <sup id="cite_ref-4" class="reference"><a href="#cite_note-4">&#91;4&#93;</a></sup>
+</p>
+<h3><span class="mw-headline" id="Unmade_films">Unmade films</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=The_Beatles_in_film&amp;action=edit&amp;section=8" title="Edit section: Unmade films">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>During the 1960s, there were many ideas pitched for films, but these were either rejected or else never saw the light of day; such projects included <i><a href="/wiki/A_Talent_for_Loving_(film)" title="A Talent for Loving (film)">A Talent for Loving</a></i>, a <a href="/wiki/Western_film" class="mw-redirect" title="Western film">Western film</a> written by <a href="/wiki/Richard_Condon" title="Richard Condon">Richard Condon</a>; <i><a href="/w/index.php?title=Shades_of_a_Personality&amp;action=edit&amp;redlink=1" class="new" title="Shades of a Personality (page does not exist)">Shades of a Personality</a></i>; film versions of <i><a href="/wiki/The_Lord_of_the_Rings" title="The Lord of the Rings">The Lord of the Rings</a></i> and <i><a href="/wiki/The_Three_Musketeers" title="The Three Musketeers">The Three Musketeers</a></i> starring the group (although <a href="/wiki/Richard_Lester" title="Richard Lester">Richard Lester</a>, who directed the group's first two movies, went on to direct his own version of <i><a href="/wiki/The_Three_Musketeers_(1973_film)" title="The Three Musketeers (1973 film)">The Three Musketeers</a></i> in 1973), and a script by playwright <a href="/wiki/Joe_Orton" title="Joe Orton">Joe Orton</a> called <i><a href="/wiki/Up_Against_It" title="Up Against It">Up Against It</a></i>.<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">&#91;5&#93;</a></sup> <a href="/wiki/Robert_Zemeckis" title="Robert Zemeckis">Robert Zemeckis</a> was planning a remake of the film <i>Yellow Submarine</i> with motion capture technology but it was cancelled in 2011.<sup id="cite_ref-gump_6-0" class="reference"><a href="#cite_note-gump-6">&#91;6&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="Critical_reception">Critical reception</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=The_Beatles_in_film&amp;action=edit&amp;section=9" title="Edit section: Critical reception">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<table class="wikitable" width="99%" border="1" style="text-align: center;">
+<tbody><tr>
+<th>Film
+</th>
+<th><a href="/wiki/Rotten_Tomatoes" title="Rotten Tomatoes">Rotten Tomatoes</a>
+</th>
+<th><a href="/wiki/Metacritic" title="Metacritic">Metacritic</a>
+</th></tr>
+<tr>
+<td><i><a href="/wiki/A_Hard_Day%27s_Night_(film)" title="A Hard Day&#39;s Night (film)">A Hard Day's Night</a></i>
+</td>
+<td>98% (102 reviews)<sup id="cite_ref-7" class="reference"><a href="#cite_note-7">&#91;7&#93;</a></sup>
+</td>
+<td>96 (24 reviews)<sup id="cite_ref-8" class="reference"><a href="#cite_note-8">&#91;8&#93;</a></sup><sup class="reference" id="ref_Release_Note_1"><a href="#endnote_Release_Note_1">[A]</a></sup>
+</td></tr>
+<tr>
+<td><i><a href="/wiki/Help!_(film)" title="Help! (film)">Help!</a></i>
+</td>
+<td>91% (22 reviews)<sup id="cite_ref-9" class="reference"><a href="#cite_note-9">&#91;9&#93;</a></sup>
+</td>
+<td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; font-size: smaller; text-align: center;" class="table-na">N/A
+</td></tr>
+<tr>
+<td><i><a href="/wiki/Magical_Mystery_Tour_(film)" title="Magical Mystery Tour (film)">Magical Mystery Tour</a></i>
+</td>
+<td>62% (12 reviews)<sup id="cite_ref-10" class="reference"><a href="#cite_note-10">&#91;10&#93;</a></sup>
+</td>
+<td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; font-size: smaller; text-align: center;" class="table-na">N/A
+</td></tr>
+<tr>
+<td><i><a href="/wiki/Yellow_Submarine_(film)" title="Yellow Submarine (film)">Yellow Submarine</a></i>
+</td>
+<td>96% (47 reviews)<sup id="cite_ref-11" class="reference"><a href="#cite_note-11">&#91;11&#93;</a></sup>
+</td>
+<td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; font-size: smaller; text-align: center;" class="table-na">N/A
+</td></tr>
+<tr>
+<td><i><a href="/wiki/Let_It_Be_(1970_film)" title="Let It Be (1970 film)">Let It Be</a></i>
+</td>
+<td>75% (11 reviews)<sup id="cite_ref-12" class="reference"><a href="#cite_note-12">&#91;12&#93;</a></sup>
+</td>
+<td data-sort-value="" style="background: #ececec; color: #2C2C2C; vertical-align: middle; font-size: smaller; text-align: center;" class="table-na">N/A
+</td></tr>
+
+<tr>
+<th>Average ratings
+</th>
+<th>85%
+</th>
+<th>96
+</th></tr></tbody></table>
+<style data-mw-deduplicate="TemplateStyles:r853264625">.mw-parser-output .refbegin{font-size:90%;margin-bottom:0.5em}.mw-parser-output .refbegin-hanging-indents>ul{list-style-type:none;margin-left:0}.mw-parser-output .refbegin-hanging-indents>ul>li,.mw-parser-output .refbegin-hanging-indents>dl>dd{margin-left:0;padding-left:3.2em;text-indent:-3.2em;list-style:none}.mw-parser-output .refbegin-100{font-size:100%}</style><div class="refbegin columns references-column-width" style="-moz-column-width: 30em; -webkit-column-width: 30em; column-width: 30em;">
+<ul><li>A<span class="citation wikicite" id="endnote_Release_Note_1"><sup></sup></span>&#160;: Ratings for the 2000 re-release.</li></ul>
+</div>
+<h2><span class="mw-headline" id="Documentaries">Documentaries</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=The_Beatles_in_film&amp;action=edit&amp;section=10" title="Edit section: Documentaries">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The Beatles have been the subject of a number of documentary films.
+</p>
+<ul><li><i>It's the Beatles!</i></li>
+<li><i><a href="/wiki/The_Beatles%27_1964_world_tour" title="The Beatles&#39; 1964 world tour">The Beatles in Australia</a></i></li>
+<li><i><a href="/wiki/Around_the_Beatles" title="Around the Beatles">Around the Beatles</a></i></li>
+<li><i><a href="/wiki/The_Beatles:_The_First_U.S._Visit" title="The Beatles: The First U.S. Visit">What's Happening! The Beatles in the U.S.A.</a></i></li>
+<li><i><a href="/wiki/The_Beatles_at_Shea_Stadium" title="The Beatles at Shea Stadium">The Beatles at Shea Stadium</a></i></li>
+<li><i><a href="/wiki/The_Beatles%27_1966_tour_of_Germany,_Japan_and_the_Philippines#Japan" title="The Beatles&#39; 1966 tour of Germany, Japan and the Philippines">The Beatles in Japan</a></i></li>
+<li><i><a href="/wiki/Let_It_Be_(1970_film)" title="Let It Be (1970 film)">Let It Be</a></i></li>
+<li><i><a href="/wiki/A_Salute_to_the_Beatles:_Once_upon_a_Time" title="A Salute to the Beatles: Once upon a Time">A Salute to the Beatles: Once upon a Time</a></i></li>
+<li><i><a href="/wiki/The_Compleat_Beatles" title="The Compleat Beatles">The Compleat Beatles</a></i></li>
+<li><i><a href="/wiki/It_Was_Twenty_Years_Ago_Today_(film)" title="It Was Twenty Years Ago Today (film)">It Was Twenty Years Ago Today</a></i></li>
+<li><i><a href="/wiki/The_Beatles:_The_First_U.S._Visit" title="The Beatles: The First U.S. Visit">The Beatles: The First U.S. Visit</a></i></li>
+<li><i><a href="/wiki/The_Beatles_Anthology_(film)" class="mw-redirect" title="The Beatles Anthology (film)">The Beatles Anthology</a></i></li>
+<li><i><a href="/wiki/All_Together_Now_(film)" title="All Together Now (film)">All Together Now</a></i></li>
+<li><i><a href="/w/index.php?title=Good_Ol%27_Freda_(film)&amp;action=edit&amp;redlink=1" class="new" title="Good Ol&#39; Freda (film) (page does not exist)">Good Ol' Freda</a></i> (December 3, 2013) Documentary about <a href="/wiki/Freda_Kelly" title="Freda Kelly">Freda Kelly</a>, secretary of Brian Epstein and The Beatles Fan Club and her life near to the Fab Four for 11 years.</li>
+<li><i><a href="/wiki/The_Beatles:_Eight_Days_a_Week" title="The Beatles: Eight Days a Week">The Beatles: Eight Days a Week</a></i></li>
+<li><i><a href="/w/index.php?title=How_The_Beatles_Changed_the_World&amp;action=edit&amp;redlink=1" class="new" title="How The Beatles Changed the World (page does not exist)">How The Beatles Changed the World</a></i></li></ul>
+<h2><span class="mw-headline" id="Promotional_films">Promotional films</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=The_Beatles_in_film&amp;action=edit&amp;section=11" title="Edit section: Promotional films">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div role="note" class="hatnote navigation-not-searchable">Main article: <a href="/wiki/Music_video#1960–1973:_Promotional_clips_and_others" title="Music video">Music video §&#160;1960–1973: Promotional clips and others</a></div>
+<ul><li>"<a href="/wiki/Rain_(Beatles_song)" title="Rain (Beatles song)">Rain</a>"</li>
+<li>"<a href="/wiki/Paperback_Writer" title="Paperback Writer">Paperback Writer</a>"</li>
+<li>"<a href="/wiki/Strawberry_Fields_Forever" title="Strawberry Fields Forever">Strawberry Fields Forever</a>"</li>
+<li>"<a href="/wiki/Penny_Lane" title="Penny Lane">Penny Lane</a>"</li>
+<li>"<a href="/wiki/A_Day_in_the_Life" title="A Day in the Life">A Day in the Life</a>"</li>
+<li>"<a href="/wiki/Hello,_Goodbye" title="Hello, Goodbye">Hello, Goodbye</a>"</li>
+<li>"<a href="/wiki/Lady_Madonna" title="Lady Madonna">Lady Madonna</a>"</li>
+<li>"<a href="/wiki/Hey_Jude" title="Hey Jude">Hey Jude</a>"</li>
+<li>"<a href="/wiki/Revolution_(Beatles_song)" title="Revolution (Beatles song)">Revolution</a>"</li>
+<li>"<a href="/wiki/Something_(Beatles_song)" title="Something (Beatles song)">Something</a>"</li></ul>
+<h2><span class="mw-headline" id="Fictionalised_Beatles">Fictionalised Beatles</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=The_Beatles_in_film&amp;action=edit&amp;section=12" title="Edit section: Fictionalised Beatles">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><i><a href="/wiki/Ringo_(1978_film)" title="Ringo (1978 film)">Ringo</a></i> (1978), Ringo Starr plays both a fictionalized version of himself and his fictional half-brother "Ognir Rrats"</li>
+<li><i><a href="/wiki/Birth_of_The_Beatles" class="mw-redirect" title="Birth of The Beatles">Birth of The Beatles</a></i> (1979), focusing on period from ca. 1957 at art college through Hamburg days to first number one</li>
+<li><i><a href="/wiki/Beatlemania_(musical)#Beatlemania:_The_Movie" title="Beatlemania (musical)">Beatlemania</a></i> (1981), a poorly received movie version of the Broadway show of the same name</li>
+<li><i><a href="/wiki/Give_My_Regards_to_Broad_Street_(film)" title="Give My Regards to Broad Street (film)">Give My Regards to Broad Street</a></i> (1984), the film covers a fictional day in the life of Paul McCartney</li>
+<li><i><a href="/wiki/John_and_Yoko:_A_Love_Story" title="John and Yoko: A Love Story">John and Yoko: A Love Story</a></i> (1985), chronicles the lives of John Lennon and Yoko Ono from 1966 to 1980</li>
+<li><i><a href="/wiki/The_Hours_and_Times" title="The Hours and Times">The Hours and Times</a></i> (1991), speculation about the weekend <a href="/wiki/Brian_Epstein" title="Brian Epstein">Brian Epstein</a> and <a href="/wiki/John_Lennon" title="John Lennon">John Lennon</a> spent together in <a href="/wiki/Barcelona" title="Barcelona">Barcelona</a> in 1963</li>
+<li><i><a href="/wiki/Backbeat_(film)" title="Backbeat (film)">Backbeat</a></i> (1994), the <a href="/wiki/Stuart_Sutcliffe" title="Stuart Sutcliffe">Stuart Sutcliffe</a> story</li>
+<li><i><a href="/wiki/The_Linda_McCartney_Story" title="The Linda McCartney Story">The Linda McCartney Story</a></i> (2000), a TV film covering the relationship between Paul McCartney and Linda Eastman</li>
+<li><i><a href="/wiki/Two_of_Us_(2000_film)" title="Two of Us (2000 film)">Two of Us</a></i> (2000), covering a mid-1970s meeting between Paul McCartney and John Lennon</li>
+<li><i><a href="/wiki/In_His_Life:_The_John_Lennon_Story" title="In His Life: The John Lennon Story">In His Life: The John Lennon Story</a></i> (2000), focusing on period from 1957 to 1964</li>
+<li><i><a href="/wiki/The_Killing_of_John_Lennon" title="The Killing of John Lennon">The Killing of John Lennon</a></i> (2006), film about Mark David Chapman's plot to kill John Lennon</li>
+<li><i><a href="/wiki/Chapter_27" title="Chapter 27">Chapter 27</a></i> (2007), film depicting the murder of John Lennon by Mark David Chapman</li>
+<li><i><a href="/wiki/Nowhere_Boy" title="Nowhere Boy">Nowhere Boy</a></i> (2009), a John Lennon biopic, focusing on his teens</li>
+<li><i><a href="/wiki/Lennon_Naked" title="Lennon Naked">Lennon Naked</a></i> (2010), a TV movie based on the life of Lennon from 1967 to 1971 starring <a href="/wiki/Christopher_Eccleston" title="Christopher Eccleston">Christopher Eccleston</a> as John Lennon</li>
+<li><i><a href="/wiki/Playhouse_Presents#Series_2_(2013)" title="Playhouse Presents">Playhouse Presents: Snodgrass</a></i> (2013), TV episode wondering what John Lennon's life would have been like if he hadn't joined The Beatles</li>
+<li><i><a href="/wiki/Cilla_(miniseries)" title="Cilla (miniseries)">Cilla</a></i> (2014), a miniseries about Cilla Black, features the Beatles in supporting roles</li></ul>
+<h2><span class="mw-headline" id="Inspired_by_The_Beatles">Inspired by The Beatles</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=The_Beatles_in_film&amp;action=edit&amp;section=13" title="Edit section: Inspired by The Beatles">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Several fictional films not depicting The Beatles have been entirely based on Beatles themes and songs
+</p>
+<ul><li><i>Pinoy Beatles</i> (1964), a <a href="/wiki/Tagalog_language" title="Tagalog language">Tagalog</a> musical made in the <a href="/wiki/Philippines" title="Philippines">Philippines</a>. It was released 3 months after <i><a href="/wiki/A_Hard_Day%27s_Night_(film)" title="A Hard Day&#39;s Night (film)">A Hard Day's Night</a></i></li>
+<li><i>The Girls on the Beach</i> (1965), a <a href="/wiki/Beach_party_film" title="Beach party film">beach party film</a> in which college coeds mistakenly believe the Beatles are going to perform at their sorority fundraiser</li>
+<li><i><a href="/wiki/All_This_and_World_War_II" title="All This and World War II">All This and World War II</a></i> (1976), <a href="/wiki/Documentary_film" title="Documentary film">documentary</a> of <a href="/wiki/World_War_II" title="World War II">World War II</a> using Beatles music</li>
+<li><i><a href="/wiki/Sgt._Pepper%27s_Lonely_Hearts_Club_Band_(film)" title="Sgt. Pepper&#39;s Lonely Hearts Club Band (film)">Sgt. Pepper's Lonely Hearts Club Band</a></i> (1978), a <a href="/wiki/Musical_film" title="Musical film">musical</a> based on the Beatles' <a href="/wiki/Sgt._Pepper%27s_Lonely_Hearts_Club_Band" title="Sgt. Pepper&#39;s Lonely Hearts Club Band">album of the same name</a></li>
+<li><i><a href="/wiki/I_Wanna_Hold_Your_Hand_(film)" title="I Wanna Hold Your Hand (film)">I Wanna Hold Your Hand</a></i> (1978), a <a href="/wiki/Category:Coming-of-age_films" title="Category:Coming-of-age films">coming of age film</a> about <a href="/wiki/Beatlemania" title="Beatlemania">Beatlemania</a></li>
+<li><i><a href="/wiki/All_You_Need_Is_Cash" title="All You Need Is Cash">All You Need Is Cash</a></i> (1978), TV <a href="/wiki/Mockumentary" title="Mockumentary">mockumentary</a> featuring <a href="/wiki/The_Rutles" title="The Rutles">The Rutles</a>, a parody of the Beatles</li>
+<li><i><a href="/wiki/Secrets_(1992_Australian_film)" title="Secrets (1992 Australian film)">Secrets</a></i> (1992), a drama about five Australian teenagers who get locked in the basement of a hotel where the Beatles are staying</li>
+<li><i><a href="/wiki/I_Am_Sam" title="I Am Sam">I Am Sam</a></i> (2001), a drama about the story of an intellectually disabled father who loves the Beatles and his efforts to retain custody of his daughter</li>
+<li><i><a href="/wiki/The_Rutles_2:_Can%27t_Buy_Me_Lunch" title="The Rutles 2: Can&#39;t Buy Me Lunch">The Rutles 2: Can't Buy Me Lunch</a></i> (2005), mockumentary featuring The Rutles</li>
+<li><i><a href="/wiki/Across_the_Universe_(film)" title="Across the Universe (film)">Across the Universe</a></i> (2007), a musical</li>
+<li><i><a href="/w/index.php?title=Beatles_(film)&amp;action=edit&amp;redlink=1" class="new" title="Beatles (film) (page does not exist)">Beatles</a></i> (2014) Norwegian film based on <a href="/wiki/Beatles_(novel)" title="Beatles (novel)">Beatles (novel)</a> written by <a href="/wiki/Lars_Saabye_Christensen" title="Lars Saabye Christensen">Lars Saabye Christensen</a>. It's about five boys in the seventh grade in school, they live on the west side of Oslo, they are all great fans of the band "The Beatles".</li></ul>
+<h2><span class="mw-headline" id="Other">Other</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=The_Beatles_in_film&amp;action=edit&amp;section=14" title="Edit section: Other">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a href="/wiki/Howard_Kaylan" title="Howard Kaylan">Howard Kaylan</a>'s autobiographical film, <i><a href="/wiki/My_Dinner_with_Jimi" title="My Dinner with Jimi">My Dinner with Jimi</a></i>, from 2003, tells the story of Kaylan and his band <a href="/wiki/The_Turtles" title="The Turtles">The Turtles</a>' first tour of England, where they met many British rock stars, including <a href="/wiki/The_Beatles" title="The Beatles">The Beatles</a>. John Lennon was portrayed by <a href="/w/index.php?title=Brian_Groh&amp;action=edit&amp;redlink=1" class="new" title="Brian Groh (page does not exist)">Brian Groh</a>; Paul McCartney, by <a href="/wiki/Quinton_Flynn" title="Quinton Flynn">Quinton Flynn</a>; George Harrison, by <a href="/wiki/Nate_Dushku" title="Nate Dushku">Nate Dushku</a> and Ringo Starr, by <a href="/wiki/Ben_Bod%C3%A9" title="Ben Bodé">Ben Bodé</a>.</li>
+<li>In the 2007 mock-biopic film <i><a href="/wiki/Walk_Hard:_The_Dewey_Cox_Story" title="Walk Hard: The Dewey Cox Story">Walk Hard: The Dewey Cox Story</a></i>, Dewey Cox and his bandmates go to India to pray with the Maharishi.  There, they encounter the intentionally miscast Beatles with <a href="/wiki/Paul_Rudd" title="Paul Rudd">Paul Rudd</a>, <a href="/wiki/Jack_Black" title="Jack Black">Jack Black</a>, <a href="/wiki/Justin_Long" title="Justin Long">Justin Long</a> and <a href="/wiki/Jason_Schwartzman" title="Jason Schwartzman">Jason Schwartzman</a> as John, Paul, George and Ringo, respectively.</li>
+<li>The vultures in the 1967 film of <i><a href="/wiki/The_Jungle_Book_(1967_film)" title="The Jungle Book (1967 film)">The Jungle Book</a></i> are considered caricatures of the Beatles. The Beatles were originally planned to voice them, but later declined due to scheduling conflicts.<sup id="cite_ref-13" class="reference"><a href="#cite_note-13">&#91;13&#93;</a></sup></li></ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=The_Beatles_in_film&amp;action=edit&amp;section=15" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<div class="mw-references-wrap mw-references-columns"><ol class="references">
+<li id="cite_note-Sarris-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-Sarris_1-0">^</a></b></span> <span class="reference-text"><cite class="citation book">Sarris, Andrew (2004). "A Hard Day's Night".  In Elizabeth Thomson, David Gutman. <i>The Lennon Companion</i>. New York: Da Capo Press. <a href="/wiki/International_Standard_Book_Number" title="International Standard Book Number">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-306-81270-3" title="Special:BookSources/0-306-81270-3">0-306-81270-3</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=A+Hard+Day%27s+Night&amp;rft.btitle=The+Lennon+Companion&amp;rft.place=New+York&amp;rft.pub=Da+Capo+Press&amp;rft.date=2004&amp;rft.isbn=0-306-81270-3&amp;rft.aulast=Sarris&amp;rft.aufirst=Andrew&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AThe+Beatles+in+film" class="Z3988"></span><style data-mw-deduplicate="TemplateStyles:r879151008">.mw-parser-output cite.citation{font-style:inherit}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation .cs1-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/6/65/Lock-green.svg/9px-Lock-green.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .citation .cs1-lock-limited a,.mw-parser-output .citation .cs1-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Lock-gray-alt-2.svg/9px-Lock-gray-alt-2.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .citation .cs1-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Lock-red-alt-2.svg/9px-Lock-red-alt-2.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration{color:#555}.mw-parser-output .cs1-subscription span,.mw-parser-output .cs1-registration span{border-bottom:1px dotted;cursor:help}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Wikisource-logo.svg/12px-Wikisource-logo.svg.png")no-repeat;background-position:right .1em center}.mw-parser-output code.cs1-code{color:inherit;background:inherit;border:inherit;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;font-size:100%}.mw-parser-output .cs1-visible-error{font-size:100%}.mw-parser-output .cs1-maint{display:none;color:#33aa33;margin-left:0.3em}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration,.mw-parser-output .cs1-format{font-size:95%}.mw-parser-output .cs1-kern-left,.mw-parser-output .cs1-kern-wl-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right,.mw-parser-output .cs1-kern-wl-right{padding-right:0.2em}</style></span>
+</li>
+<li id="cite_note-All-time_100_Movies-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-All-time_100_Movies_2-0">^</a></b></span> <span class="reference-text"><cite class="citation news">Schickel, Richard, Corliss, Richard (19 February 2007). <a rel="nofollow" class="external text" href="http://www.time.com/time/2005/100movies/0,23220,a_hard_days_night,00.html">"ALL-TIME 100 MOVIES"</a>. <i><a href="/wiki/Time_(magazine)" title="Time (magazine)">Time</a></i><span class="reference-accessdate">. Retrieved <span class="nowrap">27 February</span> 2008</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Time&amp;rft.atitle=ALL-TIME+100+MOVIES&amp;rft.date=2007-02-19&amp;rft.aulast=Schickel%2C+Richard&amp;rft.aufirst=Corliss%2C+Richard&amp;rft_id=http%3A%2F%2Fwww.time.com%2Ftime%2F2005%2F100movies%2F0%2C23220%2Ca_hard_days_night%2C00.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AThe+Beatles+in+film" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r879151008"/></span>
+</li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.televisionheaven.co.uk/magical_mystery_tour.htm">"Magical Mystery Tour"</a>. Televisionheaven.co.uk<span class="reference-accessdate">. Retrieved <span class="nowrap">2011-08-20</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Magical+Mystery+Tour&amp;rft.pub=Televisionheaven.co.uk&amp;rft_id=http%3A%2F%2Fwww.televisionheaven.co.uk%2Fmagical_mystery_tour.htm&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AThe+Beatles+in+film" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r879151008"/></span>
+</li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://ew.com/movies/2017/05/26/paul-mccartney-pirates-of-the-caribbean-5-role/">http://ew.com/movies/2017/05/26/paul-mccartney-pirates-of-the-caribbean-5-role/</a></span>
+</li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.beatlesagain.com/breflib/joeorton.html">"Joe Orton and the Lost Beatles film"</a>. Beatlesagain.com<span class="reference-accessdate">. Retrieved <span class="nowrap">2011-08-20</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Joe+Orton+and+the+Lost+Beatles+film&amp;rft.pub=Beatlesagain.com&amp;rft_id=http%3A%2F%2Fwww.beatlesagain.com%2Fbreflib%2Fjoeorton.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AThe+Beatles+in+film" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r879151008"/></span>
+</li>
+<li id="cite_note-gump-6"><span class="mw-cite-backlink"><b><a href="#cite_ref-gump_6-0">^</a></b></span> <span class="reference-text">Kit, Borys. <a rel="nofollow" class="external text" href="https://www.reuters.com/article/2011/03/15/us-yellowsubmarine-idUSTRE72E0ED20110315">Disney torpedoes Zemeckis' "Yellow Submarine"</a> <i><a href="/wiki/The_Hollywood_Reporter" title="The Hollywood Reporter">The Hollywood Reporter</a></i> (14 March 2011).</span>
+</li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="#cite_ref-7">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://www.rottentomatoes.com/m/beatles_a_hard_days_night/">"A Hard Day's Night (1964)"</a>. <i><a href="/wiki/Rotten_Tomatoes" title="Rotten Tomatoes">Rotten Tomatoes</a></i>. <a href="/wiki/Flixster" title="Flixster">Flixster</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2016-09-11</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Rotten+Tomatoes&amp;rft.atitle=A+Hard+Day%27s+Night+%281964%29&amp;rft_id=https%3A%2F%2Fwww.rottentomatoes.com%2Fm%2Fbeatles_a_hard_days_night%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AThe+Beatles+in+film" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r879151008"/></span>
+</li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="#cite_ref-8">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.metacritic.com/movie/a-hard-days-night-re-release">"A Hard Day's Night - Season 1 Reviews"</a>. <i><a href="/wiki/Metacritic" title="Metacritic">Metacritic</a></i>. <a href="/wiki/CBS_Interactive" title="CBS Interactive">CBS Interactive</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2016-09-11</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Metacritic&amp;rft.atitle=A+Hard+Day%27s+Night+-+Season+1+Reviews&amp;rft_id=http%3A%2F%2Fwww.metacritic.com%2Fmovie%2Fa-hard-days-night-re-release&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AThe+Beatles+in+film" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r879151008"/></span>
+</li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="#cite_ref-9">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://www.rottentomatoes.com/m/beatles_the_help/">"Help! (1965)"</a>. <i><a href="/wiki/Rotten_Tomatoes" title="Rotten Tomatoes">Rotten Tomatoes</a></i>. <a href="/wiki/Flixster" title="Flixster">Flixster</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2016-09-11</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Rotten+Tomatoes&amp;rft.atitle=Help%21+%281965%29&amp;rft_id=https%3A%2F%2Fwww.rottentomatoes.com%2Fm%2Fbeatles_the_help%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AThe+Beatles+in+film" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r879151008"/></span>
+</li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="#cite_ref-10">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://www.rottentomatoes.com/m/beatles_magical_mystery_tour/">"Magical Mystery Tour (1967)"</a>. <i><a href="/wiki/Rotten_Tomatoes" title="Rotten Tomatoes">Rotten Tomatoes</a></i>. <a href="/wiki/Flixster" title="Flixster">Flixster</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2016-09-11</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Rotten+Tomatoes&amp;rft.atitle=Magical+Mystery+Tour+%281967%29&amp;rft_id=https%3A%2F%2Fwww.rottentomatoes.com%2Fm%2Fbeatles_magical_mystery_tour%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AThe+Beatles+in+film" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r879151008"/></span>
+</li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="#cite_ref-11">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://www.rottentomatoes.com/m/beatles_the_yellow_submarine/">"Yellow Submarine (1968)"</a>. <i><a href="/wiki/Rotten_Tomatoes" title="Rotten Tomatoes">Rotten Tomatoes</a></i>. <a href="/wiki/Flixster" title="Flixster">Flixster</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2016-09-11</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Rotten+Tomatoes&amp;rft.atitle=Yellow+Submarine+%281968%29&amp;rft_id=https%3A%2F%2Fwww.rottentomatoes.com%2Fm%2Fbeatles_the_yellow_submarine%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AThe+Beatles+in+film" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r879151008"/></span>
+</li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="#cite_ref-12">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://www.rottentomatoes.com/m/let-it-be">"Let It Be (1970)"</a>. <i><a href="/wiki/Rotten_Tomatoes" title="Rotten Tomatoes">Rotten Tomatoes</a></i>. <a href="/wiki/Flixster" title="Flixster">Flixster</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2016-09-11</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Rotten+Tomatoes&amp;rft.atitle=Let+It+Be+%281970%29&amp;rft_id=https%3A%2F%2Fwww.rottentomatoes.com%2Fm%2Flet-it-be&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AThe+Beatles+in+film" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r879151008"/></span>
+</li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><b><a href="#cite_ref-13">^</a></b></span> <span class="reference-text"><cite class="citation web">Kumar, Sujay (2010-10-07). <a rel="nofollow" class="external text" href="http://www.thedailybeast.com/articles/2010/10/07/11-on-screen-portrayals-of-the-beatles.html">"11 On-Screen Portrayals of the Beatles"</a>. <a href="/wiki/The_Daily_Beast" title="The Daily Beast">The Daily Beast</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2011-09-26</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=11+On-Screen+Portrayals+of+the+Beatles&amp;rft.pub=The+Daily+Beast&amp;rft.date=2010-10-07&amp;rft.aulast=Kumar&amp;rft.aufirst=Sujay&amp;rft_id=http%3A%2F%2Fwww.thedailybeast.com%2Farticles%2F2010%2F10%2F07%2F11-on-screen-portrayals-of-the-beatles.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AThe+Beatles+in+film" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r879151008"/></span>
+</li>
+</ol></div></div>
+<div role="navigation" class="navbox" aria-labelledby="The_Beatles" style="padding:3px"><table class="nowraplinks vcard hlist collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th scope="col" class="navbox-title" colspan="2" style="background: #b0c4de;"><div class="plainlinks hlist navbar mini"><ul><li class="nv-view"><a href="/wiki/Template:The_Beatles" title="Template:The Beatles"><abbr title="View this template" style=";background: #b0c4de;;background:none transparent;border:none;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none; padding:0;">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:The_Beatles" title="Template talk:The Beatles"><abbr title="Discuss this template" style=";background: #b0c4de;;background:none transparent;border:none;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none; padding:0;">t</abbr></a></li><li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:The_Beatles&amp;action=edit"><abbr title="Edit this template" style=";background: #b0c4de;;background:none transparent;border:none;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none; padding:0;">e</abbr></a></li></ul></div><div id="The_Beatles" class="fn org" style="font-size:114%;margin:0 4em"><a href="/wiki/The_Beatles" title="The Beatles">The Beatles</a></div></th></tr><tr><td class="navbox-abovebelow" colspan="2" style="background: #EEEEEE;"><div id="*_John_Lennon&amp;#10;*_Paul_McCartney&amp;#10;*_George_Harrison&amp;#10;*_Ringo_Starr&amp;#10;&amp;#10;*_Stuart_Sutcliffe&amp;#10;*_Pete_Best">
+<ul><li><b><a href="/wiki/John_Lennon" title="John Lennon">John Lennon</a></b></li>
+<li><b><a href="/wiki/Paul_McCartney" title="Paul McCartney">Paul McCartney</a></b></li>
+<li><b><a href="/wiki/George_Harrison" title="George Harrison">George Harrison</a></b></li>
+<li><b><a href="/wiki/Ringo_Starr" title="Ringo Starr">Ringo Starr</a></b></li></ul>
+<ul><li><a href="/wiki/Stuart_Sutcliffe" title="Stuart Sutcliffe">Stuart Sutcliffe</a></li>
+<li><a href="/wiki/Pete_Best" title="Pete Best">Pete Best</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%;background: #EEEEEE;">History</th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/The_Quarrymen" title="The Quarrymen">The Quarrymen</a></li>
+<li><a href="/wiki/The_Beatles_in_Hamburg" title="The Beatles in Hamburg">In Hamburg</a></li>
+<li><a href="/wiki/The_Beatles_at_The_Cavern_Club" title="The Beatles at The Cavern Club">At The Cavern Club</a></li>
+<li><a href="/wiki/The_Beatles%27_Decca_audition" title="The Beatles&#39; Decca audition">Decca audition</a></li>
+<li><a href="/wiki/The_Beatles%27_North_American_releases" title="The Beatles&#39; North American releases">North American releases</a></li>
+<li><a href="/wiki/Beatlemania" title="Beatlemania">Beatlemania</a></li>
+<li>"<a href="/wiki/More_popular_than_Jesus" title="More popular than Jesus">More popular than Jesus</a>"</li>
+<li><a href="/wiki/The_Beatles_in_Bangor" title="The Beatles in Bangor">In Bangor</a></li>
+<li><a href="/wiki/The_Beatles_in_India" title="The Beatles in India">In India</a></li>
+<li><a href="/wiki/Break-up_of_the_Beatles" title="Break-up of the Beatles">Break-up</a></li>
+<li><a href="/wiki/Murder_of_John_Lennon" title="Murder of John Lennon">Murder of John Lennon</a></li>
+<li><i><a href="/wiki/The_Beatles_Anthology" title="The Beatles Anthology">Anthology</a></i></li>
+<li><a href="/wiki/List_of_members_of_bands_featuring_members_of_the_Beatles" title="List of members of bands featuring members of the Beatles">Line-ups</a></li>
+<li><a href="/wiki/Religious_views_of_the_Beatles" title="Religious views of the Beatles">Religious views</a></li>
+<li><a href="/wiki/The_Beatles_timeline" title="The Beatles timeline">Timeline</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%;background: #EEEEEE;">Live performances</th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/The_Beat_Ballad_Show_Tour" title="The Beat Ballad Show Tour">1960 Johnny Gentle Tour</a></li>
+<li><a href="/wiki/The_Beatles_Winter_1963_Helen_Shapiro_Tour" title="The Beatles Winter 1963 Helen Shapiro Tour">Winter 1963 Helen Shapiro UK Tour</a></li>
+<li><a href="/wiki/Roy_Orbison/The_Beatles_Tour" title="Roy Orbison/The Beatles Tour">1963 Roy Orbison Tour</a></li>
+<li><a href="/wiki/The_Beatles%27_1964_world_tour" title="The Beatles&#39; 1964 world tour">1964 world tour</a></li>
+<li><a href="/wiki/The_Beatles%27_1965_European_tour" title="The Beatles&#39; 1965 European tour">1965 European tour</a></li>
+<li><a href="/wiki/The_Beatles%27_1965_US_tour" title="The Beatles&#39; 1965 US tour">1965 US tour</a></li>
+<li><a href="/wiki/The_Beatles%27_1965_UK_tour" title="The Beatles&#39; 1965 UK tour">1965 UK tour</a></li>
+<li><a href="/wiki/The_Beatles%27_1966_tour_of_Germany,_Japan_and_the_Philippines" title="The Beatles&#39; 1966 tour of Germany, Japan and the Philippines">1966 tour of Germany, Japan and the Philippines</a></li>
+<li><a href="/wiki/The_Beatles%27_1966_US_tour" title="The Beatles&#39; 1966 US tour">1966 US tour</a></li>
+<li><a href="/wiki/The_Beatles%27_rooftop_concert" title="The Beatles&#39; rooftop concert">Rooftop concert</a></li>
+<li><a href="/wiki/List_of_the_Beatles%27_live_performances" title="List of the Beatles&#39; live performances">List of live performances</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%;background: #EEEEEE;">Associated places</th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/34_Montagu_Square,_Marylebone" title="34 Montagu Square, Marylebone">34 Montagu Square, Marylebone</a></li>
+<li><a href="/wiki/Abbey_Road,_London" title="Abbey Road, London">Abbey Road, London</a></li>
+<li><a href="/wiki/Abbey_Road_Studios" title="Abbey Road Studios">Abbey Road Studios</a></li>
+<li><a href="/wiki/The_Bag_O%27Nails" title="The Bag O&#39;Nails">The Bag O'Nails</a></li>
+<li><a href="/wiki/Beatlemania_Hamburg" title="Beatlemania Hamburg">Beatlemania Hamburg</a></li>
+<li><a href="/wiki/Beatles_Ashram" title="Beatles Ashram">Beatles Ashram</a></li>
+<li><a href="/wiki/Beatles-Platz" title="Beatles-Platz">Beatles-Platz</a></li>
+<li><a href="/wiki/The_Beatles_Story" title="The Beatles Story">The Beatles Story</a></li>
+<li><a href="/wiki/Blue_Angel_(nightclub)" title="Blue Angel (nightclub)">Blue Angel</a></li>
+<li><a href="/wiki/The_Casbah_Coffee_Club" title="The Casbah Coffee Club">The Casbah Coffee Club</a></li>
+<li><a href="/wiki/Candlestick_Park" title="Candlestick Park">Candlestick Park</a></li>
+<li><a href="/wiki/The_Cavern_Club" title="The Cavern Club">The Cavern Club</a></li>
+<li><a href="/wiki/Cavern_Mecca" title="Cavern Mecca">Cavern Mecca</a></li>
+<li><a href="/wiki/Egri_Road_Beatles_M%C3%BAzeum" title="Egri Road Beatles Múzeum">Egri Road Beatles Múzeum</a></li>
+<li><a href="/wiki/Kaiserkeller" title="Kaiserkeller">Kaiserkeller</a></li>
+<li><a href="/wiki/Kinfauns" title="Kinfauns">Kinfauns</a></li>
+<li><a href="/wiki/Savile_Row" title="Savile Row">3 Savile Row</a></li>
+<li><a href="/wiki/The_Scotch_of_St._James" title="The Scotch of St. James">The Scotch of St. James</a></li>
+<li><a href="/wiki/Shea_Stadium" title="Shea Stadium">Shea Stadium</a></li>
+<li><a href="/wiki/Stanley_Street,_Liverpool" title="Stanley Street, Liverpool">Stanley Street</a></li>
+<li><a href="/wiki/Star-Club" title="Star-Club">Star-Club</a></li>
+<li><a href="/wiki/Strawberry_Field" title="Strawberry Field">Strawberry Field</a></li>
+<li><a href="/wiki/Tittenhurst_Park" title="Tittenhurst Park">Tittenhurst Park</a></li>
+<li><a href="/wiki/The_Top_Ten_Club" title="The Top Ten Club">The Top Ten Club</a></li>
+<li><a href="/wiki/Wigmore_Street" title="Wigmore Street">Wigmore Street</a></li>
+<li><a href="/wiki/Yellow_Submarine_(sculpture)" title="Yellow Submarine (sculpture)">Yellow Submarine sculpture</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%;background: #EEEEEE;">Associated companies</th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Apple_Corps" title="Apple Corps">Apple Corps</a></li>
+<li><a href="/wiki/Apple_Records" title="Apple Records">Apple Records</a></li>
+<li><a href="/wiki/Harrisongs" title="Harrisongs">Harrisongs</a></li>
+<li><a href="/wiki/Lingasong_Records" title="Lingasong Records">Lingasong Records</a></li>
+<li><a href="/wiki/Northern_Songs" title="Northern Songs">Northern Songs</a></li>
+<li><a href="/wiki/Phillips%27_Sound_Recording_Services" title="Phillips&#39; Sound Recording Services">Phillips' Sound Recording Services</a></li>
+<li><a href="/wiki/Seltaeb" title="Seltaeb">Seltaeb</a></li>
+<li><a href="/wiki/Startling_Music" title="Startling Music">Startling Music</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%;background: #EEEEEE;">Influence</th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/List_of_cover_versions_of_Beatles_songs" title="List of cover versions of Beatles songs">Artists who have covered the Beatles</a></li>
+<li><a href="/wiki/Beatlesque" title="Beatlesque">Beatlesque</a></li>
+<li><a href="/wiki/British_Invasion" title="British Invasion">British Invasion</a></li>
+<li><a href="/wiki/Britpop" title="Britpop">Britpop</a></li>
+<li><a href="/wiki/Cultural_impact_of_the_Beatles" title="Cultural impact of the Beatles">Cultural impact</a></li>
+<li><a href="/wiki/Jangle_pop" title="Jangle pop">Jangle pop</a></li>
+<li><a href="/wiki/The_Fest_for_Beatles_Fans" title="The Fest for Beatles Fans">The Fest for Beatles Fans</a></li>
+<li><a href="/wiki/Power_pop" title="Power pop">Power pop</a></li>
+<li><a href="/wiki/Proto-prog" title="Proto-prog">Proto-prog</a></li>
+<li><a href="/wiki/The_Rutles" title="The Rutles">The Rutles</a></li>
+<li><a href="/wiki/Tributes_to_the_Beatles" title="Tributes to the Beatles">Tributes</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%;background: #EEEEEE;">Lists</th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/List_of_awards_and_nominations_received_by_the_Beatles" title="List of awards and nominations received by the Beatles">Awards and nominations</a></li>
+<li><a href="/wiki/The_Beatles_bootleg_recordings" title="The Beatles bootleg recordings">Bootlegs</a></li>
+<li><a href="/wiki/List_of_songs_covered_by_the_Beatles" title="List of songs covered by the Beatles">Cover songs</a></li>
+<li><a href="/wiki/The_Beatles_discography" title="The Beatles discography">Discography</a></li>
+<li><a class="mw-selflink selflink">Film</a></li>
+<li><a href="/wiki/List_of_the_Beatles%27_instruments" title="List of the Beatles&#39; instruments">Instruments</a></li>
+<li><a href="/wiki/List_of_people_who_performed_on_Beatles_recordings" title="List of people who performed on Beatles recordings">Performers</a></li>
+<li><a href="/wiki/Collaborations_between_ex-Beatles" title="Collaborations between ex-Beatles">Post-breakup collaborations</a></li>
+<li><a href="/wiki/The_Beatles%27_recording_sessions" title="The Beatles&#39; recording sessions">Recording sessions</a></li>
+<li><a href="/wiki/List_of_songs_recorded_by_the_Beatles" title="List of songs recorded by the Beatles">Songs</a></li>
+<li><a href="/wiki/List_of_images_on_the_cover_of_Sgt._Pepper%27s_Lonely_Hearts_Club_Band" title="List of images on the cover of Sgt. Pepper&#39;s Lonely Hearts Club Band"><i>Sgt. Pepper</i> cover</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%;background: #EEEEEE;">Related media</th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><i><a href="/wiki/Around_the_Beatles" title="Around the Beatles">Around the Beatles</a></i></li>
+<li><i><a href="/wiki/Beat_Bugs" title="Beat Bugs">Beat Bugs</a></i></li>
+<li><a href="/wiki/The_Beatles_(TV_series)" title="The Beatles (TV series)"><i>The Beatles</i> (TV series)</a></li>
+<li><i><a href="/wiki/The_Beatles:_The_Authorised_Biography" title="The Beatles: The Authorised Biography">The Beatles: The Authorised Biography</a></i></li>
+<li><a href="/wiki/The_Beatles_Anthology_(book)" title="The Beatles Anthology (book)"><i>The Beatles Anthology</i> (book)</a></li>
+<li><i><a href="/wiki/The_Beatles_at_Abbey_Road" title="The Beatles at Abbey Road">The Beatles at Abbey Road</a></i></li>
+<li><a href="/wiki/The_Beatles_Channel" title="The Beatles Channel">The Beatles Channel</a></li>
+<li><i><a href="/wiki/The_Beatles_Illustrated_Lyrics" title="The Beatles Illustrated Lyrics">The Beatles Illustrated Lyrics</a></i></li>
+<li><i><a href="/wiki/The_Beeb%27s_Lost_Beatles_Tapes" title="The Beeb&#39;s Lost Beatles Tapes">The Beeb's Lost Beatles Tapes</a></i></li>
+<li><i><a href="/wiki/The_Beatles:_Rock_Band" title="The Beatles: Rock Band">The Beatles: Rock Band</a></i></li>
+<li><i><a href="/wiki/The_Beatles_Tapes_from_the_David_Wigg_Interviews" title="The Beatles Tapes from the David Wigg Interviews">The Beatles Tapes from the David Wigg Interviews</a></i></li>
+<li><i><a href="/wiki/Everyday_Chemistry" title="Everyday Chemistry">Everyday Chemistry</a></i></li>
+<li><i><a href="/wiki/In_My_Life_(George_Martin_album)" title="In My Life (George Martin album)">In My Life</a></i></li>
+<li><a href="/wiki/Let_It_Be_(musical)" title="Let It Be (musical)"><i>Let It Be</i> (musical)</a></li>
+<li><a href="/wiki/Love_(Cirque_du_Soleil)" title="Love (Cirque du Soleil)"><i>Love</i> (Cirque du Soleil)</a></li>
+<li><i><a href="/wiki/Rain:_A_Tribute_to_the_Beatles" title="Rain: A Tribute to the Beatles">Rain: A Tribute to the Beatles</a></i></li>
+<li><a href="/wiki/Sgt._Pepper%27s_Lonely_Hearts_Club_Band_(film)" title="Sgt. Pepper&#39;s Lonely Hearts Club Band (film)"><i>Sgt. Pepper's Lonely Hearts Club Band</i> (film)</a></li>
+<li><i><a href="/wiki/The_Twelfth_Album" title="The Twelfth Album">The Twelfth Album</a></i></li>
+<li><i><a href="/wiki/Up_Against_It" title="Up Against It">Up Against It</a></i></li>
+<li><a href="/wiki/Across_the_Universe_(film)" title="Across the Universe (film)"><i>Across the Universe</i> (film)</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%;background: #EEEEEE;">Other topics</th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><i><a href="/wiki/Apple_Corps_v_Apple_Computer" title="Apple Corps v Apple Computer">Apple Corps v Apple Computer</a></i></li>
+<li><a href="/wiki/Apple_scruffs" title="Apple scruffs">Apple scruffs</a></li>
+<li><a href="/wiki/Beatle_boot" title="Beatle boot">Beatle boots</a></li>
+<li><a href="/wiki/Beatles_Day" title="Beatles Day">Beatles Day</a></li>
+<li><a href="/wiki/Beat_music" title="Beat music">Beat music</a></li>
+<li><a href="/wiki/Fifth_Beatle" title="Fifth Beatle">Fifth Beatle</a></li>
+<li><a href="/wiki/Lennon%E2%80%93McCartney" title="Lennon–McCartney">Lennon–McCartney</a></li>
+<li><a href="/wiki/Jeff_Lynne_and_the_Beatles" title="Jeff Lynne and the Beatles">Jeff Lynne and the Beatles</a></li>
+<li><a href="/wiki/Paul_is_dead" title="Paul is dead">Paul is dead</a></li>
+<li><a href="/wiki/Recording_practices_of_the_Beatles" title="Recording practices of the Beatles">Recording practices</a></li></ul>
+</div></td></tr><tr><td class="navbox-abovebelow" colspan="2" style="background: #EEEEEE;"><div>
+<ul><li><img alt="Wikipedia book" src="//upload.wikimedia.org/wikipedia/commons/thumb/8/89/Symbol_book_class2.svg/16px-Symbol_book_class2.svg.png" decoding="async" title="Wikipedia book" width="16" height="16" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/89/Symbol_book_class2.svg/23px-Symbol_book_class2.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/89/Symbol_book_class2.svg/31px-Symbol_book_class2.svg.png 2x" data-file-width="180" data-file-height="185" /> <a href="/wiki/Book:The_Beatles" title="Book:The Beatles">Book</a></li>
+<li><img alt="Category" src="//upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/16px-Folder_Hexagonal_Icon.svg.png" decoding="async" title="Category" width="16" height="14" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/24px-Folder_Hexagonal_Icon.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/32px-Folder_Hexagonal_Icon.svg.png 2x" data-file-width="36" data-file-height="31" /> <a href="/wiki/Category:The_Beatles" title="Category:The Beatles">Category</a></li>
+<li><img alt="Portal" src="//upload.wikimedia.org/wikipedia/en/thumb/f/fd/Portal-puzzle.svg/16px-Portal-puzzle.svg.png" decoding="async" title="Portal" width="16" height="14" srcset="//upload.wikimedia.org/wikipedia/en/thumb/f/fd/Portal-puzzle.svg/24px-Portal-puzzle.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/f/fd/Portal-puzzle.svg/32px-Portal-puzzle.svg.png 2x" data-file-width="32" data-file-height="28" /> <a href="/wiki/Portal:The_Beatles" title="Portal:The Beatles">Portal</a></li></ul>
+</div></td></tr></tbody></table></div>
+<div role="navigation" class="navbox" aria-labelledby="The_Beatles_filmography_and_videography" style="padding:3px"><table class="nowraplinks vcard collapsible collapsed navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th scope="col" class="navbox-title" colspan="2" style="background: #b0c4de;"><div class="plainlinks hlist navbar mini"><ul><li class="nv-view"><a href="/wiki/Template:Beatles_filmography_and_videography" class="mw-redirect" title="Template:Beatles filmography and videography"><abbr title="View this template" style=";background: #b0c4de;;background:none transparent;border:none;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none; padding:0;">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:Beatles_filmography_and_videography" class="mw-redirect" title="Template talk:Beatles filmography and videography"><abbr title="Discuss this template" style=";background: #b0c4de;;background:none transparent;border:none;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none; padding:0;">t</abbr></a></li><li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Beatles_filmography_and_videography&amp;action=edit"><abbr title="Edit this template" style=";background: #b0c4de;;background:none transparent;border:none;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none; padding:0;">e</abbr></a></li></ul></div><div id="The_Beatles_filmography_and_videography" class="fn org" style="font-size:114%;margin:0 4em">The Beatles <a class="mw-selflink selflink">filmography</a> and <a href="/wiki/The_Beatles_discography#Videography" title="The Beatles discography">videography</a></div></th></tr><tr><th scope="row" class="navbox-group" style="width:1%;background: #EEEEEE;"><a class="mw-selflink selflink">Filmography</a> and <a href="/wiki/The_Beatles_discography#Videography" title="The Beatles discography">videography</a></th><td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><i><a href="/wiki/A_Hard_Day%27s_Night_(film)" title="A Hard Day&#39;s Night (film)">A Hard Day's Night</a></i></li>
+<li><i><a href="/wiki/Help!_(film)" title="Help! (film)">Help!</a></i></li>
+<li><i><a href="/wiki/Magical_Mystery_Tour_(film)" title="Magical Mystery Tour (film)">Magical Mystery Tour</a></i></li>
+<li><i><a href="/wiki/Yellow_Submarine_(film)" title="Yellow Submarine (film)">Yellow Submarine</a></i></li>
+<li><i><a href="/wiki/Let_It_Be_(1970_film)" title="Let It Be (1970 film)">Let It Be</a></i></li>
+<li><i><a href="/wiki/1_(Beatles_album)#1+" title="1 (Beatles album)">The Beatles: 1+</a></i></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%;background: #EEEEEE;">Documentaries</th><td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><i><a href="/wiki/Around_the_Beatles" title="Around the Beatles">Around the Beatles</a></i></li>
+<li><i><a href="/wiki/The_Beatles:_The_First_U.S._Visit" title="The Beatles: The First U.S. Visit">The First U.S. Visit</a></i></li>
+<li><i><a href="/wiki/The_Beatles_at_Shea_Stadium" title="The Beatles at Shea Stadium">At Shea Stadium</a></i></li>
+<li><i><a href="/wiki/A_Salute_to_the_Beatles:_Once_upon_a_Time" title="A Salute to the Beatles: Once upon a Time">A Salute to the Beatles</a></i></li>
+<li><i><a href="/wiki/The_Compleat_Beatles" title="The Compleat Beatles">The Compleat Beatles</a></i></li>
+<li><i><a href="/wiki/It_Was_Twenty_Years_Ago_Today_(film)" title="It Was Twenty Years Ago Today (film)">It Was Twenty Years Ago Today</a></i></li>
+<li><i><a href="/wiki/The_Beatles_Anthology_(documentary)" class="mw-redirect" title="The Beatles Anthology (documentary)">Anthology</a></i></li>
+<li><i><a href="/wiki/All_Together_Now_(film)" title="All Together Now (film)">All Together Now</a></i></li>
+<li><i><a href="/wiki/The_Beatles:_Eight_Days_a_Week" title="The Beatles: Eight Days a Week">Eight Days a Week – The Touring Years</a></i></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%;background: #EEEEEE;">Promotional films (music videos)</th><td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li>"<a href="/wiki/Rain_(Beatles_song)" title="Rain (Beatles song)">Rain</a>"</li>
+<li>"<a href="/wiki/Paperback_Writer" title="Paperback Writer">Paperback Writer</a>"</li>
+<li>"<a href="/wiki/Strawberry_Fields_Forever" title="Strawberry Fields Forever">Strawberry Fields Forever</a>"</li>
+<li>"<a href="/wiki/Penny_Lane" title="Penny Lane">Penny Lane</a>"</li>
+<li>"<a href="/wiki/A_Day_in_the_Life" title="A Day in the Life">A Day in the Life</a>"</li>
+<li>"<a href="/wiki/Hello,_Goodbye" title="Hello, Goodbye">Hello, Goodbye</a>"</li>
+<li>"<a href="/wiki/Lady_Madonna" title="Lady Madonna">Lady Madonna</a>"</li>
+<li>"<a href="/wiki/Hey_Jude" title="Hey Jude">Hey Jude</a>"</li>
+<li>"<a href="/wiki/Revolution_(Beatles_song)" title="Revolution (Beatles song)">Revolution</a>"</li>
+<li>"<a href="/wiki/Something_(Beatles_song)" title="Something (Beatles song)">Something</a>"</li>
+<li>"<a href="/wiki/Free_as_a_Bird" title="Free as a Bird">Free as a Bird</a>"</li>
+<li>"<a href="/wiki/Real_Love_(Beatles_song)" title="Real Love (Beatles song)">Real Love</a>"</li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%;background: #EEEEEE;">Fictionalised Beatles</th><td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><i><a href="/wiki/Ringo_(1978_film)" title="Ringo (1978 film)">Ringo</a></i></li>
+<li><i><a href="/wiki/Birth_of_the_Beatles" title="Birth of the Beatles">Birth of the Beatles</a></i></li>
+<li><i><a href="/wiki/Beatlemania_(musical)#Beatlemania:_The_Movie" title="Beatlemania (musical)">Beatlemania</a></i></li>
+<li><i><a href="/wiki/Give_My_Regards_to_Broad_Street_(film)" title="Give My Regards to Broad Street (film)">Give My Regards to Broad Street</a></i></li>
+<li><i><a href="/wiki/John_and_Yoko:_A_Love_Story" title="John and Yoko: A Love Story">John and Yoko: A Love Story</a></i></li>
+<li><i><a href="/wiki/Backbeat_(film)" title="Backbeat (film)">Backbeat</a></i></li>
+<li><i><a href="/wiki/The_Hours_and_Times" title="The Hours and Times">The Hours and Times</a></i></li>
+<li><i><a href="/wiki/The_Linda_McCartney_Story" title="The Linda McCartney Story">The Linda McCartney Story</a></i></li>
+<li><i><a href="/wiki/Two_of_Us_(2000_film)" title="Two of Us (2000 film)">Two of Us</a></i></li>
+<li><i><a href="/wiki/In_His_Life:_The_John_Lennon_Story" title="In His Life: The John Lennon Story">In His Life: The John Lennon Story</a></i></li>
+<li><i><a href="/wiki/The_Killing_of_John_Lennon" title="The Killing of John Lennon">The Killing of John Lennon</a></i></li>
+<li><i><a href="/wiki/Chapter_27" title="Chapter 27">Chapter 27</a></i></li>
+<li><i><a href="/wiki/Nowhere_Boy" title="Nowhere Boy">Nowhere Boy</a></i></li>
+<li><i><a href="/wiki/Lennon_Naked" title="Lennon Naked">Lennon Naked</a></i></li>
+<li><i><a href="/wiki/Playhouse_Presents#Series_2_(2013)" title="Playhouse Presents">Snodgrass</a></i></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%;background: #EEEEEE;">Inspired by Beatles</th><td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><i><a href="/wiki/The_Girls_on_the_Beach" title="The Girls on the Beach">The Girls on the Beach</a></i></li>
+<li><i><a href="/wiki/All_This_and_World_War_II" title="All This and World War II">All This and World War II</a></i></li>
+<li><i><a href="/wiki/Sgt._Pepper%27s_Lonely_Hearts_Club_Band_(film)" title="Sgt. Pepper&#39;s Lonely Hearts Club Band (film)">Sgt. Pepper's Lonely Hearts Club Band</a></i></li>
+<li><i><a href="/wiki/I_Wanna_Hold_Your_Hand_(film)" title="I Wanna Hold Your Hand (film)">I Wanna Hold Your Hand</a></i></li>
+<li><i><a href="/wiki/All_You_Need_Is_Cash" title="All You Need Is Cash">All You Need Is Cash</a></i></li>
+<li><i><a href="/wiki/Secrets_(1992_Australian_film)" title="Secrets (1992 Australian film)">Secrets</a></i></li>
+<li><i><a href="/wiki/I_Am_Sam" title="I Am Sam">I Am Sam</a></i></li>
+<li><i><a href="/wiki/The_Rutles_2:_Can%27t_Buy_Me_Lunch" title="The Rutles 2: Can&#39;t Buy Me Lunch">The Rutles 2: Can't Buy Me Lunch</a></i></li>
+<li><i><a href="/wiki/Across_the_Universe_(film)" title="Across the Universe (film)">Across the Universe</a></i></li></ul>
+</div></td></tr></tbody></table></div>
+
+<!-- 
+NewPP limit report
+Parsed by mw1322
+Cached time: 20190203031901
+Cache expiry: 2073600
+Dynamic content: false
+CPU time usage: 0.332 seconds
+Real time usage: 0.481 seconds
+Preprocessor visited node count: 1717/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 82176/2097152 bytes
+Template argument size: 8248/2097152 bytes
+Highest expansion depth: 12/40
+Expensive parser function count: 3/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 32583/5000000 bytes
+Number of Wikibase entities loaded: 0/400
+Lua time usage: 0.133/10.000 seconds
+Lua memory usage: 5.66 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  369.506      1 -total
+ 32.53%  120.195      1 Template:Reflist
+ 24.12%   89.116      1 Template:Refimprove
+ 22.55%   83.308      1 Template:Ambox
+ 16.09%   59.467      1 Template:Cite_book
+ 10.10%   37.334      2 Template:Navbox_musical_artist
+  9.67%   35.749      1 Template:The_Beatles
+  8.99%   33.208      2 Template:Navbox
+  8.68%   32.066      1 Template:Find_sources_mainspace
+  8.55%   31.604      9 Template:Cite_web
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:8780285-0!canonical and timestamp 20190203031901 and revision id 869481684
+ -->
+</div><noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>         <div class="printfooter">
+            Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=The_Beatles_in_film&amp;oldid=869481684">https://en.wikipedia.org/w/index.php?title=The_Beatles_in_film&amp;oldid=869481684</a>"          </div>
+        <div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Films_associated_with_the_Beatles" title="Category:Films associated with the Beatles">Films associated with the Beatles</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Use_British_English_from_November_2010" title="Category:Use British English from November 2010">Use British English from November 2010</a></li><li><a href="/wiki/Category:Articles_needing_additional_references_from_March_2007" title="Category:Articles needing additional references from March 2007">Articles needing additional references from March 2007</a></li><li><a href="/wiki/Category:All_articles_needing_additional_references" title="Category:All articles needing additional references">All articles needing additional references</a></li><li><a href="/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">All articles with unsourced statements</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_August_2007" title="Category:Articles with unsourced statements from August 2007">Articles with unsourced statements from August 2007</a></li></ul></div></div>       <div class="visualClear"></div>
+</div>
+</div>
+</body>
+</div>
+</html>

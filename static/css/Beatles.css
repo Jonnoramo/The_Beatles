@@ -8,7 +8,7 @@ h1 {
 p {
   text-align: left;
   font-size: 16px;
-  color: red;
+  color: black;
   font-family:Italics
 }
 
@@ -21,7 +21,7 @@ h2 {
 h3 {
   text-align: center;
   font-size: 36px;
-  color: red;
+  color: black;
 } 
 
 #description1, #description2, #description3, #description4{
@@ -79,7 +79,7 @@ form {
   line-height: 24px;
   font-weight: bold;
   color: #09C;
-  text-decoration: none;
+  t\ext-decoration: none;
   border-radius: 10px;
   padding: 10px;
   border: 1px solid #999;
@@ -90,9 +90,10 @@ form {
 }
 
 button {
-    background-color: #4CAF50; /* Green */
+    background-color: white;
     border-style: : solid;
     color: white;
+    font-style: initial;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
